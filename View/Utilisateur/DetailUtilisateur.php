@@ -1,0 +1,3 @@
+<?php
+    echo "User ".htmlspecialchars($v->getLogin())." of last name ".htmlspecialchars($v->getNom())." (name ".htmlspecialchars($v->getPrenom()).") <a href=http://webinfo.iutmontp.univ-montp2.fr/~sonettir/PHP/TD2/index.php?action=update&controller=utilisateur&login=".rawurlencode($_GET['login']).">Update User</a> <a href=http://webinfo.iutmontp.univ-montp2.fr/~sonettir/PHP/TD2/index.php?action=delete&controller=utilisateur&login=".rawurlencode($_GET['login']).">Delete User</a> <br>";
+?>
