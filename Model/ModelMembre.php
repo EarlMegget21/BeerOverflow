@@ -10,7 +10,7 @@ class ModelMembre extends ModelClient
     /**
      * @var String
      */
-    private $pseudo;
+    private $login;
 
     /**
      * @var String
@@ -21,5 +21,8 @@ class ModelMembre extends ModelClient
      * @var int
      */
     private $numCB;
+    
+    
+    protected static $object='membre';
 
 }

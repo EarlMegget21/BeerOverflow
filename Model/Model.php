@@ -13,6 +13,11 @@ require_once File::build_path(array('Config','Conf.php'));
  */
 class Model {
     public static $pdo;
+    
+     // getter
+   public function get($attribut){
+       return $this->$attribut;
+   }
 
     public static function Init(){
         $hostname=Conf::getHostname();

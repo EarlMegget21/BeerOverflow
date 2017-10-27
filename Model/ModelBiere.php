@@ -44,5 +44,7 @@ class ModelBiere extends Model
     private $marque;
 
 
+    protected static $object='biere';
+    protected static $primary='id';
 
 }

@@ -33,5 +33,7 @@ class ModelMarque extends Model
     private $listBieres;
 
 
+    protected static $object='marque';
+    protected static $primary='id';
 
 }

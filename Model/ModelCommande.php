@@ -18,11 +18,6 @@ class ModelCommande extends Model
     private $livraison;
 
     /**
-     * @var \ModelBiere[]
-     */
-    private $listBieres;
-
-    /**
      * @var \ModelClient
      */
     private $client;
@@ -31,12 +26,15 @@ class ModelCommande extends Model
      * @var \ModelMoment
      */
     private $moment;
+    
+    
+    protected static $object='commande';
+    protected static $primary='id';
 
     /**
      * @return float
      */
-    public function calculerTotal():float
-    {
+    public function calculerTotal()    {
         // TODO: implement here
         return 0.0;
     }

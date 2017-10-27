@@ -8,6 +8,11 @@ class ModelCategorie extends Model
 {
 
     /**
+     * @var int
+     */
+    private $id;
+    
+    /**
      * @var String
      */
     private $nom;
@@ -21,5 +26,9 @@ class ModelCategorie extends Model
      * @var \ModelBiere[]
      */
     private $listBieres;
+    
+    
+    protected static $object='categorie';
+    protected static $primary='id';
 
 }

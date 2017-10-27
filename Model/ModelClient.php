@@ -32,5 +32,8 @@ abstract class ModelClient extends Model
      */
     private $adresse;
 
+    
+    protected static $object='client';
+    protected static $primary='id';
 
 }

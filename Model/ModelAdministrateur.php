@@ -10,11 +10,15 @@ class ModelAdministrateur extends ModelClient
     /**
      * @var String
      */
-    private $pseudo;
+    private $login;
 
     /**
      * @var String
      */
     private $motDePasse;
+    
+    
+    protected static $object='administrateur';
+   
 
 }

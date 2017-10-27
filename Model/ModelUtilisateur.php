@@ -10,17 +10,9 @@ class ModelUtilisateur extends Model{
     protected static $object='utilisateur';
     protected static $primary='login';
 
-    // getters
-   public function getLogin(){
-       return $this->login;
-   }
-   
-   public function getNom(){
-       return $this->nom;
-   }
-   
-   public function getPrenom(){
-       return $this->prenom;
+    // getter
+   public function get($attribut){
+       return $this->$attribut;
    }
 
     // a constructor

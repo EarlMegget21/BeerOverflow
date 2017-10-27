@@ -15,30 +15,18 @@ class ModelMoment extends Model
     /**
      * @var int
      */
-    private $jour;
-
+    private $biere;
     /**
      * @var int
      */
-    private $mois;
-
+    private $qte;
     /**
      * @var int
      */
-    private $annee;
-
-    /**
-     * @var int
-     */
-    private $heure;
-
-    /**
-     * @var int
-     */
-    private $minute;
+    private $commande;
 
 
-    protected static $object='moment';
+    protected static $object='achat';
     protected static $primary='id';
 
 }
