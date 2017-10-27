@@ -2,17 +2,23 @@
 
 //Le router est un peu le main qui exécute les fonctions des controllers(utilisent le php en écriture et effectuent des traitements) qui eux jouent avec la BD via Model
 //et avec la page à afficher via View(utilise du php uniquement en lecture)
-require_once File::build_path(array('Controller','ControllerVoiture.php'));
-require_once File::build_path(array('Controller','ControllerUtilisateur.php'));
+require_once File::build_path(array('controller','controllerClient.php'));
+require_once File::build_path(array('controller','controllerCommande.php'));
+require_once File::build_path(array('controller','controllerAchat.php'));
+require_once File::build_path(array('controller','controllerBiere.php'));
+require_once File::build_path(array('controller','controllerCategorie.php'));
+require_once File::build_path(array('controller','controllerMarque.php'));
+require_once File::build_path(array('controller','controllerBrasserie.php'));
+require_once File::build_path(array('controller','controllerCateBiere.php'));
 // On recupère l'action passée dans l'URL
 
 if(array_key_exists("controller", $_GET)){ //arrat_key_exists test si la clé controller existe dans le tableau $_GET
     $controller = $_GET["controller"];    
 }else{
-    $controller = 'voiture';
+    $controller = 'biere';
 }
 
-$controller_class = 'Controller'.ucfirst($controller); //ucfirst transforme une chaine en capitalisant sa première lettre
+$controller_class = 'controller'.ucfirst($controller); //ucfirst transforme une chaine en capitalisant sa première lettre
 
 if(class_exists($controller_class)){
     if(array_key_exists("action", $_GET)){
@@ -31,7 +37,7 @@ if(class_exists($controller_class)){
         }else{
            $pagetitle='Error!';
            $view='Error';
-           require File::build_path(array('View','View.php'));
+           require File::build_path(array('view','View.php'));
        }
     }else{
         // Appel de la méthode statique $action du controller specifié
@@ -40,5 +46,5 @@ if(class_exists($controller_class)){
 }else{
     $pagetitle='Error!';
     $view='Error';
-    require File::build_path(array('View','View.php'));
+    require File::build_path(array('view','View.php'));
 }
