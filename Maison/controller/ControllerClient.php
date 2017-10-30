@@ -15,8 +15,8 @@ class ControllerClient {
     }
     
     public static function read() {
-        $login=$_GET['login'];
-        if(!$v = ModelClient::select($login)){
+        $id=$_GET['id'];
+        if(!$v = ModelClient::select($id)){
             $pagetitle='Error!';
             $view='Error';
             require File::build_path(array('view','View.php'));
@@ -35,7 +35,7 @@ class ControllerClient {
     
     public static function created() {
         $data=array(
-            'login'=>$_GET['login'],
+            'id'=>$_GET['id'],
             'nom'=>$_GET['nom'],
             'prenom'=>$_GET['prenom']);
         if(!ModelClient::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
@@ -58,7 +58,7 @@ class ControllerClient {
     
     public static function updated() {
         $data=array(
-            'login'=>$_GET['login'],
+            'id'=>$_GET['id'],
             'nom'=>$_GET['nom'],
             'prenom'=>$_GET['prenom']);
         if(!ModelClient::update($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
@@ -66,7 +66,7 @@ class ControllerClient {
             $view='Error';
             require File::build_path(array('view','View.php'));
         } else {
-            $v = ModelClient::select($_GET["login"]);
+            $v = ModelClient::select($_GET["id"]);
             $pagetitle='DetailClient';
             $view='Updated';
             require File::build_path(array('view','View.php'));
@@ -74,7 +74,7 @@ class ControllerClient {
     }
     
     public static function delete() {
-        ModelClient::delete($_GET['login']);
+        ModelClient::delete(array('id'=>$_GET['id']));
         $tab_v = ModelClient::selectAll();
         $pagetitle='ListClient';
         $view='Deleted';

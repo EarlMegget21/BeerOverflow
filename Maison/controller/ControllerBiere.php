@@ -13,8 +13,9 @@ class ControllerBiere {
         require File::build_path(array('view','View.php'));
     }
     public static function read() {
-        $immat=$_GET['id'];
-        if(!$v = ModelBiere::select($immat)){
+        $id=$_GET['id'];
+        $tab_c = ModelCateBiere::selectBi($id);
+        if(!$v = ModelBiere::select($id)){
             $pagetitle='Error!';
             $view='Error';
             require File::build_path(array('view','View.php'));
@@ -32,12 +33,12 @@ class ControllerBiere {
     public static function created() {
         $data=array(
             'id'=>$_GET['id'],
-            'modele'=>$_GET['modele'],
+            'nom'=>$_GET['nom'],
             'taux'=>$_GET['taux'],
-            'composition'=>$_GET['taux'],
+            'composition'=>$_GET['composition'],
             'montant'=>$_GET['montant'],
-            'idCategorie'=>$_GET['idCategorie'],
-            'idMarque'=>$_GET['idMarque']);
+            'marque'=>$_GET['marque'],
+            'idBrasserie'=>$_GET['idBrasserie']);
         if(!ModelBiere::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
             $pagetitle='Error!';
             $view='Error';
@@ -57,12 +58,12 @@ class ControllerBiere {
     public static function updated() {
         $data=array(
            'id'=>$_GET['id'],
-            'modele'=>$_GET['modele'],
+            'nom'=>$_GET['nom'],
             'taux'=>$_GET['taux'],
             'composition'=>$_GET['taux'],
             'montant'=>$_GET['montant'],
-            'idCategorie'=>$_GET['idCategorie'],
-            'idMarque'=>$_GET['idMarque']);
+            'marque'=>$_GET['marque'],
+            'idBrasserie'=>$_GET['idBrasserie']);
         if(!ModelBiere::update($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
             $pagetitle='Error!';
             $view='Error';
@@ -75,7 +76,7 @@ class ControllerBiere {
         }
     }
     public static function delete() {
-        ModelBiere::delete($_GET['id']);
+        ModelBiere::delete(array('id'=>$_GET['id']));
         $tab_v = ModelBiere::selectAll();
         $pagetitle='ListBiere';
         $view='Deleted';

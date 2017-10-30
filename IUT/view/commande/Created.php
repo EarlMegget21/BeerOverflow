@@ -1,4 +1,4 @@
 <?php
-    echo '<p>L\'utilisateur a bien été créé !</p>';
-    require File::build_path(array('View','Utilisateur','ListUtilisateur.php'));
+    echo '<p>La Commande a bien été créée !</p>';
+    require File::build_path(array('view','commande','ListCommande.php'));
 

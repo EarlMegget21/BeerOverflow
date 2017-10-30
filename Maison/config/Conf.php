@@ -4,17 +4,17 @@ class Conf {
   static private $databases = array(
     // Hostname is webinfo at IUT
     // or localhost on your computer
-    'hostname' => 'webinfo',
+    'hostname' => 'localhost',
     // At IUT, you have a database named after your login
     // On your computer, please create a database
-    'database' => 'chadouliw',
+    'database' => 'projetbiere',
     // At IUT, it is your classical login
     // On your computer, you should have at least a 'root' account
-    'login' => 'chadouliw',
+    'login' => 'root',
     // At IUT, it is your database password 
     // (=PHPMyAdmin pwd, INE by defaut)
     // On your computer, you created the pwd during setup
-    'password' => 'jesaispas'
+    'password' => ''
   );
   
   static private $debug = True; 

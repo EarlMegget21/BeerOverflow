@@ -1,5 +1,5 @@
 <?php
-require_once File::build_path(array('Config','Conf.php'));
+require_once File::build_path(array('config','Conf.php'));
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -13,11 +13,6 @@ require_once File::build_path(array('Config','Conf.php'));
  */
 class Model {
     public static $pdo;
-    
-     // getter
-   public function get($attribut){
-       return $this->$attribut;
-   }
 
     public static function Init(){
         $hostname=Conf::getHostname();
@@ -85,11 +80,16 @@ class Model {
     public static function delete($primary) {
         $table_name= static::$object;
         $class_name= ucfirst($table_name);
-        $key_name=static::$primary;
-        $sql = "DELETE FROM $class_name WHERE $key_name='$primary'";
+        //$key_name=static::$primary;
+        $sql = "DELETE FROM $class_name WHERE ";
+        foreach($primary as $key => $value){
+            $sql=$sql."$key=:$key    AND ";
+        }
+        $sql=rtrim($sql,"AND ");
+        echo $sql;
         try{
             $req_prep = Model::$pdo->prepare($sql);
-            $req_prep->execute();
+            $req_prep->execute($primary);
             return true; //si on return pas true, la valeur retournée sera NULL
         } catch(PDOException $e){
            echo $e->getMessage(); // affiche un message d'erreur
@@ -134,6 +134,7 @@ class Model {
         }
         $sql= rtrim($sql,", ");
         $sql=$sql.");";
+        echo $sql;
         try{
             $req_prep = Model::$pdo->prepare($sql);
             $req_prep->execute($data);

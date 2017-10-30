@@ -18,28 +18,26 @@ class ModelBrasserie extends Model
     private $nom;
 
     /**
-     * @var \ModelAdresse
+     * @var String
      */
     private $adresse;
-
-    /**
-     * @var \ModelMarque[]
-     */
-    private $listMarques;
     
     
     protected static $object='brasserie';
     protected static $primary='id';
 
     // a constructor
-    public function __construct($i = NULL, $n = NULL, $a = NULL, $m=NULL) {
-        if (!is_null($i) && !is_null($n) && !is_null($a) && !is_null($m)) {
+    public function __construct($i = NULL, $n = NULL, $a = NULL) {
+        if (!is_null($i) && !is_null($n) && !is_null($a)) {
             $this->id = $i;
             $this->nom = $n;
             $this->adresse = $a;
-            $this->listMarques = $m;
         }
     }
 
+    // getter
+    public function get($attribut){
+        return $this->$attribut;
+    }
 
 }

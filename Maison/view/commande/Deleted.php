@@ -1,3 +1,3 @@
 <?php
-    echo '<p>L\'utilisateur a bien été supprimé !</p>';
-    require File::build_path(array('View','Utilisateur','ListUtilisateur.php'));
+    echo '<p>La Commande a bien été supprimée !</p>';
+    require File::build_path(array('View','Commande','ListCommande.php'));

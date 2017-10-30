@@ -7,17 +7,17 @@
     <body>
         <header>
             <nav>
-                <a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/PHP/TD2/index.php">Accueil</a>
-                <a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/PHP/TD2/index.php?action=readAll&controller=client">Clients</a>
-                <a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/PHP/TD2/index.php?action=readAll&controller=commande">Commandes</a>
-                <a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/PHP/TD2/index.php?action=readAll&controller=biere">Bieres</a>
-                <a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/PHP/TD2/index.php?action=readAll&controller=marque">Marques</a>
-                <a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/PHP/TD2/index.php?action=readAll&controller=brasserie">Brasseries</a>
+                <a href="http://localhost/projetbiere/index.php">Accueil</a>
+                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=client">Clients</a>
+                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=commande">Commandes</a>
+                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=biere">Bieres</a>
+                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=brasserie">Brasseries</a>
+                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=categorie">Categories</a>
             </nav>
         </header>
 <?php
 // Si static::$object='Voiture' et $view='ListVoiture',
-// alors $filepath="/chemin_du_site/View/Voiture/ListVoiture.php"
+// alors $filepath="/chemin_du_site/View/Voiture/ListBiere.php"
 $filepath = File::build_path(array("view", static::$object, "$view.php"));
 require $filepath;
 ?>

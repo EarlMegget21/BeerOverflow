@@ -16,7 +16,7 @@ and open the template in the editor.
 <?php
   // Include PHP files using require_once
   // to avoid multiple inclusions
-  require_once 'Conf.php';
+  require_once 'config/Conf.php';
 
   // Display database login
   echo Conf::getLogin();
