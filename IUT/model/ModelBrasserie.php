@@ -6,11 +6,9 @@
  */
 class ModelBrasserie extends Model
 {
-
     private $id;
     private $nom;
     private $idAdresse;
-    
     
     protected static $object='brasserie';
     protected static $primary='id';
@@ -20,7 +18,7 @@ class ModelBrasserie extends Model
         if (!is_null($i) && !is_null($n) && !is_null($a)) {
             $this->id = $i;
             $this->nom = $n;
-            $this->adresse = $a;
+            $this->idAdresse = $a;
         }
     }
 

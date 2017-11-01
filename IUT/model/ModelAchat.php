@@ -11,17 +11,8 @@ class ModelAchat extends Model
     private $idCommande;
     private $quantite;
 
-
-
     protected static $object='achat';
-    //protected static $primary='id';
 
-    /**
-     * ModelAchat constructor.
-     * @param int $idBiere
-     * @param int $idCommande
-     * @param int $qte
-     */
     public function __construct($idBiere=NULL, $idCommande=NULL, $qte=NULL)
     {
         if (!is_null($idBiere) && !is_null($idCommande) && !is_null($qte)) {

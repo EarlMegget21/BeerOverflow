@@ -10,15 +10,8 @@ class ModelCateBiere extends Model
     private $idBiere;
     private $idCategorie;
 
+    protected static $object='cateBiere';
 
-    protected static $object='catebiere';
-    //protected static $primary='id';
-
-    /**
-     * ModelCateBiere constructor.
-     * @param int $idBiere
-     * @param int $idCategorie
-     */
     public function __construct($idBiere=NULL, $idCategorie=NULL)
     {
         if (!is_null($idBiere) && !is_null($idCategorie)) {

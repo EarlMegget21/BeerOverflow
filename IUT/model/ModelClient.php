@@ -11,16 +11,9 @@ class ModelClient extends Model
     private $nom;
     private $prenom;
 
-    
     protected static $object='client';
     protected static $primary='id';
 
-    /**
-     * ModelClient constructor.
-     * @param int $id
-     * @param String $nom
-     * @param String $prenom
-     */
     public function __construct($id=NULL, $nom=NULL, $prenom=NULL)
     {
         if (!is_null($id) && !is_null($nom) && !is_null($prenom)) {
@@ -29,7 +22,6 @@ class ModelClient extends Model
             $this->prenom = $prenom;
         }
     }
-
 
     // getter
     public function get($attribut){

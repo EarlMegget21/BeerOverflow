@@ -7,19 +7,21 @@ class ModelMarque extends Model
     private $nom;
     private $edition;
     private $idBrasserie;
+
+    protected static $object = 'marque';
+    protected static $primary = 'id';
 	
-	public function __construct($id = NULL, $n = NULL, $ed = NULL, $br = NULL, $liste = NULL) {
-        if (!is_null($id) && !is_null($n) && !is_null($ed) && !is_null($br) && !is_null($liste)) {
+	public function __construct($id = NULL, $n = NULL, $ed = NULL, $br = NULL)
+    {
+        if (!is_null($id) && !is_null($n) && !is_null($ed) && !is_null($br)) {
             $this->id = $id;
             $this->nom = $n;
             $this->edition = $ed;
-			$this->brasseur = $br;
-			$this->listBieres = $liste;
+            $this->idBrasserie = $br;
         }
     }
 
-
-    protected static $object='marque';
-    protected static $primary='id';
-
+    public function get($attribut){
+        return $this->$attribut;
+    }
 }

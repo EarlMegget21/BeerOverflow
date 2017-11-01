@@ -8,6 +8,22 @@
 
 class ModelIngredient
 {
-    private $idIngredient;
+    private $id;
     private $nom;
+
+    protected static $object = 'ingredient';
+    protected static $primary = 'id';
+
+    public function __construct($id = NULL, $n = NULL)
+    {
+        if (!is_null($id) && !is_null($n)) {
+            $this->id = $id;
+            $this->nom = $n;
+        }
+    }
+
+    public function get($attribut)
+    {
+        return $this->$attribut;
+    }
 }

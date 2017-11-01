@@ -14,11 +14,11 @@ class ModelCommande extends Model
 
     public function __construct($id=NULL, $livraison=false, $idClient=NULL, $date=NULL)
     {
-        if (!is_null($id) && !is_null($idClient) && !is_null($date)) {
+        if (!is_null($id) && !is_null($idClient) && !is_null($date) && !is_null($livraison)) {
             $this->id = $id;
             $this->livraison = $livraison;
             $this->idClient = $idClient;
-            $this->Date = $date;
+            $this->date = $date;
         }
     }
 
@@ -27,9 +27,6 @@ class ModelCommande extends Model
         return $this->$attribut;
     }
 
-    /**
-     * @return float
-     */
     public function calculerTotal()
     {
 
