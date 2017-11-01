@@ -1,17 +1,8 @@
 <?php
 require_once File::build_path(array('config','Conf.php'));
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- * Description of Model
- *
- * @author sonettir
- */
 class Model {
+
     public static $pdo;
 
     public static function Init(){
@@ -19,9 +10,8 @@ class Model {
         $login=Conf::getLogin();
         $password=Conf::getPassword();
         $database=Conf::getDatabase();
-        $port=Conf::getPort();
         try{
-            self::$pdo=new PDO("mysql:host=$hostname;port=".$port.";dbname=$database",$login,$password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+            self::$pdo=new PDO("mysql:host=$hostname;dbname=$database",$login,$password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
             self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch(PDOException $e){
            if (Conf::getDebug()) {
@@ -47,23 +37,24 @@ class Model {
         }
     }
     
-    public static function select($primary) {
+    public static function select($primary) { //j'ai modifié la fonction select pour prendre un tableau en entree car certaines tables ont deux clés primaires
         $table_name= static::$object;
         $class_name= ucfirst($table_name);
-        $key_name=static::$primary;
+        //$key_name=static::$primary;
 	// In the query, put tags :xxx instead of variables $xxx
-    $sql = "SELECT * from $class_name WHERE $key_name=:nom_tag";
+    $sql = "SELECT * from $class_name WHERE ";
+        foreach($primary as $key => $value){ //on ajoute dans le WHERE tout ce qui a dans le tableau
+            $sql=$sql."$key=:$key AND ";
+        }
+        $sql=rtrim($sql,"AND "); //on supprime le dernier AND
+        echo $sql; //on affiche pour debugger
         try{
             // Prepare the SQL statement
             $req_prep = Model::$pdo->prepare($sql);
 
-            $values = array(
-                "nom_tag" => $primary,
-                //nomdutag => valeur, ...
-            );
             // Execute the SQL prepared statement after replacing tags 
             // with the values given in $values
-            $req_prep->execute($values);
+            $req_prep->execute($primary); //on associe le tableau à la requete pour éviter l'injection
 
             // Retrieve results as previously
             $req_prep->setFetchMode(PDO::FETCH_CLASS, 'Model'.$class_name);
@@ -71,26 +62,26 @@ class Model {
             // Careful: you should handle the special case of no results
             if (empty($tab))
                 return false;
-            return $tab[0];
+            return $tab; //on retourne un tableau car pour les tables à plusieurs clés primaire, si on en met qu'une dans le WHERE, ça peut renvoyer plusieurs tuples
         } catch(PDOException $e){
             echo $e->getMessage(); // affiche un message d'erreur
             die(); //supprimer equilvalent à System.exit(1); en java
         }   
     }
     
-    public static function delete($primary) {
+    public static function delete($primary) { //j'ai modifié la fonction delete pour prendre un tableau en entree car certaines tables ont deux clés primaires
         $table_name= static::$object;
         $class_name= ucfirst($table_name);
         //$key_name=static::$primary;
         $sql = "DELETE FROM $class_name WHERE ";
-        foreach($primary as $key => $value){
+        foreach($primary as $key => $value){ //on ajoute dans le WHERE tout ce qui a dans le tableau
             $sql=$sql."$key=:$key    AND ";
         }
-        $sql=rtrim($sql,"AND ");
-        echo $sql;
+        $sql=rtrim($sql,"AND "); //on supprime le dernier AND
+        echo $sql; //on affiche pour debugger
         try{
             $req_prep = Model::$pdo->prepare($sql);
-            $req_prep->execute($primary);
+            $req_prep->execute($primary); //on associe le tableau à la requete pour éviter l'injection
             return true; //si on return pas true, la valeur retournée sera NULL
         } catch(PDOException $e){
            echo $e->getMessage(); // affiche un message d'erreur
@@ -123,7 +114,7 @@ class Model {
     public static function save($data) {
         $table_name= static::$object;
         $class_name= ucfirst($table_name);
-        $key_name=static::$primary;
+        //$key_name=static::$primary;
         $sql = "INSERT INTO $class_name (";
         foreach($data as $key => $value){
             $sql=$sql."$key, ";

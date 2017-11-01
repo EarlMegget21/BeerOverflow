@@ -3,7 +3,9 @@
     echo "Bière <a href=http://localhost/projetbiere/index.php?action=read&controller=biere&id="
         .rawurlencode($v->get("id"))
         .">"
-        .htmlspecialchars($v->get("id"))
+        .htmlspecialchars($v->get("marque"))
+        ." "
+        .htmlspecialchars($v->get("nom"))
         ."</a> <a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id="
         .rawurlencode($v->get("id"))
         .">Supprimer Bière</a> <br>";

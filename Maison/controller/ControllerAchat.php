@@ -27,36 +27,44 @@ class ControllerAchat {
         }   
     }
     
-    public static function create() {
+    /*public static function create() {
         $pagetitle='Create';
         $view='Update';
         require File::build_path(array('view','View.php'));
-    }
+    }*/
     
     public static function created() {
+        $id=$_GET['idCommande']; //on stock le GET pour aller plus vite
         $data=array(
             'idBiere'=>$_GET['idBiere'],
-            'idCommande'=>$_GET['idCommande'],
+            'idCommande'=>$id,
             'quantite'=>$_GET['quantite']);
         if(!ModelAchat::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
             $pagetitle='Error!';
             $view='Error';
             require File::build_path(array('view','View.php'));
         } else {
-            $tab_v = ModelAchat::selectAll();
-            $pagetitle='ListAchat';
-            $view='Created';
-            require File::build_path(array('view','View.php'));
+            $tab_a = ModelAchat::select(array('idCommande'=>$id)); //on selectionne touts les achats de cette commande
+            if(!$tv = ModelCommande::select(array('id'=>$id))){
+                $pagetitle='Error!';
+                $view='Error';
+                require File::build_path(array('view','View.php'));
+            } else {
+                $v=$tv[0];
+                $pagetitle='DetailCommande';
+                $view='DetailCommande';
+                require File::build_path(array('view','View.php'));
+            }
         }
     }
     
-    public static function update() {
+    /*public static function update() {
         $pagetitle='Update';
         $view='Update';
         require File::build_path(array('view','View.php'));
-    }
+    }*/
     
-    public static function updated() {
+    /*public static function updated() {
         $data=array(
             'idBiere'=>$_GET['idBiere'],
             'idCommande'=>$_GET['idCommande'],
@@ -71,17 +79,18 @@ class ControllerAchat {
             $view='Updated';
             require File::build_path(array('view','View.php'));
         }
-    }
+    }*/
     
     public static function delete() {
         $id=$_GET['idCommande'];
         ModelAchat::delete(array('idCommande'=>$id,'idBiere'=>$_GET['idBiere']));
-        $tab_a = ModelAchat::selectBi($id);
-        if(!$v = ModelCommande::select($id)){
+        $tab_a = ModelAchat::select(array('idCommande'=>$id)); //on selectionne touts les achats de cette commande
+        if(!$tv = ModelCommande::select(array('id'=>$id))){
             $pagetitle='Error!';
             $view='Error';
             require File::build_path(array('view','View.php'));
         } else {
+            $v=$tv[0];
             $pagetitle='DetailCommande';
             $view='DetailCommande';
             require File::build_path(array('view','View.php'));

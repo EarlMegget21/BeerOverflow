@@ -7,19 +7,37 @@
 class ModelCategorie extends Model
 {
 
+    /**
+     * @var int
+     */
     private $id;
+    
+    /**
+     * @var String
+     */
     private $nom;
-    private $description;
+
+    /**
+     * @var String
+     */
+    private $specifications;
+    
     
     protected static $object='categorie';
     protected static $primary='id';
 
-    public function __construct($id=NULL, $nom=NULL, $desc=NULL)
+    /**
+     * ModelCategorie constructor.
+     * @param int $id
+     * @param String $nom
+     * @param String $specifications
+     */
+    public function __construct($id=NULL, $nom=NULL, $specifications=NULL)
     {
-        if (!is_null($id) && !is_null($nom) && !is_null($desc)) {
+        if (!is_null($id) && !is_null($nom) && !is_null($specifications)) {
             $this->id = $id;
             $this->nom = $nom;
-            $this->description = $desc;
+            $this->specifications = $specifications;
         }
     }
 

@@ -16,12 +16,13 @@ class ControllerCommande {
     
     public static function read() {
         $id=$_GET['id'];
-        $tab_a = ModelAchat::selectCo($id);
-        if(!$v = ModelCommande::select($id)){
+        $tab_a = ModelAchat::select(array('idCommande'=>$id)); //on selectionne touts les achats de cette commande
+        if(!$tv = ModelCommande::select(array('id'=>$id))){
             $pagetitle='Error!';
             $view='Error';
             require File::build_path(array('view','View.php'));
         } else {
+            $v=$tv[0];
             $pagetitle='DetailCommande';
             $view='DetailCommande';
             require File::build_path(array('view','View.php'));
@@ -35,17 +36,14 @@ class ControllerCommande {
     }
     
     public static function created() {
-        $data=array(
-            'id'=>$_GET['id'],
-            'livraison'=>$_GET['livraison'],
+
+        $data=array( //pas besoin de récupérer l'id pour la création car il s'incrémente tout seul sur mySQL
+            'livraison'=>0,
             'date'=>$_GET['date'],
             'idClient'=>$_GET['idClient']);
         if(isset($_GET['livraison'])){
-            //livraison is checked and value = 1
+            //dans mySQL les booleans sont 0 ou 1 alors on lui affecte 1 si la checkbox et coché 0 sinon
             $data['livraison'] = 1;
-        }else{
-            //livraison is nog checked and value=0
-            $data['livraison'] = 0;
         }
         if(!ModelCommande::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
             $pagetitle='Error!';
@@ -68,15 +66,22 @@ class ControllerCommande {
     public static function updated() {
         $data=array(
             'id'=>$_GET['id'],
-            'livraison'=>$_GET['livraison'],
+            'livraison'=>0,
             'date'=>$_GET['date'],
             'idClient'=>$_GET['idClient']);
+        if(isset($_GET['livraison'])){
+            //dans mySQL les booleans sont 0 ou 1 alors on lui affecte 1 si la checkbox et coché 0 sinon
+            $data['livraison'] = 1;
+        }
         if(!ModelCommande::update($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
             $pagetitle='Error!';
             $view='Error';
             require File::build_path(array('view','View.php'));
         } else {
-            $v = ModelCommande::select($_GET["id"]);
+            $id=$_GET['id'];
+            $tab_a = ModelAchat::select(array('idCommande'=>$id)); //on selectionne touts les achats de cette commande
+            $tv = ModelCommande::select(array('id'=>$id));
+            $v=$tv[0];
             $pagetitle='DetailCommande';
             $view='Updated';
             require File::build_path(array('view','View.php'));

@@ -3,7 +3,9 @@
     echo "Client <a href=http://localhost/projetbiere/index.php?action=read&controller=Client&id="
         .rawurlencode($v->get("id"))
         .">"
-        .htmlspecialchars($v->get("id"))
+        .htmlspecialchars($v->get("prenom"))
+        ." "
+        .htmlspecialchars($v->get("nom"))
         ."</a> <a href=http://localhost/projetbiere/index.php?action=delete&controller=Client&id="
         .rawurlencode($v->get("id"))
         .">Supprimer Client</a> <br>";

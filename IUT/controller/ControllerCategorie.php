@@ -16,11 +16,12 @@ class ControllerCategorie {
     
     public static function read() {
         $id=$_GET['id'];
-        if(!$v = ModelCategorie::select($id)){
+        if(!$tv = ModelCategorie::select(array('id'=>$id))){
             $pagetitle='Error!';
             $view='Error';
             require File::build_path(array('view','View.php'));
         } else {
+            $v=$tv[0];
             $pagetitle='DetailCategorie';
             $view='DetailCategorie';
             require File::build_path(array('view','View.php'));
@@ -35,7 +36,7 @@ class ControllerCategorie {
     
     public static function created() {
         $data=array(
-            'id'=>$_GET['id'],
+            //'id'=>$_GET['id'],
             'nom'=>$_GET['nom'],
             'specifications'=>$_GET['specifications']);
         if(!ModelCategorie::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
@@ -66,7 +67,8 @@ class ControllerCategorie {
             $view='Error';
             require File::build_path(array('view','View.php'));
         } else {
-            $v = ModelCategorie::select($_GET["id"]);
+            $tv = ModelCategorie::select(array('id'=>$_GET["id"]));
+            $v=$tv[0];
             $pagetitle='DetailCategorie';
             $view='Updated';
             require File::build_path(array('view','View.php'));
