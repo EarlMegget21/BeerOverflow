@@ -7,39 +7,11 @@
 class ModelBiere extends Model
 {
 
-    /**
-     * @var int
-     */
     private $id;
-
-    /**
-     * @var String
-     */
     private $nom;
-
-    /**
-     * @var String
-     */
-    private $marque;
-
-    /**
-     * @var int
-     */
+    private $idMarque;
     private $idBrasserie;
-
-    /**
-     * @var float
-     */
     private $taux;
-
-    /**
-     * @var String
-     */
-    private $composition;
-
-    /**
-     * @var float
-     */
     private $montant;
 
 

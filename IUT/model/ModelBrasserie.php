@@ -7,20 +7,9 @@
 class ModelBrasserie extends Model
 {
 
-    /**
-     * @var int
-     */
     private $id;
-
-    /**
-     * @var String
-     */
     private $nom;
-
-    /**
-     * @var String
-     */
-    private $adresse;
+    private $idAdresse;
     
     
     protected static $object='brasserie';

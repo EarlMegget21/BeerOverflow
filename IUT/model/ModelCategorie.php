@@ -7,20 +7,9 @@
 class ModelCategorie extends Model
 {
 
-    /**
-     * @var int
-     */
     private $id;
-    
-    /**
-     * @var String
-     */
     private $nom;
-
-    /**
-     * @var String
-     */
-    private $specifications;
+    private $description;
     
     
     protected static $object='categorie';

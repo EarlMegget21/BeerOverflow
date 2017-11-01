@@ -7,14 +7,7 @@
 class ModelCateBiere extends Model
 {
 
-    /**
-     * @var int
-     */
     private $idBiere;
-
-    /**
-     * @var int
-     */
     private $idCategorie;
 
 

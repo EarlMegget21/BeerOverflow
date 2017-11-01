@@ -7,20 +7,8 @@ require_once File::build_path(array('model','Model.php'));
 class ModelClient extends Model
 {
 
-
-    /**
-     * @var int
-     */
     private $id;
-
-    /**
-     * @var String
-     */
     private $nom;
-
-    /**
-     * @var String
-     */
     private $prenom;
 
     

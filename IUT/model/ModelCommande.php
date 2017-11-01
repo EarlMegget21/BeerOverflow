@@ -1,32 +1,13 @@
 <?php
 
 
-/**
- *
- */
 class ModelCommande extends Model
 {
 
-    /**
-     * @var int
-     */
     private $id;
-
-    /**
-     * @var boolean
-     */
     private $livraison;
-
-    /**
-     * @var int
-     */
     private $idClient;
-
-    /**
-     * @var String
-     */
-    private $date;
-    
+    private $idDate;
     
     protected static $object='commande';
     protected static $primary='id';
@@ -37,7 +18,7 @@ class ModelCommande extends Model
             $this->id = $id;
             $this->livraison = $livraison;
             $this->idClient = $idClient;
-            $this->date = $date;
+            $this->idDdate = $date;
         }
     }
 
@@ -49,9 +30,8 @@ class ModelCommande extends Model
     /**
      * @return float
      */
-    public function calculerTotal()    {
-        // TODO: implement here
-        return 0.0;
-    }
+    public function calculerTotal()
+    {
 
+    }
 }

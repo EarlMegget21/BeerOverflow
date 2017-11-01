@@ -6,19 +6,9 @@
  */
 class ModelAchat extends Model
 {
-    /**
-     * @var int
-     */
+
     private $idBiere;
-
-    /**
-     * @var int
-     */
     private $idCommande;
-
-    /**
-     * @var int
-     */
     private $quantite;
 
 
