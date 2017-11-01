@@ -7,7 +7,7 @@ class ModelCommande extends Model
     private $id;
     private $livraison;
     private $idClient;
-    private $date;  
+    private $date;
     
     protected static $object='commande';
     protected static $primary='id';
@@ -18,7 +18,7 @@ class ModelCommande extends Model
             $this->id = $id;
             $this->livraison = $livraison;
             $this->idClient = $idClient;
-            $this->idDdate = $date;
+            $this->Date = $date;
         }
     }
 

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4145158-cf43-4aa9-8b41-a58e1530ccd0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/IUT/model/ModelDate.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/config/Conf.php" afterPath="$PROJECT_DIR$/IUT/config/Conf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/model/Model.php" afterPath="$PROJECT_DIR$/IUT/model/Model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/model/ModelCommande.php" afterPath="$PROJECT_DIR$/IUT/model/ModelCommande.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,9 +29,35 @@
       <file leaf-file-name="ModelCommande.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IUT/model/ModelCommande.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="340">
+              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Conf.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IUT/config/Conf.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="66" lean-forward="true" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IUT/model/Model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+              <folding>
+                <marker date="1509528173883" expanded="true" signature="1352:1366" ph="SELECT * FRO... ${$class_name}" />
+                <marker date="1509528173883" expanded="true" signature="1900:1950" ph="SELECT * fro... ${$class_name}" />
+                <marker date="1509528173883" expanded="true" signature="3045:3074" ph="DELETE FROM " />
+                <marker date="1509528173883" expanded="true" signature="3737:3759" ph="UPDATE ${$cl... " />
+                <marker date="1509528173883" expanded="true" signature="4488:4513" ph="INSERT INTO ${$class_name}... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,6 +84,8 @@
         <option value="$PROJECT_DIR$/IUT/model/ModelCompoBiere.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelIngredient.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelMarque.php" />
+        <option value="$PROJECT_DIR$/IUT/model/Model.php" />
+        <option value="$PROJECT_DIR$/IUT/config/Conf.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelCommande.php" />
       </list>
     </option>
@@ -111,18 +140,6 @@
               <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="IUT" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="IUT" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="IUT" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -160,12 +177,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509522156257</updated>
-      <workItem from="1509522158586" duration="3908000" />
+      <workItem from="1509522158586" duration="6349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3908000" />
+    <option name="totallyTimeSpent" value="6349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -201,28 +218,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IUT/config/Conf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/model/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1509472040753" expanded="true" signature="1306:1320" ph="SELECT * FRO... ${$class_name}" />
-            <marker date="1509472040753" expanded="true" signature="1854:1904" ph="SELECT * fro... ${$class_name}" />
-            <marker date="1509472040753" expanded="true" signature="2999:3028" ph="DELETE FROM " />
-            <marker date="1509472040753" expanded="true" signature="3691:3713" ph="UPDATE ${$cl... " />
-            <marker date="1509472040753" expanded="true" signature="4442:4467" ph="INSERT INTO ${$class_name}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IUT/model/ModelAchat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -389,10 +384,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/config/Conf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="66" lean-forward="true" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/model/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+          <folding>
+            <marker date="1509528173883" expanded="true" signature="1352:1366" ph="SELECT * FRO... ${$class_name}" />
+            <marker date="1509528173883" expanded="true" signature="1900:1950" ph="SELECT * fro... ${$class_name}" />
+            <marker date="1509528173883" expanded="true" signature="3045:3074" ph="DELETE FROM " />
+            <marker date="1509528173883" expanded="true" signature="3737:3759" ph="UPDATE ${$cl... " />
+            <marker date="1509528173883" expanded="true" signature="4488:4513" ph="INSERT INTO ${$class_name}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/IUT/model/ModelCommande.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="340">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding />
         </state>
       </provider>
