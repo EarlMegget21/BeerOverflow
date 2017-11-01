@@ -7,7 +7,7 @@ class ModelCommande extends Model
     private $id;
     private $livraison;
     private $idClient;
-    private $idDate;
+    private $date;  
     
     protected static $object='commande';
     protected static $primary='id';
