@@ -50,6 +50,7 @@ class ModelBrasserie extends Model
         if(isset($data["adresse"])){
             $sql = $sql . "adresse LIKE CONCAT('%',:adresse,'%')"; //permet de vérifier si la chaîne rentrée est comprise dans la chaîne totale de la bdd (% = nimporte quelle chaîne de char)
         }
+        $sql=rtrim($sql,"AND "); //on supprime le dernier AND
         //echo $sql;    //DEBUG
         try {
             // Prepare the SQL statement
