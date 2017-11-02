@@ -11,13 +11,13 @@
         .htmlspecialchars($v->get("composition"))
         .", montant "
         .htmlspecialchars($v->get("montant"))
-        ."€ <a href=http://localhost/projetbiere/IUT/index.php?action=update&controller=biere&id="
+        ."€ <a href=http://localhost/projetbiere/index.php?action=update&controller=biere&id="
         .rawurlencode($v->get("id"))
-        .">Modifier Bière</a> <a href=http://localhost/projetbiere/IUT/index.php?action=delete&controller=biere&id="
+        .">Modifier Bière</a> <a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id="
         .rawurlencode($v->get("id"))
         .">Supprimer Bière</a> <br> Categories : <br>";
 ?>
-<form method="get" action="../ProjetBiere/IUT/index.php">
+<form method="get" action="../ProjetBiere/index.php">
     <input type='hidden' name='action' value="created"/>
     <input type='hidden' name='controller' value='catebiere'/>
     <input type='hidden' name='idBiere' value='<?php echo $v->get("id"); ?>'>
@@ -28,7 +28,7 @@
     if($tab_c) { //si le tableau existe(il y a des catégories pour cette bière, alors on parcours le tableau en affichant chaque catégorie et un lien pour la supprimer
         foreach ($tab_c as $c) {
             echo $c->get("idCategorie")
-                ."<a href=http://localhost/projetbiere/IUT/index.php?action=delete&controller=catebiere&idCategorie="
+                ."<a href=http://localhost/projetbiere/index.php?action=delete&controller=catebiere&idCategorie="
                 .$c->get("idCategorie")
                 ."&idBiere="
                 .htmlspecialchars($v->get("id"))
