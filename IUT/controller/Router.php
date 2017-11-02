@@ -2,6 +2,7 @@
 
 //Le router est un peu le main qui exécute les fonctions des controllers(utilisent le php en écriture et effectuent des traitements) qui eux jouent avec la BD via Model
 //et avec la page à afficher via View(utilise du php uniquement en lecture)
+require_once '\lib\File.php';
 require_once File::build_path(array('controller','controllerClient.php'));
 require_once File::build_path(array('controller','controllerCommande.php'));
 require_once File::build_path(array('controller','controllerAchat.php'));

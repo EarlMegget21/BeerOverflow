@@ -7,12 +7,12 @@
     <body>
         <header>
             <nav>
-                <a href="http://localhost/projetbiere/index.php">Accueil</a>
-                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=client">Clients</a>
-                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=commande">Commandes</a>
-                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=biere">Bieres</a>
-                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=brasserie">Brasseries</a>
-                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=categorie">Categories</a>
+                <a href="http://localhost/projetbiere/IUT/index.php">Accueil</a>
+                <a href="http://localhost/projetbiere/IUT/index.php?action=readAll&controller=client">Clients</a>
+                <a href="http://localhost/projetbiere/IUT/index.php?action=readAll&controller=commande">Commandes</a>
+                <a href="http://localhost/projetbiere/IUT/index.php?action=main&controller=biere">Bieres</a>
+                <a href="http://localhost/projetbiere/IUT/index.php?action=readAll&controller=brasserie">Brasseries</a>
+                <a href="http://localhost/projetbiere/IUT/index.php?action=readAll&controller=categorie">Categories</a>
             </nav>
         </header>
 <?php

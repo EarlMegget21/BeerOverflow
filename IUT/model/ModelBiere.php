@@ -46,16 +46,6 @@ class ModelBiere extends Model
     protected static $object='biere';
     protected static $primary='id';
 
-    /**
-     * ModelBiere constructor.
-     * @param int $id
-     * @param String $nom
-     * @param String $marque
-     * @param int $idBrasserie
-     * @param float $taux
-     * @param String $composition
-     * @param float $montant
-     */
     public function __construct($id=NULL, $nom=NULL, $marque=NULL, $idBrasserie=NULL, $taux=NULL, $composition=NULL, $montant=NULL)
     {
         if (!is_null($id) && !is_null($nom) && !is_null($marque) && !is_null($idBrasserie) && !is_null($taux) && !is_null($composition) && !is_null($montant)) {
@@ -69,10 +59,52 @@ class ModelBiere extends Model
         }
     }
 
-
     // getter
     public function get($attribut){
         return $this->$attribut;
+    }
+
+    public static function search($data){
+        $table_name= "biere";
+        $class_name= "Biere";
+        $sql = "SELECT * FROM biere WHERE ";
+        if(isset($data["marque"])){
+            $sql=$sql."marque=:marque AND ";
+        }
+        if(isset($data["nom"])){
+            $sql=$sql."nom=:nom AND ";
+        }
+        if(isset($data["idBrasserie"])) {
+            $sql = $sql . "idBrasserie=:idBrasserie AND ";
+        }
+        if(isset($data["composition"])){
+            $sql = $sql . "composition LIKE CONCAT('%',:composition,'%') AND "; //permet de vérifier si la chaîne rentrée est comprise dans la chaîne totale de la bdd (% = nimporte quelle chaîne de char)
+        }
+        if(isset($data["taux"])) {
+            $sql = $sql . "taux < :taux AND ";
+        }
+        $sql = $sql."montant > :montantMin AND montant < :montantMax";
+        //echo $sql;    //DEBUG
+        try {
+            // Prepare the SQL statement
+            $req_prep = Model::$pdo->prepare($sql);
+
+            // Execute the SQL prepared statement after replacing tags
+            $req_prep->execute($data); //on associe le tableau à la requete pour éviter l'injection
+
+            // Retrieve results as previously
+            $req_prep->setFetchMode(PDO::FETCH_CLASS, 'ModelBiere');
+            $tab = $req_prep->fetchAll();
+            if (empty($tab)) {
+                return false;
+            }
+            return $tab; //on retourne un tableau car pour les tables à plusieurs clés primaire, si on en met qu'une dans le WHERE, ça peut renvoyer plusieurs tuples
+        } catch(PDOException $e){
+            echo $e->getMessage(); // affiche un message d'erreur
+            die(); //supprimer equilvalent à System.exit(1); en java
+        }
+
+
     }
 
 }
