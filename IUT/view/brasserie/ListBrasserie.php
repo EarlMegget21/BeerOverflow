@@ -1,6 +1,6 @@
 <?php
-    foreach ($tab_v as $v) // Display of the cars stored in $tab_v
-    echo "Brasserie <a href=http://localhost/projetbiere/index.php?action=read&controller=Brasserie&id="
+    foreach ($tab_v as $key => $v)
+    echo "Brasserie $key <a href=http://localhost/projetbiere/index.php?action=read&controller=Brasserie&id="
         .rawurlencode($v->get("id"))
         .">"
         .htmlspecialchars($v->get("nom"))

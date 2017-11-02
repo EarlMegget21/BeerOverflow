@@ -5,6 +5,39 @@ require_once File::build_path(array('model','ModelBrasserie.php')); // chargemen
 class ControllerBrasserie {
     
     protected static $object='Brasserie';
+
+    public static function main(){  //Affiche 2 liens: recherche ou liste de toutes les brasseries
+        $pagetitle='Brasseries';
+        $view='Main';
+        require File::build_path(array('view','View.php'));
+    }
+
+    public static function search(){
+        $pagetitle='Recherche Brasserie';
+        $view='Search';
+        require File::build_path(array('view','View.php'));
+    }
+
+    public static function searched(){
+        $data = array();
+        if(!empty($_GET["nom"])) {  //empty test si la variable a une valeur (donc si l'utilisateur a rentré une valeur dans le form)
+            $data["nom"] = $_GET["nom"];
+        }
+        if(!empty($_GET["adresse"])) {
+            $data["adresse"] = $_GET["adresse"];
+        }
+        //var_dump($data);    //DEBUG
+        if(!ModelBrasserie::search($data)){
+            $pagetitle='Error!';
+            $view='Error';
+            require File::build_path(array('view','View.php'));
+        } else {
+            $tab_v = ModelBrasserie::search($data);
+            $pagetitle='Résultat Recherche';
+            $view='ListBrasserie';
+            require File::build_path(array('view','View.php'));
+        }
+    }
             
     public static function readAll() {
         $tab_v = ModelBrasserie::selectAll();     //appel au modèle pour gerer la BD

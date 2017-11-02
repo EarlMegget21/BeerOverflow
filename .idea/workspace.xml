@@ -2,83 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4145158-cf43-4aa9-8b41-a58e1530ccd0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IUT/view/biere/Main.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IUT/view/biere/Search.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/config/Conf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/controller/ControllerAchat.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/controller/ControllerBiere.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/controller/ControllerBrasserie.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/controller/ControllerCateBiere.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/controller/ControllerCategorie.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/controller/ControllerClient.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/controller/ControllerCommande.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/controller/Router.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/lib/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/Model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelAchat.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelAdministrateur.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelAdresse.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelBiere.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelBrasserie.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelCateBiere.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelCategorie.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelClient.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelCommande.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelMembre.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelMoment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/model/ModelVisiteur.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/nbproject/private/config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/nbproject/private/private.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/nbproject/private/private.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/nbproject/project.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/nbproject/project.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/testConf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/testModel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/View.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/biere/Created.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/biere/Deleted.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/biere/DetailBiere.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/biere/Error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/biere/ListBiere.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/biere/Update.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/biere/Updated.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/brasserie/Created.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/brasserie/Deleted.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/brasserie/DetailBrasserie.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/brasserie/Error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/brasserie/ListBrasserie.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/brasserie/Update.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/brasserie/Updated.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/categorie/Created.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/categorie/Deleted.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/categorie/DetailCategorie.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/categorie/Error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/categorie/ListCategorie.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/categorie/Update.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/categorie/Updated.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/client/Created.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/client/Deleted.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/client/DetailClient.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/client/Error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/client/ListClient.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/client/Update.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/client/Updated.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/commande/Created.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/commande/Deleted.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/commande/DetailCommande.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/commande/Error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/commande/ListCommande.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/commande/Update.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maison/view/commande/Updated.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IUT/view/brasserie/Main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IUT/view/brasserie/Search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/controller/ControllerBiere.php" afterPath="$PROJECT_DIR$/IUT/controller/ControllerBiere.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/controller/Router.php" afterPath="$PROJECT_DIR$/IUT/controller/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/model/ModelBiere.php" afterPath="$PROJECT_DIR$/IUT/model/ModelBiere.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/controller/ControllerBrasserie.php" afterPath="$PROJECT_DIR$/IUT/controller/ControllerBrasserie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/model/ModelBrasserie.php" afterPath="$PROJECT_DIR$/IUT/model/ModelBrasserie.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/view/View.php" afterPath="$PROJECT_DIR$/IUT/view/View.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/view/biere/DetailBiere.php" afterPath="$PROJECT_DIR$/IUT/view/biere/DetailBiere.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/view/biere/ListBiere.php" afterPath="$PROJECT_DIR$/IUT/view/biere/ListBiere.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/view/biere/Update.php" afterPath="$PROJECT_DIR$/IUT/view/biere/Update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IUT/view/brasserie/ListBrasserie.php" afterPath="$PROJECT_DIR$/IUT/view/brasserie/ListBrasserie.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,91 +18,45 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ControllerBiere.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IUT/controller/ControllerBiere.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ControllerBrasserie.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IUT/controller/ControllerBrasserie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-              <folding>
-                <element signature="n#main#0;n#ControllerBiere#0;n#!!top" expanded="false" />
-                <element signature="n#search#0;n#ControllerBiere#0;n#!!top" expanded="false" />
-                <element signature="n#read#0;n#ControllerBiere#0;n#!!top" expanded="false" />
-                <element signature="n#create#0;n#ControllerBiere#0;n#!!top" expanded="false" />
-                <element signature="n#created#0;n#ControllerBiere#0;n#!!top" expanded="false" />
-                <element signature="n#update#0;n#ControllerBiere#0;n#!!top" expanded="false" />
-                <element signature="n#updated#0;n#ControllerBiere#0;n#!!top" expanded="false" />
-                <element signature="n#delete#0;n#ControllerBiere#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListBiere.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IUT/view/biere/ListBiere.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="340">
+              <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelBiere.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IUT/model/ModelBiere.php">
+      <file leaf-file-name="ModelBrasserie.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IUT/model/ModelBrasserie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+            <state relative-caret-position="850">
+              <caret line="50" column="64" lean-forward="false" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
               <folding>
-                <marker date="1509616059250" expanded="true" signature="1309:1328" ph="SELECT * fro... ${$class_name}" />
-                <marker date="1509616059250" expanded="true" signature="1309:1334" ph="SELECT * FRO... biere" />
+                <marker date="1509638587411" expanded="true" signature="778:807" ph="SELECT * FRO... brasserie" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IUT/view/biere/Search.php">
+        <entry file="file://$PROJECT_DIR$/IUT/view/brasserie/Search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IUT/view/brasserie/Main.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="59" lean-forward="true" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IUT/controller/Router.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="File.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IUT/lib/File.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IUT/model/Model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="80" column="35" lean-forward="true" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
-              <folding>
-                <marker date="1509560525205" expanded="true" signature="1067:1081" ph="SELECT * FRO... ${$class_name}" />
-                <marker date="1509560525205" expanded="true" signature="1730:1761" ph="SELECT * fro... ${$class_name}" />
-                <marker date="1509560525205" expanded="true" signature="3305:3334" ph="DELETE FROM " />
-                <marker date="1509560525205" expanded="true" signature="4170:4192" ph="UPDATE ${$cl... " />
-                <marker date="1509560525205" expanded="true" signature="4923:4948" ph="INSERT INTO ${$class_name}... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -185,6 +69,7 @@
       <find>get</find>
       <find>AND</find>
       <find>index</find>
+      <find>biere</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -202,14 +87,12 @@
         <option value="$PROJECT_DIR$/IUT/model/ModelAchat.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelAdministrateur.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelAdresse.php" />
-        <option value="$PROJECT_DIR$/IUT/model/ModelBrasserie.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelCateBiere.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelCategorie.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelClient.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelCommande.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelCompoBiere.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelMembre.php" />
-        <option value="$PROJECT_DIR$/IUT/view/View.php" />
         <option value="$PROJECT_DIR$/IUT/view/biere/Recherche.php" />
         <option value="$PROJECT_DIR$/IUT/view/biere/Main.php" />
         <option value="$PROJECT_DIR$/IUT/view/biere/Created.php" />
@@ -220,6 +103,12 @@
         <option value="$PROJECT_DIR$/IUT/controller/ControllerBiere.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelBiere.php" />
         <option value="$PROJECT_DIR$/IUT/view/biere/ListBiere.php" />
+        <option value="$PROJECT_DIR$/IUT/view/brasserie/Main.php" />
+        <option value="$PROJECT_DIR$/IUT/view/View.php" />
+        <option value="$PROJECT_DIR$/IUT/view/brasserie/ListBrasserie.php" />
+        <option value="$PROJECT_DIR$/IUT/view/brasserie/Search.php" />
+        <option value="$PROJECT_DIR$/IUT/controller/ControllerBrasserie.php" />
+        <option value="$PROJECT_DIR$/IUT/model/ModelBrasserie.php" />
       </list>
     </option>
   </component>
@@ -251,6 +140,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,12 +163,6 @@
               <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="IUT" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="IUT" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -294,18 +178,29 @@
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="biere" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IUT" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="brasserie" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../dataviz" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ProjetBiere\IUT\view\brasserie" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -330,11 +225,13 @@
       <option name="presentableId" value="Default" />
       <updated>1509522156257</updated>
       <workItem from="1509522158586" duration="24131000" />
+      <workItem from="1509618868375" duration="108000" />
+      <workItem from="1509630433336" duration="3743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24131000" />
+    <option name="totallyTimeSpent" value="27982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -344,18 +241,18 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -367,11 +264,118 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/IUT/lib/File.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/model/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="35" lean-forward="false" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+          <folding>
+            <marker date="1509618778967" expanded="true" signature="1067:1081" ph="SELECT * FRO... ${$class_name}" />
+            <marker date="1509618778967" expanded="true" signature="1730:1761" ph="SELECT * fro... ${$class_name}" />
+            <marker date="1509618778967" expanded="true" signature="3305:3334" ph="DELETE FROM " />
+            <marker date="1509618778967" expanded="true" signature="4170:4192" ph="UPDATE ${$cl... " />
+            <marker date="1509618778967" expanded="true" signature="4923:4948" ph="INSERT INTO ${$class_name}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/view/biere/ListBiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/controller/ControllerBiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+          <folding>
+            <element signature="n#main#0;n#ControllerBiere#0;n#!!top" expanded="false" />
+            <element signature="n#search#0;n#ControllerBiere#0;n#!!top" expanded="false" />
+            <element signature="n#read#0;n#ControllerBiere#0;n#!!top" expanded="false" />
+            <element signature="n#create#0;n#ControllerBiere#0;n#!!top" expanded="false" />
+            <element signature="n#created#0;n#ControllerBiere#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#ControllerBiere#0;n#!!top" expanded="false" />
+            <element signature="n#updated#0;n#ControllerBiere#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#ControllerBiere#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/model/ModelBiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+          <folding>
+            <marker date="1509618778978" expanded="true" signature="1309:1328" ph="SELECT * fro... ${$class_name}" />
+            <marker date="1509618778978" expanded="true" signature="1309:1334" ph="SELECT * FRO... biere" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/view/biere/Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="59" lean-forward="true" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/controller/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding>
+            <marker date="1509618778969" expanded="true" signature="1025:1045" ph="..." />
+            <marker date="1509618778969" expanded="true" signature="1894:1973" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/lib/File.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/model/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="35" lean-forward="true" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+          <folding>
+            <marker date="1509618778967" expanded="true" signature="1067:1081" ph="SELECT * FRO... ${$class_name}" />
+            <marker date="1509618778967" expanded="true" signature="1730:1761" ph="SELECT * fro... ${$class_name}" />
+            <marker date="1509618778967" expanded="true" signature="3305:3334" ph="DELETE FROM " />
+            <marker date="1509618778967" expanded="true" signature="4170:4192" ph="UPDATE ${$cl... " />
+            <marker date="1509618778967" expanded="true" signature="4923:4948" ph="INSERT INTO ${$class_name}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/view/biere/ListBiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="uml://PHP/\ModelMoment">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -386,6 +390,7 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="56.0" y="54.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
@@ -413,9 +418,10 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.7213230119634061" x="700.5" y="108.5" />
+          <settings layout="Hierarchic Group" zoom="0.7213230119634061" x="701.0" y="109.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
@@ -428,14 +434,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/model/ModelDate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/model/ModelDate.php" />
     <entry file="file://$PROJECT_DIR$/IUT/testModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -468,30 +467,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/model/ModelCompoBiere.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/model/ModelIngredient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/model/ModelMarque.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/model/ModelCompoBiere.php" />
+    <entry file="file://$PROJECT_DIR$/IUT/model/ModelIngredient.php" />
+    <entry file="file://$PROJECT_DIR$/IUT/model/ModelMarque.php" />
     <entry file="file://$PROJECT_DIR$/IUT/model/ModelCommande.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="742">
@@ -520,42 +498,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="66" lean-forward="true" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/view/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/controller/ControllerBrasserie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Maison/lib/File.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Maison/lib/File.php" />
     <entry file="file://$PROJECT_DIR$/IUT/model/ModelAchat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -580,16 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/model/ModelBrasserie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding>
-            <marker date="1509560525229" expanded="true" signature="532:553" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IUT/model/ModelCateBiere.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -602,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -610,7 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -618,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="65" lean-forward="false" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -626,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,20 +581,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IUT/model/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="80" column="35" lean-forward="true" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+        <state relative-caret-position="1360">
+          <caret line="80" column="35" lean-forward="false" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
           <folding>
-            <marker date="1509560525205" expanded="true" signature="1067:1081" ph="SELECT * FRO... ${$class_name}" />
-            <marker date="1509560525205" expanded="true" signature="1730:1761" ph="SELECT * fro... ${$class_name}" />
-            <marker date="1509560525205" expanded="true" signature="3305:3334" ph="DELETE FROM " />
-            <marker date="1509560525205" expanded="true" signature="4170:4192" ph="UPDATE ${$cl... " />
-            <marker date="1509560525205" expanded="true" signature="4923:4948" ph="INSERT INTO ${$class_name}... " />
+            <marker date="1509618778967" expanded="true" signature="1067:1081" ph="SELECT * FRO... ${$class_name}" />
+            <marker date="1509618778967" expanded="true" signature="1730:1761" ph="SELECT * fro... ${$class_name}" />
+            <marker date="1509618778967" expanded="true" signature="3305:3334" ph="DELETE FROM " />
+            <marker date="1509618778967" expanded="true" signature="4170:4192" ph="UPDATE ${$cl... " />
+            <marker date="1509618778967" expanded="true" signature="4923:4948" ph="INSERT INTO ${$class_name}... " />
           </folding>
         </state>
       </provider>
@@ -671,31 +601,50 @@
     <entry file="file://$PROJECT_DIR$/IUT/lib/File.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/controller/Router.php">
+    <entry file="file://$PROJECT_DIR$/IUT/view/biere/ListBiere.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/view/biere/Search.php">
+    <entry file="file://$PROJECT_DIR$/IUT/model/ModelBiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1099">
+          <caret line="83" column="24" lean-forward="true" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+          <folding>
+            <marker date="1509618778978" expanded="true" signature="1309:1328" ph="SELECT * fro... ${$class_name}" />
+            <marker date="1509618778978" expanded="true" signature="1309:1334" ph="SELECT * FRO... biere" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/view/brasserie/ListBrasserie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/view/brasserie/Main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="59" lean-forward="true" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IUT/controller/ControllerBiere.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+        <state relative-caret-position="181">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding>
             <element signature="n#main#0;n#ControllerBiere#0;n#!!top" expanded="false" />
             <element signature="n#search#0;n#ControllerBiere#0;n#!!top" expanded="false" />
@@ -709,22 +658,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/model/ModelBiere.php">
+    <entry file="file://$PROJECT_DIR$/IUT/controller/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+        <state relative-caret-position="-85">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding>
-            <marker date="1509616059250" expanded="true" signature="1309:1328" ph="SELECT * fro... ${$class_name}" />
-            <marker date="1509616059250" expanded="true" signature="1309:1334" ph="SELECT * FRO... biere" />
+            <marker date="1509618778969" expanded="true" signature="1025:1045" ph="..." />
+            <marker date="1509618778969" expanded="true" signature="1894:1973" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IUT/view/biere/ListBiere.php">
+    <entry file="file://$PROJECT_DIR$/IUT/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/view/biere/Search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/view/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/view/brasserie/Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/controller/ControllerBrasserie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IUT/model/ModelBrasserie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="64" lean-forward="false" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+          <folding>
+            <marker date="1509638587411" expanded="true" signature="778:807" ph="SELECT * FRO... brasserie" />
+          </folding>
         </state>
       </provider>
     </entry>
