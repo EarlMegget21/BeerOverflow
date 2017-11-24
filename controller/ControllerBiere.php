@@ -3,7 +3,7 @@ require_once File::build_path(array('model','ModelBiere.php')); // chargement du
 
 class ControllerBiere {
 
-    protected static $object='Biere';
+    protected static $object='biere';
 
     public static function main(){  //Affiche 2 liens: recherche ou liste de toutes les bières
         $pagetitle='Bieres';

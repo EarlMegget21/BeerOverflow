@@ -4,7 +4,7 @@ require_once File::build_path(array('model','ModelBrasserie.php')); // chargemen
 
 class ControllerBrasserie {
     
-    protected static $object='Brasserie';
+    protected static $object='brasserie';
             
     public static function readAll() {
         $tab_v = ModelBrasserie::selectAll();     //appel au modèle pour gerer la BD

@@ -1,6 +1,3 @@
-<?php
-require_once File::build_path(array('controller','ControllerBiere.php'));
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,16 +7,16 @@ require_once File::build_path(array('controller','ControllerBiere.php'));
     <body>
         <header>
             <nav>
-                <a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/ProjetBiere/">Accueil</a>
-                <a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/ProjetBiere/index.php?action=readAll&controller=client">Clients</a>
-                <a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/ProjetBiere/index.php?action=readAll&controller=commande">Commandes</a>
-                <a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/ProjetBiere/index.php?action=main&controller=biere">Bieres</a>
+                <a href="http://localhost/projetbiere/">Accueil</a>
+                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=client">Clients</a>
+                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=commande">Commandes</a>
+                <a href="http://localhost/projetbiere/index.php?action=main&controller=biere">Bieres</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=brasserie">Brasseries</a>
-                <a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/ProjetBiere/index.php?action=readAll&controller=categorie">Categories</a>
+                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=categorie">Categories</a>
                 <?php if(isset($_SESSION['id'])){
-                    echo '<a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/ProjetBiere/index.php?action=deconnect&controller=utilisateur">Deconnexion</a>';
+                    echo '<a href="http://localhost/projetbiere/index.php?action=deconnect&controller=utilisateur">Deconnexion</a>';
                 }else{
-                    echo '<a href="http://webinfo.iutmontp.univ-montp2.fr/~sonettir/ProjetBiere/view/Connect.php">Connexion</a>';
+                    echo '<a href="http://localhost/projetbiere/view/Connect.php">Connexion</a>';
                 }?>
             </nav>
         </header>

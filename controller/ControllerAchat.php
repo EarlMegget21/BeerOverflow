@@ -4,7 +4,7 @@ require_once File::build_path(array('model','ModelAchat.php')); // chargement du
 
 class ControllerAchat {
     
-    protected static $object='Commande';
+    protected static $object='commande';
             
     public static function readAll() {
         $tab_v = ModelAchat::selectAll();     //appel au modèle pour gerer la BD

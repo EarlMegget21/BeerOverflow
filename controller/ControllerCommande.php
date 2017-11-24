@@ -4,7 +4,7 @@ require_once File::build_path(array('model','ModelCommande.php')); // chargement
 
 class ControllerCommande {
     
-    protected static $object='Commande';
+    protected static $object='commande';
             
     public static function readAll() {
         $tab_v = ModelCommande::selectAll();     //appel au modèle pour gerer la BD

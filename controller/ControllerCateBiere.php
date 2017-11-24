@@ -4,7 +4,7 @@ require_once File::build_path(array('model','ModelCateBiere.php')); // chargemen
 
 class ControllerCateBiere {
     
-    protected static $object='Biere';
+    protected static $object='biere';
             
     public static function readAll() {
         $tab_v = ModelCateBiere::selectAll();     //appel au modèle pour gerer la BD

@@ -4,7 +4,7 @@ require_once File::build_path(array('model','ModelCategorie.php')); // chargemen
 
 class ControllerCategorie {
     
-    protected static $object='Categorie';
+    protected static $object='categorie';
             
     public static function readAll() {
         $tab_v = ModelCategorie::selectAll();     //appel au modèle pour gerer la BD

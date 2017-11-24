@@ -5,7 +5,7 @@ require_once File::build_path(array('lib','Security.php'));
 
 class ControllerClient {
     
-    protected static $object='Client';
+    protected static $object='client';
             
     public static function readAll() {
         $tab_v = ModelClient::selectAll();     //appel au modèle pour gerer la BD
