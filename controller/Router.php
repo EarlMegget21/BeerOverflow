@@ -40,7 +40,5 @@ if(class_exists($controller_class)){
         $controller_class::readAll();//remplacera $action() par readAll() lorsque ?action=readAll dans l'URL
     }
 }else{
-    $pagetitle='Error!';
-    $view='Error';
-    require File::build_path(array('view','View.php'));
+    ControllerBiere::error();
 }
