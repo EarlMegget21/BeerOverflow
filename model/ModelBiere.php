@@ -67,23 +67,25 @@ class ModelBiere extends Model
     public static function search($data){
         $table_name= "biere";
         $class_name= "Biere";
-        $sql = "SELECT * FROM biere WHERE ";
+        $sql = "SELECT * FROM biere bi ";
+        if(isset($data["nomBrasserie"])) {
+            $sql = $sql . "JOIN Brasserie br ON br.id = bi.idBrasserie WHERE br.nom=:nomBrasserie AND ";
+        } else{
+            $sql = $sql . "WHERE ";
+        }
         if(isset($data["marque"])){
-            $sql=$sql."marque=:marque AND ";
+            $sql=$sql."bi.marque=:marque AND ";
         }
         if(isset($data["nom"])){
-            $sql=$sql."nom=:nom AND ";
-        }
-        if(isset($data["idBrasserie"])) {
-            $sql = $sql . "idBrasserie=:idBrasserie AND ";
+            $sql=$sql."bi.nom=:nom AND ";
         }
         if(isset($data["composition"])){
-            $sql = $sql . "composition LIKE CONCAT('%',:composition,'%') AND "; //permet de vérifier si la chaîne rentrée est comprise dans la chaîne totale de la bdd (% = nimporte quelle chaîne de char)
+            $sql = $sql . "bi.composition LIKE CONCAT('%',:composition,'%') AND "; //permet de vérifier si la chaîne rentrée est comprise dans la chaîne totale de la bdd (% = nimporte quelle chaîne de char)
         }
         if(isset($data["taux"])) {
-            $sql = $sql . "taux < :taux AND ";
+            $sql = $sql . "bi.taux < :taux AND ";
         }
-        $sql = $sql."montant > :montantMin AND montant < :montantMax";
+        $sql = $sql."bi.montant > :montantMin AND montant < :montantMax";
         //echo $sql;    //DEBUG
         try {
             // Prepare the SQL statement

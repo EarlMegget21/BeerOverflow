@@ -10,8 +10,8 @@
             <label for="nom_id">Nom</label> :
             <input type="text" placeholder="ex:Soleil" name="nom" id="nom_id"/>
 
-            <label for="idBrasserie_id">Id Brasserie</label> :
-            <input type="number" placeholder="ex:5" name="idBrasserie" id="idBrasserie_id"/>
+            <label for="nomBrasserie_id">Nom Brasserie</label> :
+            <input type="text" placeholder="ex: Vanuxeem" name="nomBrasserie" id="nomBrasserie_id"/>
 
             <label for="taux_id">Taux</label> :
             <input type="text" placeholder="ex:7.5" name="taux" id="taux_id"/>

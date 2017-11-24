@@ -1,5 +1,5 @@
 <?php
-    foreach ($tab_v as $key => $v) // Display of the cars stored in $tab_v
+    foreach ($tab_v as $key => $v) // Display of the beers stored in $tab_v
     echo "Bière $key : <a href=http://localhost/projetbiere/index.php?action=read&controller=biere&id="
         .rawurlencode($v->get("id"))
         .">"

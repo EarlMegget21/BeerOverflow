@@ -25,8 +25,8 @@ class ControllerBiere {
         if(!empty($_GET["nom"])) {
             $data["nom"] = $_GET["nom"];
         }
-        if(!empty($_GET["idBrasserie"])) {
-            $data["idBrasserie"] = $_GET["idBrasserie"];
+        if(!empty($_GET["nomBrasserie"])) {
+            $data["nomBrasserie"] = $_GET["nomBrasserie"];
         }
         if(!empty($_GET["taux"])) {
             $data["taux"] = $_GET["taux"];
