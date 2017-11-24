@@ -1,16 +1,12 @@
 <?php
 
-//Le router est un peu le main qui exécute les fonctions des controllers(utilisent le php en écriture et effectuent des traitements) qui eux jouent avec la BD via Model
-//et avec la page à afficher via View(utilise du php uniquement en lecture)
-require_once '\lib\File.php';
-require_once File::build_path(array('controller','controllerClient.php'));
+/*require_once File::build_path(array('controller','controllerClient.php'));
 require_once File::build_path(array('controller','controllerCommande.php'));
 require_once File::build_path(array('controller','controllerAchat.php'));
 require_once File::build_path(array('controller','controllerBiere.php'));
 require_once File::build_path(array('controller','controllerCategorie.php'));
 require_once File::build_path(array('controller','controllerBrasserie.php'));
-require_once File::build_path(array('controller','controllerCateBiere.php'));
-// On recupère l'action passée dans l'URL
+require_once File::build_path(array('controller','controllerCateBiere.php'));*/
 
 if(array_key_exists("controller", $_GET)){ //arrat_key_exists test si la clé controller existe dans le tableau $_GET
     $controller = $_GET["controller"];    
