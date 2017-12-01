@@ -47,7 +47,6 @@ class Model {
             $sql=$sql."$key=:$key AND ";
         }
         $sql=rtrim($sql,"AND "); //on supprime le dernier AND
-        echo $sql; //on affiche pour debugger
         try{
             // Prepare the SQL statement
             $req_prep = Model::$pdo->prepare($sql);
@@ -77,7 +76,6 @@ class Model {
             $sql=$sql."$key=:$key    AND ";
         }
         $sql=rtrim($sql,"AND "); //on supprime le dernier AND
-        echo $sql; //on affiche pour debugger
         try{
             $req_prep = Model::$pdo->prepare($sql);
             $req_prep->execute($primary); //on associe le tableau à la requete pour éviter l'injection
@@ -125,7 +123,6 @@ class Model {
         }
         $sql= rtrim($sql,", ");
         $sql=$sql.");";
-        echo $sql;
         try{
             $req_prep = Model::$pdo->prepare($sql);
             $req_prep->execute($data);

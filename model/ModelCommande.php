@@ -20,7 +20,7 @@ class ModelCommande extends Model
     /**
      * @var int
      */
-    private $idClient;
+    private $login;
 
     /**
      * @var String
@@ -31,12 +31,12 @@ class ModelCommande extends Model
     protected static $object='commande';
     protected static $primary='id';
 
-    public function __construct($id=NULL, $livraison=false, $idClient=NULL, $date=NULL)
+    public function __construct($id=NULL, $livraison=false, $login=NULL, $date=NULL)
     {
-        if (!is_null($id) && !is_null($idClient) && !is_null($date)) {
+        if (!is_null($id) && !is_null($login) && !is_null($date)) {
             $this->id = $id;
             $this->livraison = $livraison;
-            $this->idClient = $idClient;
+            $this->login = $login;
             $this->date = $date;
         }
     }

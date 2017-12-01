@@ -2,10 +2,12 @@
     echo "Client "
         .htmlspecialchars($v->get("prenom"))
         ." "
-        .htmlspecialchars($v->get("nom"))
-        ." <a href=http://localhost/projetbiere/index.php?action=update&controller=Client&id="
-        .rawurlencode($_GET['id'])
-        .">Modifier Client</a> <a href=http://localhost/projetbiere/index.php?action=delete&controller=Client&id="
-        .rawurlencode($_GET['id'])
-        .">Supprimer Client</a> <br>";
+        .htmlspecialchars($v->get("nom"));
+    if(Session::is_user($_GET['login'])||Session::is_admin()) {
+        echo " <a href=http://localhost/projetbiere/index.php?action=update&controller=Client&login="
+            . rawurlencode($_GET['login'])
+            . ">Modifier Profil</a> <a href=http://localhost/projetbiere/index.php?action=delete&controller=Client&login="
+            . rawurlencode($_GET['login'])
+            . ">Supprimer Compte</a> <br>";
+    }
 ?>

@@ -9,16 +9,20 @@
         <header>
             <nav>
                 <a href="http://localhost/projetbiere/">Accueil</a>
-                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=client">Clients</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=commande">Commandes</a>
                 <a href="http://localhost/projetbiere/index.php?action=main&controller=biere">Bieres</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=brasserie">Brasseries</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=categorie">Categories</a>
-                <?php if(isset($_SESSION['id'])){
-                    echo '<a href="http://localhost/projetbiere/index.php?action=seeMyCommands&controller=commande">Voir mes commandes</a>';
-                    echo '<a href="http://localhost/projetbiere/index.php?action=deconnect&controller=utilisateur">Deconnexion</a>';
+                <?php
+                if(Session::is_admin()){
+                    echo '<a href="http://localhost/projetbiere/index.php?action=readAll&controller=client">Clients</a>';
+                }
+                if(isset($_SESSION['login'])){
+                    echo '<a href="http://localhost/projetbiere/index.php?action=read&controller=client&login='.$_SESSION['login'].'">Mon Profil</a>';
+                    echo '<a href="http://localhost/projetbiere/index.php?action=deconnect&controller=client">Deconnexion</a>';
                 }else{
                     echo '<a href="http://localhost/projetbiere/view/Connect.php">Connexion</a>';
+                    echo '<a href="http://localhost/projetbiere/index.php?action=create&controller=client">S\'inscrire</a>';
                 }?>
             </nav>
         </header>

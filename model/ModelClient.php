@@ -3,7 +3,7 @@ require_once File::build_path(array('model','Model.php'));
 
 class ModelClient extends Model
 {
-    private $id;
+    private $login;
     private $mdp;
     private $nom;
     private $prenom;
@@ -11,12 +11,12 @@ class ModelClient extends Model
     private $email;
     private $nonce;
     protected static $object='client';
-    protected static $primary='id';
+    protected static $primary='login';
 
-    public function __construct($id=NULL, $nom=NULL, $prenom=NULL, $mdp=NULL, $isAdmin=NULL, $email=NULL, $nonce=NULL)
+    public function __construct($login=NULL, $nom=NULL, $prenom=NULL, $mdp=NULL, $isAdmin=NULL, $email=NULL, $nonce=NULL)
     {
-        if (!is_null($id) && !is_null($nom) && !is_null($prenom) && !is_null($mdp) && !is_null($isAdmin) && !is_null($email) && !is_null($nonce)) {
-            $this->id = $id;
+        if (!is_null($login) && !is_null($nom) && !is_null($prenom) && !is_null($mdp) && !is_null($isAdmin) && !is_null($email) && !is_null($nonce)) {
+            $this->login = $login;
             $this->nom = $nom;
             $this->prenom = $prenom;
             $this->mdp = $mdp;
@@ -31,10 +31,14 @@ class ModelClient extends Model
     public function get($attribut){
         return $this->$attribut;
     }
+
+    public function isAdmin(){
+        return $this->isAdmin;
+    }
     
     
-    public static function checkPassword($id,$mot_de_passe_chiffre){
-        $sql='SELECT * FROM Client WHERE id=\''.$id.'\'';
+    public static function checkPassword($login,$mot_de_passe_chiffre){
+        $sql='SELECT * FROM Client WHERE login=\''.$login.'\'';
         try{
             $rep=Model::$pdo->query($sql);
             $tab=$rep->fetchAll(PDO::FETCH_CLASS, 'ModelClient');
@@ -49,8 +53,8 @@ class ModelClient extends Model
         }
     }
     
-    public static function isValide($id){
-        $sql='SELECT count(nonce) FROM Client WHERE id=\''.$id.'\' AND nonce is not null';
+    public static function isVallogine($login){
+        $sql='SELECT count(nonce) FROM Client WHERE login=\''.$login.'\' AND nonce is not null';
         try{
             $rep=Model::$pdo->query($sql);
             $tab=$rep->fetch();
@@ -65,13 +69,13 @@ class ModelClient extends Model
         }
     }
     
-    public static function validate($id){
-        $sql='UPDATE Client SET nonce=NULL WHERE id=:id';
+    public static function valloginate($login){
+        $sql='UPDATE Client SET nonce=NULL WHERE login=:login';
         try{
             $req_prep = Model::$pdo->prepare($sql);
 
             $values = array(
-                "id" => $id
+                "login" => $login
             );
             $req_prep->execute($values);
             return true;

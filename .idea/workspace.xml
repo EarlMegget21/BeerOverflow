@@ -2,78 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4145158-cf43-4aa9-8b41-a58e1530ccd0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/IUT/nbproject/private/private.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/config/Conf.php" afterPath="$PROJECT_DIR$/config/Conf.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/controller/ControllerAchat.php" afterPath="$PROJECT_DIR$/controller/ControllerAchat.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/controller/ControllerBiere.php" afterPath="$PROJECT_DIR$/controller/ControllerBiere.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/controller/ControllerBrasserie.php" afterPath="$PROJECT_DIR$/controller/ControllerBrasserie.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/controller/ControllerCateBiere.php" afterPath="$PROJECT_DIR$/controller/ControllerCateBiere.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/controller/ControllerCategorie.php" afterPath="$PROJECT_DIR$/controller/ControllerCategorie.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/controller/ControllerClient.php" afterPath="$PROJECT_DIR$/controller/ControllerClient.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/controller/ControllerCommande.php" afterPath="$PROJECT_DIR$/controller/ControllerCommande.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/controller/Router.php" afterPath="$PROJECT_DIR$/controller/Router.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/lib/File.php" afterPath="$PROJECT_DIR$/lib/File.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/Model.php" afterPath="$PROJECT_DIR$/model/Model.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelAchat.php" afterPath="$PROJECT_DIR$/model/ModelAchat.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelAdministrateur.php" afterPath="$PROJECT_DIR$/model/ModelAdministrateur.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelAdresse.php" afterPath="$PROJECT_DIR$/model/ModelAdresse.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelBiere.php" afterPath="$PROJECT_DIR$/model/ModelBiere.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelBrasserie.php" afterPath="$PROJECT_DIR$/model/ModelBrasserie.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelCateBiere.php" afterPath="$PROJECT_DIR$/model/ModelCateBiere.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelCategorie.php" afterPath="$PROJECT_DIR$/model/ModelCategorie.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelClient.php" afterPath="$PROJECT_DIR$/model/ModelClient.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelCommande.php" afterPath="$PROJECT_DIR$/model/ModelCommande.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelMembre.php" afterPath="$PROJECT_DIR$/model/ModelMembre.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelMoment.php" afterPath="$PROJECT_DIR$/model/ModelMoment.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/model/ModelVisiteur.php" afterPath="$PROJECT_DIR$/model/ModelVisiteur.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/nbproject/private/config.properties" afterPath="$PROJECT_DIR$/nbproject/private/config.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/nbproject/private/private.properties" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/nbproject/project.properties" afterPath="$PROJECT_DIR$/nbproject/project.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/nbproject/project.xml" afterPath="$PROJECT_DIR$/nbproject/project.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/testConf.php" afterPath="$PROJECT_DIR$/testConf.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/testModel.php" afterPath="$PROJECT_DIR$/testModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/View.php" afterPath="$PROJECT_DIR$/view/View.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/biere/Created.php" afterPath="$PROJECT_DIR$/view/biere/Created.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/biere/Deleted.php" afterPath="$PROJECT_DIR$/view/biere/Deleted.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/biere/DetailBiere.php" afterPath="$PROJECT_DIR$/view/biere/DetailBiere.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/biere/Error.php" afterPath="$PROJECT_DIR$/view/biere/Error.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/biere/ListBiere.php" afterPath="$PROJECT_DIR$/view/biere/ListBiere.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/biere/Main.php" afterPath="$PROJECT_DIR$/view/biere/Main.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/biere/Search.php" afterPath="$PROJECT_DIR$/view/biere/Search.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/biere/Update.php" afterPath="$PROJECT_DIR$/view/biere/Update.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/biere/Updated.php" afterPath="$PROJECT_DIR$/view/biere/Updated.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/brasserie/Created.php" afterPath="$PROJECT_DIR$/view/brasserie/Created.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/brasserie/Deleted.php" afterPath="$PROJECT_DIR$/view/brasserie/Deleted.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/brasserie/DetailBrasserie.php" afterPath="$PROJECT_DIR$/view/brasserie/DetailBrasserie.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/brasserie/Error.php" afterPath="$PROJECT_DIR$/view/brasserie/Error.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/brasserie/ListBrasserie.php" afterPath="$PROJECT_DIR$/view/brasserie/ListBrasserie.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/brasserie/Main.php" afterPath="$PROJECT_DIR$/view/brasserie/Main.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/brasserie/Search.php" afterPath="$PROJECT_DIR$/view/brasserie/Search.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/brasserie/Update.php" afterPath="$PROJECT_DIR$/view/brasserie/Update.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/brasserie/Updated.php" afterPath="$PROJECT_DIR$/view/brasserie/Updated.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/categorie/Created.php" afterPath="$PROJECT_DIR$/view/categorie/Created.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/categorie/Deleted.php" afterPath="$PROJECT_DIR$/view/categorie/Deleted.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/categorie/DetailCategorie.php" afterPath="$PROJECT_DIR$/view/categorie/DetailCategorie.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/categorie/Error.php" afterPath="$PROJECT_DIR$/view/categorie/Error.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/categorie/ListCategorie.php" afterPath="$PROJECT_DIR$/view/categorie/ListCategorie.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/categorie/Update.php" afterPath="$PROJECT_DIR$/view/categorie/Update.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/categorie/Updated.php" afterPath="$PROJECT_DIR$/view/categorie/Updated.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/client/Created.php" afterPath="$PROJECT_DIR$/view/client/Created.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/client/Deleted.php" afterPath="$PROJECT_DIR$/view/client/Deleted.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/client/DetailClient.php" afterPath="$PROJECT_DIR$/view/client/DetailClient.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/client/Error.php" afterPath="$PROJECT_DIR$/view/client/Error.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/client/ListClient.php" afterPath="$PROJECT_DIR$/view/client/ListClient.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/client/Update.php" afterPath="$PROJECT_DIR$/view/client/Update.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/client/Updated.php" afterPath="$PROJECT_DIR$/view/client/Updated.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/commande/Created.php" afterPath="$PROJECT_DIR$/view/commande/Created.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/commande/Deleted.php" afterPath="$PROJECT_DIR$/view/commande/Deleted.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/commande/DetailCommande.php" afterPath="$PROJECT_DIR$/view/commande/DetailCommande.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/commande/Error.php" afterPath="$PROJECT_DIR$/view/commande/Error.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/commande/ListCommande.php" afterPath="$PROJECT_DIR$/view/commande/ListCommande.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/commande/Update.php" afterPath="$PROJECT_DIR$/view/commande/Update.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/IUT/view/commande/Updated.php" afterPath="$PROJECT_DIR$/view/commande/Updated.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ControllerBiere.php" afterPath="$PROJECT_DIR$/controller/ControllerBiere.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ControllerBrasserie.php" afterPath="$PROJECT_DIR$/controller/ControllerBrasserie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ControllerCategorie.php" afterPath="$PROJECT_DIR$/controller/ControllerCategorie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ControllerClient.php" afterPath="$PROJECT_DIR$/controller/ControllerClient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ControllerCommande.php" afterPath="$PROJECT_DIR$/controller/ControllerCommande.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/Router.php" afterPath="$PROJECT_DIR$/controller/Router.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Model.php" afterPath="$PROJECT_DIR$/model/Model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/ModelClient.php" afterPath="$PROJECT_DIR$/model/ModelClient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/ModelCommande.php" afterPath="$PROJECT_DIR$/model/ModelCommande.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/Connect.php" afterPath="$PROJECT_DIR$/view/Connect.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/View.php" afterPath="$PROJECT_DIR$/view/View.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/biere/DetailBiere.php" afterPath="$PROJECT_DIR$/view/biere/DetailBiere.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/biere/ListBiere.php" afterPath="$PROJECT_DIR$/view/biere/ListBiere.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/biere/Update.php" afterPath="$PROJECT_DIR$/view/biere/Update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/brasserie/DetailBrasserie.php" afterPath="$PROJECT_DIR$/view/brasserie/DetailBrasserie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/brasserie/ListBrasserie.php" afterPath="$PROJECT_DIR$/view/brasserie/ListBrasserie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/categorie/DetailCategorie.php" afterPath="$PROJECT_DIR$/view/categorie/DetailCategorie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/categorie/ListCategorie.php" afterPath="$PROJECT_DIR$/view/categorie/ListCategorie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/client/DetailClient.php" afterPath="$PROJECT_DIR$/view/client/DetailClient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/client/ListClient.php" afterPath="$PROJECT_DIR$/view/client/ListClient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/client/Update.php" afterPath="$PROJECT_DIR$/view/client/Update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/commande/DetailCommande.php" afterPath="$PROJECT_DIR$/view/commande/DetailCommande.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/commande/ListCommande.php" afterPath="$PROJECT_DIR$/view/commande/ListCommande.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/commande/Update.php" afterPath="$PROJECT_DIR$/view/commande/Update.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,8 +38,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -94,52 +48,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/brasserie/Search.php">
+      <file leaf-file-name="ControllerBiere.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/ControllerBiere.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="662">
+              <caret line="168" column="59" lean-forward="true" selection-start-line="168" selection-start-column="59" selection-end-line="168" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelBrasserie.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model/ModelBrasserie.php">
+      <file leaf-file-name="ControllerClient.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller/ControllerClient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="52" column="61" lean-forward="false" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
-              <folding>
-                <marker date="1509639485565" expanded="true" signature="778:807" ph="SELECT * FRO... brasserie" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModelBiere.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/ModelBiere.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-867">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1509618778978" expanded="true" signature="1309:1334" ph="SELECT * FRO... biere" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="48" column="61" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="61" />
-              <folding>
-                <marker date="1509618778967" expanded="true" signature="1067:1081" ph="SELECT * FRO... ${$class_name}" />
-                <marker date="1509618778967" expanded="true" signature="1730:1761" ph="SELECT * fro... ${$class_name}" />
-                <marker date="1509618778967" expanded="true" signature="3305:3334" ph="DELETE FROM " />
-                <marker date="1509618778967" expanded="true" signature="4170:4192" ph="UPDATE ${$cl... " />
-                <marker date="1509618778967" expanded="true" signature="4923:4948" ph="INSERT INTO ${$class_name}... " />
-              </folding>
+            <state relative-caret-position="392">
+              <caret line="55" column="103" lean-forward="false" selection-start-line="55" selection-start-column="103" selection-end-line="55" selection-end-column="103" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,7 +78,12 @@
       <find>index</find>
       <find>biere</find>
       <find>IUT</find>
+      <find>id</find>
+      <find>idClient</find>
     </findStrings>
+    <replaceStrings>
+      <replace>login</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -163,14 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/IUT/model/ModelDate.php" />
-        <option value="$PROJECT_DIR$/IUT/model/Model.php" />
-        <option value="$PROJECT_DIR$/IUT/config/Conf.php" />
-        <option value="$PROJECT_DIR$/IUT/model/ModelIngredient.php" />
-        <option value="$PROJECT_DIR$/IUT/model/ModelMarque.php" />
-        <option value="$PROJECT_DIR$/IUT/model/ModelAchat.php" />
-        <option value="$PROJECT_DIR$/IUT/model/ModelAdministrateur.php" />
-        <option value="$PROJECT_DIR$/IUT/model/ModelAdresse.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelCateBiere.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelCategorie.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelClient.php" />
@@ -193,13 +114,35 @@
         <option value="$PROJECT_DIR$/IUT/view/brasserie/Search.php" />
         <option value="$PROJECT_DIR$/IUT/controller/ControllerBrasserie.php" />
         <option value="$PROJECT_DIR$/IUT/model/ModelBrasserie.php" />
-        <option value="$PROJECT_DIR$/view/biere/DetailBiere.php" />
-        <option value="$PROJECT_DIR$/view/biere/ListBiere.php" />
         <option value="$PROJECT_DIR$/view/biere/Main.php" />
-        <option value="$PROJECT_DIR$/view/biere/Update.php" />
         <option value="$PROJECT_DIR$/view/brasserie/Main.php" />
-        <option value="$PROJECT_DIR$/view/View.php" />
         <option value="$PROJECT_DIR$/model/ModelBrasserie.php" />
+        <option value="$PROJECT_DIR$/model/ModelCommande.php" />
+        <option value="$PROJECT_DIR$/config/Conf.php" />
+        <option value="$PROJECT_DIR$/view/Connect.php" />
+        <option value="$PROJECT_DIR$/view/client/Update.php" />
+        <option value="$PROJECT_DIR$/model/ModelClient.php" />
+        <option value="$PROJECT_DIR$/view/commande/Update.php" />
+        <option value="$PROJECT_DIR$/view/biere/Update.php" />
+        <option value="$PROJECT_DIR$/controller/ControllerBrasserie.php" />
+        <option value="$PROJECT_DIR$/controller/ControllerCategorie.php" />
+        <option value="$PROJECT_DIR$/model/Model.php" />
+        <option value="$PROJECT_DIR$/view/biere/DetailBiere.php" />
+        <option value="$PROJECT_DIR$/view/brasserie/DetailBrasserie.php" />
+        <option value="$PROJECT_DIR$/view/brasserie/ListBrasserie.php" />
+        <option value="$PROJECT_DIR$/view/categorie/DetailCategorie.php" />
+        <option value="$PROJECT_DIR$/view/categorie/ListCategorie.php" />
+        <option value="$PROJECT_DIR$/view/client/ListClient.php" />
+        <option value="$PROJECT_DIR$/view/client/DetailClient.php" />
+        <option value="$PROJECT_DIR$/controller/ControllerCommande.php" />
+        <option value="$PROJECT_DIR$/view/commande/DetailCommande.php" />
+        <option value="$PROJECT_DIR$/view/commande/ListCommande.php" />
+        <option value="$PROJECT_DIR$/view/biere/ListBiere.php" />
+        <option value="$PROJECT_DIR$/view/biere/Accueil.html" />
+        <option value="$PROJECT_DIR$/view/View.php" />
+        <option value="$PROJECT_DIR$/controller/ControllerBiere.php" />
+        <option value="$PROJECT_DIR$/controller/Router.php" />
+        <option value="$PROJECT_DIR$/controller/ControllerClient.php" />
       </list>
     </option>
   </component>
@@ -231,6 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -239,16 +183,40 @@
               <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Session" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ProjetBiere" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetBiere" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dataviz" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
@@ -282,16 +250,18 @@
       <workItem from="1509522158586" duration="24131000" />
       <workItem from="1509618868375" duration="108000" />
       <workItem from="1509630433336" duration="4444000" />
+      <workItem from="1512118995858" duration="9648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28683000" />
+    <option name="totallyTimeSpent" value="38331000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -323,298 +293,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IUT/model/ModelBrasserie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="64" lean-forward="false" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Conf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ControllerBiere.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ControllerAchat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ControllerBrasserie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ControllerCateBiere.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ControllerCategorie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ControllerClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ControllerCommande.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/File.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelAchat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelAdministrateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelCateBiere.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelAdresse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelCategorie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelCommande.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelMembre.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelMoment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelVisiteur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/biere/Created.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/biere/Deleted.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/biere/DetailBiere.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/biere/Error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/biere/ListBiere.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/biere/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/biere/Search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/biere/Update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="39" lean-forward="false" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/biere/Updated.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/brasserie/Created.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/brasserie/Deleted.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/brasserie/DetailBrasserie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/brasserie/Error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/brasserie/ListBrasserie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/brasserie/Main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/brasserie/Update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -635,31 +317,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/categorie/Update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/categorie/ListCategorie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/categorie/Error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/categorie/DetailCategorie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -683,10 +341,318 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/View.php">
+    <entry file="file://$PROJECT_DIR$/view/brasserie/Search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/ModelBiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/ModelBrasserie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="52" column="61" lean-forward="false" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
+          <folding>
+            <marker date="1512118632189" expanded="true" signature="778:807" ph="SELECT * FRO... brasserie" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/client/Updated.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/client/Error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/client/Deleted.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/client/Created.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Conf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/Connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Security.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/ModelClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="35" column="15" lean-forward="false" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+          <folding>
+            <marker date="1512123986905" expanded="true" signature="1112:1159" ph="SELECT * FRO... Client" />
+            <marker date="1512123986905" expanded="true" signature="1702:1782" ph="SELECT count... Client" />
+            <marker date="1512123986905" expanded="true" signature="2256:2303" ph="UPDATE Clien... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/ModelCommande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/commande/Deleted.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/commande/Created.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/commande/Updated.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/client/Update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/commande/Update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="164" lean-forward="false" selection-start-line="15" selection-start-column="164" selection-end-line="15" selection-end-column="164" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/categorie/Update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/brasserie/Update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/ControllerAchat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/ControllerBrasserie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="99" column="63" lean-forward="true" selection-start-line="99" selection-start-column="63" selection-end-line="99" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/ControllerCateBiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-882">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/ControllerCategorie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2121">
+          <caret line="101" column="40" lean-forward="true" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/biere/Update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="125" column="23" lean-forward="false" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
+          <folding>
+            <marker date="1512125494568" expanded="true" signature="1067:1081" ph="SELECT * FRO... ${$class_name}" />
+            <marker date="1512125494568" expanded="true" signature="1730:1761" ph="SELECT * fro... ${$class_name}" />
+            <marker date="1512125494568" expanded="true" signature="3259:3288" ph="DELETE FROM " />
+            <marker date="1512125494568" expanded="true" signature="4078:4100" ph="UPDATE ${$cl... " />
+            <marker date="1512125494568" expanded="true" signature="4831:4856" ph="INSERT INTO ${$class_name}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/biere/DetailBiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/brasserie/DetailBrasserie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/brasserie/ListBrasserie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/categorie/DetailCategorie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/categorie/ListCategorie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/client/ListClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/client/DetailClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/ControllerCommande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/commande/DetailCommande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/commande/ListCommande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/biere/Accueil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/biere/ListBiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -699,7 +665,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/brasserie/Search.php">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -707,37 +673,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelBiere.php">
+    <entry file="file://$PROJECT_DIR$/lib/File.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="74" />
           <folding>
-            <marker date="1509618778978" expanded="true" signature="1309:1334" ph="SELECT * FRO... biere" />
+            <marker date="1512128267221" expanded="true" signature="1832:1947" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Model.php">
+    <entry file="file://$PROJECT_DIR$/controller/ControllerBiere.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="48" column="61" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="61" />
-          <folding>
-            <marker date="1509618778967" expanded="true" signature="1067:1081" ph="SELECT * FRO... ${$class_name}" />
-            <marker date="1509618778967" expanded="true" signature="1730:1761" ph="SELECT * fro... ${$class_name}" />
-            <marker date="1509618778967" expanded="true" signature="3305:3334" ph="DELETE FROM " />
-            <marker date="1509618778967" expanded="true" signature="4170:4192" ph="UPDATE ${$cl... " />
-            <marker date="1509618778967" expanded="true" signature="4923:4948" ph="INSERT INTO ${$class_name}... " />
-          </folding>
+        <state relative-caret-position="662">
+          <caret line="168" column="59" lean-forward="true" selection-start-line="168" selection-start-column="59" selection-end-line="168" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/ModelBrasserie.php">
+    <entry file="file://$PROJECT_DIR$/controller/ControllerClient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="52" column="61" lean-forward="false" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
-          <folding>
-            <marker date="1509639485565" expanded="true" signature="778:807" ph="SELECT * FRO... brasserie" />
-          </folding>
+        <state relative-caret-position="392">
+          <caret line="55" column="103" lean-forward="false" selection-start-line="55" selection-start-column="103" selection-end-line="55" selection-end-column="103" />
+          <folding />
         </state>
       </provider>
     </entry>
