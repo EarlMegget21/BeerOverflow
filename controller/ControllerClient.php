@@ -159,4 +159,19 @@ class ControllerClient {
             }
         }
     }
+
+    public static function initPanier(){
+        if (!isset($_SESSION['Basket'])){
+            $_SESSION['Basket']=array(
+                "NomProd" => array("Marque", "Qte", "Prix"),
+                "Dildo" => array("Durex", "3", "69€")
+            );
+        }
+    }
+
+    public static function showBasket(){
+        $pagetitle='showBasket';
+        $view='showBasket';
+        require File::build_path(array('view','View.php'));
+    }
 }
