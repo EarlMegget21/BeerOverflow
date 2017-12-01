@@ -53,7 +53,7 @@ class ModelClient extends Model
         }
     }
     
-    public static function isVallogine($login){
+    public static function isValide($login){
         $sql='SELECT count(nonce) FROM Client WHERE login=\''.$login.'\' AND nonce is not null';
         try{
             $rep=Model::$pdo->query($sql);
@@ -69,7 +69,7 @@ class ModelClient extends Model
         }
     }
     
-    public static function valloginate($login){
+    public static function validate($login){
         $sql='UPDATE Client SET nonce=NULL WHERE login=:login';
         try{
             $req_prep = Model::$pdo->prepare($sql);

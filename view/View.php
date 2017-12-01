@@ -19,6 +19,7 @@
                 }
                 if(isset($_SESSION['login'])){
                     echo '<a href="http://localhost/projetbiere/index.php?action=read&controller=client&login='.$_SESSION['login'].'">Mon Profil</a>';
+                    echo '<a href="http://localhost/projetbiere/?action=showBasket&controller=client">Panier</a>';
                     echo '<a href="http://localhost/projetbiere/index.php?action=deconnect&controller=client">Deconnexion</a>';
                 }else{
                     echo '<a href="http://localhost/projetbiere/view/Connect.php">Connexion</a>';
