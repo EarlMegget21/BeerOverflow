@@ -1,4 +1,4 @@
-<form method="get" action="ProjetBiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
+<form method="post" action="ProjetBiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
   <fieldset>
     <legend>Formulaire:</legend>
     <p>

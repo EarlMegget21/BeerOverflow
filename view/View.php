@@ -15,6 +15,7 @@
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=brasserie">Brasseries</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=categorie">Categories</a>
                 <?php if(isset($_SESSION['id'])){
+                    echo '<a href="http://localhost/projetbiere/index.php?action=seeMyCommands&controller=commande">Voir mes commandes</a>';
                     echo '<a href="http://localhost/projetbiere/index.php?action=deconnect&controller=utilisateur">Deconnexion</a>';
                 }else{
                     echo '<a href="http://localhost/projetbiere/view/Connect.php">Connexion</a>';

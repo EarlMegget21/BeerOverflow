@@ -25,15 +25,15 @@ class ControllerCategorie {
             $pagetitle='DetailCategorie';
             $view='DetailCategorie';
             require File::build_path(array('view','View.php'));
-        }   
+        }
     }
-    
+
     public static function create() {
         $pagetitle='Create';
         $view='Update';
         require File::build_path(array('view','View.php'));
     }
-    
+
     public static function created() {
         $data=array(
             //'id'=>$_GET['id'],
@@ -50,13 +50,13 @@ class ControllerCategorie {
             require File::build_path(array('view','View.php'));
         }
     }
-    
+
     public static function update() {
         $pagetitle='Update';
         $view='Update';
         require File::build_path(array('view','View.php'));
     }
-    
+
     public static function updated() {
         $data=array(
             'id'=>$_GET['id'],
@@ -74,7 +74,7 @@ class ControllerCategorie {
             require File::build_path(array('view','View.php'));
         }
     }
-    
+
     public static function delete() {
         ModelCategorie::delete(array('id'=>$_GET['id']));
         $tab_v = ModelCategorie::selectAll();

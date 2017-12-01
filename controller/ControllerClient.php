@@ -32,7 +32,7 @@ class ControllerClient {
             ControllerClient::readAll();
         }
     }
-    
+
     public static function create() {
         if(Session::is_user($_GET['id'])||Session::is_admin()){
             $pagetitle='Create';
@@ -42,7 +42,7 @@ class ControllerClient {
             ControllerClient::readAll();
         }
     }
-    
+
     public static function created() {
         if(Session::is_user($_GET['id'])||Session::is_admin()){
             $data=array(
@@ -63,7 +63,7 @@ class ControllerClient {
             ControllerClient::readAll();
         }
     }
-    
+
     public static function update() {
         if(Session::is_user($_GET['id'])||Session::is_admin()){
             $pagetitle='Update';
@@ -73,7 +73,7 @@ class ControllerClient {
             ControllerClient::readAll();
         }
     }
-    
+
     public static function updated() {
         if(Session::is_user($_GET['id'])||Session::is_admin()){
             $data=array(
@@ -105,7 +105,7 @@ class ControllerClient {
             ControllerClient::readAll();
         }
     }
-    
+
     public static function delete() {
         if(Session::is_user($_GET['id'])||Session::is_admin()){
             ModelClient::delete(array('id'=>$_GET['id']));
@@ -117,13 +117,13 @@ class ControllerClient {
             ControllerClient::readAll();
         }
     }
-    
+
     public static function connect() {
         $pagetitle='Connexion';
         $view='Connect';
         require File::build_path(array('View','View.php'));
     }
-    
+
     public static function connected() {
         $mdp1=Security::getSeed().$_GET['mdp'];
         $mdp= Security::chiffrer($mdp1);
@@ -142,15 +142,15 @@ class ControllerClient {
                 ControllerClient::readAll();
             }
         }
-        
+
     }
-    
+
     public static function deconnect() {
         session_unset();
         session_destroy();
         ControllerClient::readAll();
     }
-    
+
     public static function validate() {
         if(isset($_GET['id'])){
             $v = ModelClient::select($_GET["id"]);

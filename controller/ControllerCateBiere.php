@@ -24,15 +24,15 @@ class ControllerCateBiere {
             $pagetitle='DetailCateBiere';
             $view='DetailCateBiere';
             require File::build_path(array('view','View.php'));
-        }   
+        }
     }
-    
+
     /*public static function create() {
         $pagetitle='Create';
         $view='Update';
         require File::build_path(array('view','View.php'));
     }*/
-    
+
     public static function created() {
         $id=$_GET['idBiere']; //on stock le GET pour aller plus vite
         $data=array(
@@ -56,13 +56,13 @@ class ControllerCateBiere {
             }
         }
     }
-    
+
     /*public static function update() {
         $pagetitle='Update';
         $view='Update';
         require File::build_path(array('view','View.php'));
     }*/
-    
+
     /*public static function updated() {
         $data=array(
             'idBiere'=>$_GET['idBiere'],
@@ -78,7 +78,7 @@ class ControllerCateBiere {
             require File::build_path(array('view','View.php'));
         }
     }*/
-    
+
     public static function delete() { //lors de la suppression d'une categorie associée à une biere, on reaffiche les details de la biere
         $id=$_GET['idBiere']; //on stock le GET pour aller plus vite
         ModelCateBiere::delete(array('idBiere'=>$id,'idCategorie'=>$_GET['idCategorie'])); //on supprime la categorie assossiée à la bière

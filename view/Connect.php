@@ -1,4 +1,4 @@
-<form method="get" action="../index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
+<form method="post" action="../index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
   <fieldset>
     <legend>Connexion:</legend>
     <p>
@@ -9,7 +9,7 @@
       <input type="text" name="login" id="login_id" required/>
 
       <label for="mdp_id">Mot de passe</label>
-      <input type="text" name="mdp" id="mdp_id" required/>
+      <input type="password" name="mdp" id="mdp_id" required/>
     </p>
     <p>
       <input type="submit" value="Se Connecter" />

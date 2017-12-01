@@ -1,6 +1,8 @@
 <?php
 //Ctrl+H permet de remplacer les mots par un autre Voiture->Commande
 require_once File::build_path(array('model','ModelCommande.php')); // chargement du modèle
+require_once File::build_path(array('model', 'ModelAchat.php'));
+require_once File::build_path(array('model', 'ModelBiere.php'));
 
 class ControllerCommande {
     
@@ -16,25 +18,25 @@ class ControllerCommande {
     
     public static function read() {
         $id=$_GET['id'];
-        $tab_a = ModelAchat::select(array('idCommande'=>$id)); //on selectionne touts les achats de cette commande
+        $tab_a = ModelAchat::getMyPurchases($id);   //Récupère un tableau avec le nom, la marque et la quantité de chaque produit de la commande
         if(!$tv = ModelCommande::select(array('id'=>$id))){
             $pagetitle='Error!';
             $view='Error';
             require File::build_path(array('view','View.php'));
         } else {
-            $v=$tv[0];
+            $c=$tv[0];
             $pagetitle='DetailCommande';
             $view='DetailCommande';
             require File::build_path(array('view','View.php'));
-        }   
+        }
     }
-    
+
     public static function create() {
         $pagetitle='Create';
         $view='Update';
         require File::build_path(array('view','View.php'));
     }
-    
+
     public static function created() {
 
         $data=array( //pas besoin de récupérer l'id pour la création car il s'incrémente tout seul sur mySQL
@@ -56,13 +58,13 @@ class ControllerCommande {
             require File::build_path(array('view','View.php'));
         }
     }
-    
+
     public static function update() {
         $pagetitle='Update';
         $view='Update';
         require File::build_path(array('view','View.php'));
     }
-    
+
     public static function updated() {
         $data=array(
             'id'=>$_GET['id'],
@@ -87,12 +89,25 @@ class ControllerCommande {
             require File::build_path(array('view','View.php'));
         }
     }
-    
+
     public static function delete() {
         ModelCommande::delete(array('id'=>$_GET['id']));
         $tab_v = ModelCommande::selectAll();
         $pagetitle='ListCommande';
         $view='Deleted';
         require File::build_path(array('view','View.php'));
+    }
+
+    public static function seeMyCommands(){
+        $tab_c = ModelCommande::getMyCommands($_SESSION['id']);
+        if(is_empty($tab_c)){
+            $pagetitle = 'Error !';
+            $view = "Error";
+        } else {
+            //$tab_a = ModelAchat::getMyPurchase($_SESSION['id']);
+            $pagetitle = 'Mes commandes';
+            $view = 'ListCommande';
+        }
+        require_once File::build_path(array('view', 'View.php'));
     }
 }
