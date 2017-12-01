@@ -21,11 +21,11 @@
 if(Session::is_admin()) {
     echo
         "<form method = \"get\" action = \"../ProjetBiere/index.php\" >"
-            ."<input type = 'hidden' name = \'action\' value = \"created\" />"
-            ."<input type = 'hidden' name = \'controller\' value = \'catebiere\' />"
-            ."<input type = 'hidden' name = 'idBiere' value = '<?php echo $v->get(\"id\"); ?>' >"
-            ."<input type = \"text\" placeholder = \"ID de la Catégorie\" name = 'idCategorie' id = \"idCategorie_id\" required />"
-            ."<input type = \"submit\" value = \"Ajouter Categorie\" />"
+            ."<input type = 'hidden' name = 'action' value = 'created' />"
+            ."<input type = 'hidden' name = 'controller' value = 'catebiere' />"
+            ."<input type = 'hidden' name = 'idBiere' value = '".$v->get("id")."' >"
+            ."<input type = 'text' placeholder = 'ID de la Catégorie' name = 'idCategorie' id = 'idCategorie_id' required />"
+            ."<input type = 'submit' value = 'Ajouter Categorie' />"
         ."</form >";
     }
 

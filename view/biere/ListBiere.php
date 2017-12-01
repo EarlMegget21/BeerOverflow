@@ -13,8 +13,4 @@
                 .">Supprimer Bière</a> <br> <a href=\"http://localhost/projetbiere/index.php?action=create&controller=Biere\">Créer Bière</a>";
         }
     }
-
-if((isset($_SESSION["admin"])) && $_SESSION["admin"] == true) {
-    echo "<a href=\"http://localhost/projetbiere/index.php?action=create&controller=Biere\">Créer Bière</a>";
-}
 ?>

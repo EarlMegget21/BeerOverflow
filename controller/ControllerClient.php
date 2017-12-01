@@ -17,7 +17,7 @@ class ControllerClient
             $view = 'ListClient';
             require File::build_path(array('view', 'View.php'));
         } else {
-            ControllerBiere::readAll();
+            ControllerBiere::accueil();
         }
     }
     
@@ -35,7 +35,7 @@ class ControllerClient
                 require File::build_path(array('view', 'View.php'));
             }
         } else {
-            ControllerClient::readAll();
+            ControllerBiere::accueil();
         }
     }
 
@@ -79,7 +79,7 @@ class ControllerClient
             $view='Update';
             require File::build_path(array('view','View.php'));
         }else{
-            ControllerBiere::readAll();
+            ControllerBiere::accueil();
         }
     }
 
@@ -112,7 +112,7 @@ class ControllerClient
                 require File::build_path(array('View','View.php'));
             }
         } else {
-            ControllerBiere::readAll();
+            ControllerBiere::accueil();
         }
     }
 
@@ -126,7 +126,7 @@ class ControllerClient
             $view = 'Deleted';
             require File::build_path(array('view', 'View.php'));
         } else {
-            ControllerBiere::readAll();
+            ControllerBiere::accueil();
         }
     }
 
@@ -149,7 +149,7 @@ class ControllerClient
                 }
                 ControllerBiere::accueil();
             }else{
-                ControllerBiere::readAll();
+                ControllerBiere::accueil();
             }
         }else{
             ControllerBiere::accueil();

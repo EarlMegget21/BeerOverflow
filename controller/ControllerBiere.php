@@ -104,7 +104,7 @@ class ControllerBiere {
                 require File::build_path(array('view','View.php'));
             }
         }else{
-            ControllerClient::readAll();
+            ControllerBiere::accueil();
         }
     }
 
@@ -114,7 +114,7 @@ class ControllerBiere {
             $view='Update';
             require File::build_path(array('view','View.php'));
         }else{
-            ControllerClient::readAll();
+            ControllerBiere::accueil();
         }
     }
 
@@ -142,7 +142,7 @@ class ControllerBiere {
                 require File::build_path(array('view','View.php'));
             }
         }else{
-            ControllerClient::readAll();
+            ControllerBiere::accueil();
         }
     }
 
@@ -154,7 +154,7 @@ class ControllerBiere {
             $view='Deleted';
             require File::build_path(array('view','View.php'));
         }else{
-            ControllerClient::readAll();
+            ControllerBiere::accueil();
         }
     }
     
