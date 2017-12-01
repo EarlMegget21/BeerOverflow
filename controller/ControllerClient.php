@@ -124,8 +124,7 @@ class ControllerClient
         }
     }
 
-    public static function connect()
-    {
+    public static function connect(){
         $pagetitle = 'Connexion';
         $view = 'Connect';
         require File::build_path(array('View', 'View.php'));
@@ -135,7 +134,7 @@ class ControllerClient
         $mdp1=Security::getSeed().$_GET['mdp'];
         $mdp= Security::chiffrer($mdp1);
         if(isset($_GET['login'])&&isset($_GET['mdp'])){
-            if(ModelClient::checkPassword($_GET['login'], $mdp)&&ModelClient::isVallogine($_GET['login'])){
+            if(ModelClient::checkPassword($_GET['login'], $mdp)&&ModelClient::isValide($_GET['login'])){
                 $_SESSION['login']=$_GET['login'];
                 $tv = ModelClient::select(array('login'=>$_GET['login']));
                 $v=$tv[0];
@@ -149,27 +148,24 @@ class ControllerClient
                 ControllerClient::readAll();
             }
         }
-
     }
 
-    public static function deconnect()
-    {
+    public static function deconnect(){
         session_unset();
         session_destroy();
         ControllerClient::readAll();
     }
     
-    public static function valloginate() {
+    public static function validate(){
         if(isset($_GET['login'])){
             $v = ModelClient::select($_GET["login"]);
             if(isset($_GET['nonce'])&&$v->getNonce()==$_GET["nonce"]){
-                ModelClient::valloginate($_GET["login"]);
+                ModelClient::validate($_GET["login"]);
             }
         }
     }
 
-    public static function initPanier()
-    {
+    public static function initPanier(){
         if (!isset($_SESSION['Basket'])) {
             $_SESSION['Basket'] = array(
                 "NomProd" => array("Marque", "Qte", "Prix"),
@@ -178,16 +174,14 @@ class ControllerClient
         }
     }
 
-    public static function showBasket()
-    {
+    public static function showBasket(){
         $pagetitle = 'showBasket';
         $view = 'showBasket';
         ControllerClient::initPanier();
         require File::build_path(array('view', 'View.php'));
     }
 
-    public static function addBasket($NomProd, $Marque, $Qte, $PrixBase)
-    {
+    public static function addBasket($NomProd, $Marque, $Qte, $PrixBase){
         ControllerClient::initPanier();
         if (isset($_SESSION['Basket'][$NomProd])) {
             $_SESSION['Basket'][$NomProd][1] += $Qte;
