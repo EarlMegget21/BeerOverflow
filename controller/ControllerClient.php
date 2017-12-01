@@ -17,7 +17,7 @@ class ControllerClient
             $view = 'ListClient';
             require File::build_path(array('view', 'View.php'));
         } else {
-            ControllerClient::readAll();
+            ControllerBiere::readAll();
         }
     }
     
@@ -79,7 +79,7 @@ class ControllerClient
             $view='Update';
             require File::build_path(array('view','View.php'));
         }else{
-            ControllerClient::readAll();
+            ControllerBiere::readAll();
         }
     }
 
@@ -112,7 +112,7 @@ class ControllerClient
                 require File::build_path(array('View','View.php'));
             }
         } else {
-            ControllerClient::readAll();
+            ControllerBiere::readAll();
         }
     }
 
@@ -126,7 +126,7 @@ class ControllerClient
             $view = 'Deleted';
             require File::build_path(array('view', 'View.php'));
         } else {
-            ControllerClient::readAll();
+            ControllerBiere::readAll();
         }
     }
 
@@ -137,9 +137,9 @@ class ControllerClient
     }
 
     public static function connected() {
-        $mdp1=Security::getSeed().$_GET['mdp'];
-        $mdp= Security::chiffrer($mdp1);
         if(isset($_GET['login'])&&isset($_GET['mdp'])){
+            $mdp1=Security::getSeed().$_GET['mdp'];
+            $mdp= Security::chiffrer($mdp1);
             if(ModelClient::checkPassword($_GET['login'], $mdp)&&ModelClient::isValide($_GET['login'])){
                 $_SESSION['login']=$_GET['login'];
                 $tv = ModelClient::select(array('login'=>$_GET['login']));
@@ -149,8 +149,10 @@ class ControllerClient
                 }
                 ControllerBiere::accueil();
             }else{
-                ControllerClient::readAll();
+                ControllerBiere::readAll();
             }
+        }else{
+            ControllerBiere::accueil();
         }
     }
 

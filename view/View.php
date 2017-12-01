@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="/ProjetBiere/css/styles.css">
         <title><?php echo $pagetitle; ?></title>
     </head>
     <body>
@@ -14,23 +14,21 @@
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=categorie">Categories</a>
                 <?php
                 if(Session::is_admin()){
-                    echo '<a href="http://localhost/projetbiere/index.php?action=readAll&controller=client">Clients</a>';
+                    echo '<a href="http://localhost/projetbiere/index.php?action=readAll&controller=client">Clients</a> ';
                 }
                 if(isset($_SESSION['login'])){
-                    echo '<a href="http://localhost/projetbiere/index.php?action=read&controller=client&login='.$_SESSION['login'].'">Mon Profil</a>';
-                    echo '<a href="http://localhost/projetbiere/?action=showBasket&controller=client">Panier</a>';
+                    echo '<a href="http://localhost/projetbiere/index.php?action=read&controller=client&login='.$_SESSION['login'].'">Mon Profil</a> ';
+                    echo '<a href="http://localhost/projetbiere/index.php?action=showBasket&controller=client">Panier</a> ';
                     echo '<a href="http://localhost/projetbiere/index.php?action=deconnect&controller=client">Deconnexion</a>';
                 }else{
-                    echo '<a href="http://localhost/projetbiere/view/Connect.php">Connexion</a>';
+                    echo '<a href="http://localhost/projetbiere/index.php?controller=client&action=connect">Connexion</a> ';
                     echo '<a href="http://localhost/projetbiere/index.php?action=create&controller=client">S\'inscrire</a>';
                 }?>
             </nav>
         </header>
 <?php
-// Si static::$object='Voiture' et $view='ListVoiture',
-// alors $filepath="/chemin_du_site/View/Voiture/ListBiere.php"
-$filepath = File::build_path(array("view", static::$object, "$view.php"));
-require $filepath;
+    $filepath = File::build_path(array("view", static::$object, "$view.php"));
+    require $filepath;
 ?>
         <footer>
             <p style="border: 1px solid black;text-align:right;padding-right:1em;">Copyright</p>
