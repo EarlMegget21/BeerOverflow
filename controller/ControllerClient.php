@@ -1,5 +1,4 @@
 <?php
-//Ctrl+H permet de remplacer les mots par un autre Voiture->Client
 require_once File::build_path(array('model', 'ModelClient.php')); // chargement du modèle
 require_once File::build_path(array('lib', 'Security.php'));
 
@@ -8,13 +7,16 @@ class ControllerClient
 
     protected static $object = 'client';
 
-    public static function readAll()
-    {
-        $tab_v = ModelClient::selectAll();     //appel au modèle pour gerer la BD
-        //"redirige" vers la vue (pas require_once car on peut appeler plusieur fois dans le code pour 'copier' le html à la manière d'un include en C
-        $pagetitle = 'ListClient';
-        $view = 'ListClient';
-        require File::build_path(array('view', 'View.php'));
+    public static function readAll(){
+        if(Session::is_admin()){
+            $tab_v = ModelClient::selectAll();     //appel au modèle pour gerer la BD
+            //"redirige" vers la vue (pas require_once car on peut appeler plusieur fois dans le code pour 'copier' le html à la manière d'un include en C
+            $pagetitle = 'ListClient';
+            $view = 'ListClient';
+            require File::build_path(array('view', 'View.php'));
+        } else {
+            ControllerClient::readAll();
+        }
     }
     
     public static function read() {
@@ -115,6 +117,8 @@ class ControllerClient
     public static function delete() {
         if(Session::is_user($_GET['login'])||Session::is_admin()){
             ModelClient::delete(array('login'=>$_GET['login']));
+            session_unset();
+            session_destroy();
             $tab_v = ModelClient::selectAll();
             $pagetitle = 'ListClient';
             $view = 'Deleted';

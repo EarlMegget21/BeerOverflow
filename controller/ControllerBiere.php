@@ -164,7 +164,7 @@ class ControllerBiere {
     }
 
     public static function accueil() {
-        $pagetitle='ProjetBiere';
+        $pagetitle='BeerOverflow';
         $view='Accueil';
         require File::build_path(array('view','View.php'));
     }
