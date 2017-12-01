@@ -3,6 +3,7 @@
         <legend>Formulaire:</legend>
         <p>
             <input type="hidden" name="action" value="searched"/>
+            <input type="hidden" name="controller" value="biere"/>
 
             <label for="marque_id">Marque</label> :
             <input type="text" placeholder="ex:Chouffe" name="marque" id="marque_id"/>
