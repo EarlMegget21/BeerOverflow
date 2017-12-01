@@ -10,7 +10,10 @@
         if(Session::is_admin()){
             echo "<a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id="
                 .rawurlencode($v->get("id"))
-                .">Supprimer Bière</a> <br> <a href=\"http://localhost/projetbiere/index.php?action=create&controller=Biere\">Créer Bière</a>";
+                .">Supprimer Bière</a> <br>";
         }
+    }
+    if(Session::is_admin()){
+            echo "<a href='http://localhost/projetbiere/index.php?action=create&controller=Biere'>Créer Bière</a>";
     }
 ?>

@@ -1,5 +1,4 @@
 <?php
-//Ctrl+H permet de remplacer les mots par un autre Voiture->Client
 require_once File::build_path(array('model','ModelClient.php')); // chargement du modèle
 require_once File::build_path(array('lib','Security.php'));
 require_once File::build_path(array('controller', 'ControllerBiere.php'));
@@ -88,8 +87,7 @@ class ControllerClient
             $data=array(
                 'login'=>$_GET['login'],
                 'nom'=>$_GET['nom'],
-                'prenom'=>$_GET['prenom'],
-                'isAdmin'=>0);
+                'prenom'=>$_GET['prenom']);
             if($_GET['mdp']==$_GET['mdp2']){
                 $mdp= Security::getSeed().$_GET['mdp'];
                 $data['mdp']= Security::chiffrer($mdp);
@@ -99,6 +97,8 @@ class ControllerClient
             }
             if (Session::is_admin() && isset($_GET['isAdmin'])) {
                 $data['isAdmin'] = 1;
+            }else{
+                $data['isAdmin'] = 0;
             }
             if (!ModelClient::update($data)) { //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
                 $pagetitle = 'Error!';

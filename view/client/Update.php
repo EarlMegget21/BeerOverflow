@@ -1,4 +1,4 @@
-<form method="post" action="../ProjetBiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
+<form method="get" action="../ProjetBiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
   <fieldset>
     <legend>Formulaire</legend>
     <p>
@@ -31,6 +31,18 @@
         <label for="prenom_id">Prenom: </label>
         <input type="text" <?php if($_GET['action']=="update"){echo "value=\"".$v->get("prenom")."\"";}else{echo "placeholder=\"ex:Will\"";} ?> name="prenom" id="prenom_id" required/>
 
+        <?php
+            if(Session::is_admin()){
+                echo "<label for='admin_id'>Administrateur: </label>
+                    <input type='checkbox' ";
+                if($_GET['action']=="update"){
+                    if($v->isAdmin()){
+                        echo "checked";
+                    }
+                }
+                echo " name='isAdmin' id='admin_id'/>";
+            }
+        ?>
 
     </p>
       <p>

@@ -2,6 +2,8 @@
   <fieldset>
     <legend>Formulaire:</legend>
     <p>
+        <input type='hidden' name='controller' value="biere"> <!-- ajoute un input caché qui défini la variable GET action -->
+
         <input type='hidden' name='action' value="<?php if($_GET['action']=="update"){echo "updated";}else{echo "created";}?>"> <!-- ajoute un input caché qui défini la variable GET action -->
 
         <?php if($_GET['action']=="update"){echo "<input type='hidden' value=\"".$_GET['id']."\" name=\"id\" id=\"id_id\" readonly/>";} ?> <!-- met un attribut caché avec l'id dans le cas où c'est un update car l'id n'apparaît pas est n'est pas modifiable manuellement -->
