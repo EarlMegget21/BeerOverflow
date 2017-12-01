@@ -9,7 +9,7 @@
         <header>
             <nav>
                 <a href="http://localhost/projetbiere/">Accueil</a>
-                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=commande">Commandes</a>
+                <a href="http://localhost/projetbiere/index.php?action=readAll&controller=client">Clients</a>
                 <a href="http://localhost/projetbiere/index.php?action=main&controller=biere">Bieres</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=brasserie">Brasseries</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=categorie">Categories</a>

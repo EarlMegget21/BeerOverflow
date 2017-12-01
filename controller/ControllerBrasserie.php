@@ -3,9 +3,9 @@
 require_once File::build_path(array('model','ModelBrasserie.php')); // chargement du modèle
 
 class ControllerBrasserie {
-    
+
     protected static $object='brasserie';
-            
+
     public static function readAll() {
         $tab_v = ModelBrasserie::selectAll();     //appel au modèle pour gerer la BD
           //"redirige" vers la vue (pas require_once car on peut appeler plusieur fois dans le code pour 'copier' le html à la manière d'un include en C
@@ -13,7 +13,7 @@ class ControllerBrasserie {
         $view='ListBrasserie';
         require File::build_path(array('view','View.php'));
     }
-    
+
     public static function read() {
         $id=$_GET['id'];
         if(!$tv = ModelBrasserie::select(array('id'=>$id))){

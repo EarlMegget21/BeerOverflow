@@ -1,5 +1,5 @@
 <?php
-    foreach ($tab_v as $key => $v)
+foreach ($tab_v as $key => $v)
     echo "Brasserie $key <a href=http://localhost/projetbiere/index.php?action=read&controller=Brasserie&id="
         .rawurlencode($v->get("id"))
         .">"

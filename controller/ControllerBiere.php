@@ -77,10 +77,11 @@ class ControllerBiere {
         if(Session::is_admin()){
             $pagetitle='Create';
             $view='Update';
-            require File::build_path(array('view','View.php'));
         }else{
-            ControllerClient::readAll();
+            $pagetitle='Error';
+            $view='Error';
         }
+        require File::build_path(array('view','View.php'));
     }
 
     public static function created() {
