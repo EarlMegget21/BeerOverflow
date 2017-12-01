@@ -29,57 +29,77 @@ class ControllerBrasserie {
     }
 
     public static function create() {
-        $pagetitle='Create';
-        $view='Update';
-        require File::build_path(array('view','View.php'));
+        if(Session::is_admin()){
+            $pagetitle='Create';
+            $view='Update';
+            require File::build_path(array('view','View.php'));
+        }else{
+            ControllerClient::readAll();
+        }
     }
 
     public static function created() {
-        $data=array(
-            //'id'=>$_GET['id'],
-            'nom'=>$_GET['nom'],
-            'adresse'=>$_GET['adresse']);
-        if(!ModelBrasserie::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
-            $pagetitle='Error!';
-            $view='Error';
-            require File::build_path(array('view','View.php'));
-        } else {
-            $tab_v = ModelBrasserie::selectAll();
-            $pagetitle='ListBrasserie';
-            $view='Created';
-            require File::build_path(array('view','View.php'));
+        if(Session::is_admin()){
+            $data=array(
+                //'id'=>$_GET['id'],
+                'nom'=>$_GET['nom'],
+                'adresse'=>$_GET['adresse']);
+            if(!ModelBrasserie::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
+                $pagetitle='Error!';
+                $view='Error';
+                require File::build_path(array('view','View.php'));
+            } else {
+                $tab_v = ModelBrasserie::selectAll();
+                $pagetitle='ListBrasserie';
+                $view='Created';
+                require File::build_path(array('view','View.php'));
+            }
+        }else{
+            ControllerClient::readAll();
         }
     }
 
     public static function update() {
-        $pagetitle='Update';
-        $view='Update';
-        require File::build_path(array('view','View.php'));
+        if(Session::is_admin()){
+            $pagetitle='Update';
+            $view='Update';
+            require File::build_path(array('view','View.php'));
+        }else{
+            ControllerClient::readAll();
+        }
     }
 
     public static function updated() {
-        $data=array(
-            'id'=>$_GET['id'],
-            'nom'=>$_GET['nom'],
-            'adresse'=>$_GET['adresse']);
-        if(!ModelBrasserie::update($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
-            $pagetitle='Error!';
-            $view='Error';
-            require File::build_path(array('view','View.php'));
-        } else {
-            $tv = ModelBrasserie::select(array('id'=>$_GET['id']));
-            $v=$tv[0];
-            $pagetitle='DetailBrasserie';
-            $view='Updated';
-            require File::build_path(array('view','View.php'));
+        if(Session::is_admin()){
+            $data=array(
+                'id'=>$_GET['id'],
+                'nom'=>$_GET['nom'],
+                'adresse'=>$_GET['adresse']);
+            if(!ModelBrasserie::update($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
+                $pagetitle='Error!';
+                $view='Error';
+                require File::build_path(array('view','View.php'));
+            } else {
+                $tv = ModelBrasserie::select(array('id'=>$_GET['id']));
+                $v=$tv[0];
+                $pagetitle='DetailBrasserie';
+                $view='Updated';
+                require File::build_path(array('view','View.php'));
+            }
+        }else{
+            ControllerClient::readAll();
         }
     }
 
     public static function delete() {
-        ModelBrasserie::delete(array('id'=>$_GET['id']));
-        $tab_v = ModelBrasserie::selectAll();
-        $pagetitle='ListBrasserie';
-        $view='Deleted';
-        require File::build_path(array('view','View.php'));
+        if(Session::is_admin()){
+            ModelBrasserie::delete(array('id'=>$_GET['id']));
+            $tab_v = ModelBrasserie::selectAll();
+            $pagetitle='ListBrasserie';
+            $view='Deleted';
+            require File::build_path(array('view','View.php'));
+        }else{
+            ControllerClient::readAll();
+        }
     }
 }

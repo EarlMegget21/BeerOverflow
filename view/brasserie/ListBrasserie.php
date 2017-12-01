@@ -4,9 +4,10 @@
         .rawurlencode($v->get("id"))
         .">"
         .htmlspecialchars($v->get("nom"))
-        ."</a> <a href=http://localhost/projetbiere/index.php?action=delete&controller=Brasserie&id="
-        .rawurlencode($v->get("id"))
-        .">Supprimer Brasserie</a> <br>";
-//rawurlencode() permet d'eviter URL injection, htmlspecialchars permet d'éviter SQL injection
+        ."</a>";
+    if(Session::is_admin()) {
+        echo "<a href=http://localhost/projetbiere/index.php?action=delete&controller=Brasserie&id="
+            . rawurlencode($v->get("id"))
+            . ">Supprimer Brasserie</a> <br> <a href=\"http://localhost/projetbiere/index.php?action=create&controller=Brasserie\">Créer Brasserie</a>";
+    }
 ?>
-<a href="http://localhost/projetbiere/index.php?action=create&controller=Brasserie">Créer Brasserie</a>

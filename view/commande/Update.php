@@ -12,8 +12,8 @@
       <label for="livraison_id">livraison</label> :
       <input type="checkbox" <?php if($_GET['action']=="update"){echo "value=\"". $v->get("livraison")."\"";} ?> name="livraison" id="livraison_id" />
 
-      <label for="idClient_id">ID du client</label> :
-      <input type="text" <?php if($_GET['action']=="update"){echo "value=\"". $v->get("idClient")."\"";}else{echo "placeholder=\"ex:5\"";} ?> name="idClient" id="idClient_id" required/>
+      <label for="login_id">ID du client</label> :
+      <input type="text" <?php if($_GET['action']=="update"){echo "value=\"". $v->get("login")."\"";}else{echo "placeholder=\"ex:5\"";} ?> name="login" id="login_id" required/>
 
       <label for="date_id">Date</label> :
       <input type="text" <?php if($_GET['action']=="update"){echo "value=\"". $v->get("date")."\"";}else{echo "placeholder=\"ex:10/04/1995\"";} ?> name="date" id="date_id" required/>

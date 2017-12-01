@@ -74,7 +74,7 @@ class ControllerBiere {
     }
 
     public static function create() {
-        if(Session::is_user($_GET['id'])||Session::is_admin()){
+        if(Session::is_admin()){
             $pagetitle='Create';
             $view='Update';
             require File::build_path(array('view','View.php'));
@@ -84,7 +84,7 @@ class ControllerBiere {
     }
 
     public static function created() {
-        if(Session::is_user($_GET['id'])||Session::is_admin()){
+        if(Session::is_admin()){
             $data=array( //pas besoin de rentrer l'id lors de la création d'une bière, il s'incrémente tout seul sur MySQL lors de la création d'un tuple
                 'nom'=>$_GET['nom'],
                 'taux'=>$_GET['taux'],
@@ -108,7 +108,7 @@ class ControllerBiere {
     }
 
     public static function update() {
-        if(Session::is_user($_GET['id'])||Session::is_admin()){
+        if(Session::is_admin()){
             $pagetitle='Update';
             $view='Update';
             require File::build_path(array('view','View.php'));
@@ -118,7 +118,7 @@ class ControllerBiere {
     }
 
     public static function updated() {
-        if(Session::is_user($_GET['id'])||Session::is_admin()){
+        if(Session::is_admin()){
             $data=array(
                 'id'=>$_GET['id'], //lors de la modification d'une bière, on a besoin de l'id pour mettre dans le WHERE
                 'nom'=>$_GET['nom'],
@@ -146,7 +146,7 @@ class ControllerBiere {
     }
 
     public static function delete() {
-        if(Session::is_user($_GET['id'])||Session::is_admin()){
+        if(Session::is_admin()){
             ModelBiere::delete(array('id'=>$_GET['id']));
             $tab_v = ModelBiere::selectAll();
             $pagetitle='ListBiere';
@@ -160,6 +160,12 @@ class ControllerBiere {
     public static function error() {
         $pagetitle='Error!';
         $view='Error';
+        require File::build_path(array('view','View.php'));
+    }
+
+    public static function accueil() {
+        $pagetitle='ProjetBiere';
+        $view='Accueil';
         require File::build_path(array('view','View.php'));
     }
 }

@@ -10,12 +10,14 @@
         ."%, composition :"
         .htmlspecialchars($v->get("composition"))
         .", montant "
-        .htmlspecialchars($v->get("montant"))
-        ."€ <a href=http://localhost/projetbiere/index.php?action=update&controller=biere&id="
-        .rawurlencode($v->get("id"))
-        .">Modifier Bière</a> <a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id="
-        .rawurlencode($v->get("id"))
-        .">Supprimer Bière</a> <br> Categories : <br>";
+        .htmlspecialchars($v->get("montant"))."€";
+    if(Session::is_admin()) {
+        echo "<a href=http://localhost/projetbiere/index.php?action=update&controller=biere&id="
+            . rawurlencode($v->get("id"))
+            . ">Modifier Bière</a> <a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id="
+            . rawurlencode($v->get("id"))
+            . ">Supprimer Bière</a> <br> Categories : <br>";
+    }
 ?>
 <form method="get" action="../ProjetBiere/index.php">
     <input type='hidden' name='action' value="created"/>

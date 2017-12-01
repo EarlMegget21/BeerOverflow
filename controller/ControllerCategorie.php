@@ -29,57 +29,77 @@ class ControllerCategorie {
     }
 
     public static function create() {
-        $pagetitle='Create';
-        $view='Update';
-        require File::build_path(array('view','View.php'));
+        if(Session::is_admin()){
+            $pagetitle='Create';
+            $view='Update';
+            require File::build_path(array('view','View.php'));
+        }else{
+            ControllerClient::readAll();
+        }
     }
 
     public static function created() {
-        $data=array(
-            //'id'=>$_GET['id'],
-            'nom'=>$_GET['nom'],
-            'specifications'=>$_GET['specifications']);
-        if(!ModelCategorie::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
-            $pagetitle='Error!';
-            $view='Error';
-            require File::build_path(array('view','View.php'));
-        } else {
-            $tab_v = ModelCategorie::selectAll();
-            $pagetitle='ListCategorie';
-            $view='Created';
-            require File::build_path(array('view','View.php'));
+        if(Session::is_admin()){
+            $data=array(
+                //'id'=>$_GET['id'],
+                'nom'=>$_GET['nom'],
+                'specifications'=>$_GET['specifications']);
+            if(!ModelCategorie::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
+                $pagetitle='Error!';
+                $view='Error';
+                require File::build_path(array('view','View.php'));
+            } else {
+                $tab_v = ModelCategorie::selectAll();
+                $pagetitle='ListCategorie';
+                $view='Created';
+                require File::build_path(array('view','View.php'));
+            }
+        }else{
+            ControllerClient::readAll();
         }
     }
 
     public static function update() {
-        $pagetitle='Update';
-        $view='Update';
-        require File::build_path(array('view','View.php'));
+        if(Session::is_admin()){
+            $pagetitle='Update';
+            $view='Update';
+            require File::build_path(array('view','View.php'));
+        }else{
+            ControllerClient::readAll();
+        }
     }
 
     public static function updated() {
-        $data=array(
-            'id'=>$_GET['id'],
-            'nom'=>$_GET['nom'],
-            'specifications'=>$_GET['specifications']);
-        if(!ModelCategorie::update($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
-            $pagetitle='Error!';
-            $view='Error';
-            require File::build_path(array('view','View.php'));
-        } else {
-            $tv = ModelCategorie::select(array('id'=>$_GET["id"]));
-            $v=$tv[0];
-            $pagetitle='DetailCategorie';
-            $view='Updated';
-            require File::build_path(array('view','View.php'));
+        if(Session::is_admin()){
+            $data=array(
+                'id'=>$_GET['id'],
+                'nom'=>$_GET['nom'],
+                'specifications'=>$_GET['specifications']);
+            if(!ModelCategorie::update($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
+                $pagetitle='Error!';
+                $view='Error';
+                require File::build_path(array('view','View.php'));
+            } else {
+                $tv = ModelCategorie::select(array('id'=>$_GET["id"]));
+                $v=$tv[0];
+                $pagetitle='DetailCategorie';
+                $view='Updated';
+                require File::build_path(array('view','View.php'));
+            }
+        }else{
+            ControllerClient::readAll();
         }
     }
 
     public static function delete() {
-        ModelCategorie::delete(array('id'=>$_GET['id']));
-        $tab_v = ModelCategorie::selectAll();
-        $pagetitle='ListCategorie';
-        $view='Deleted';
-        require File::build_path(array('view','View.php'));
+        if(Session::is_admin()){
+            ModelCategorie::delete(array('id'=>$_GET['id']));
+            $tab_v = ModelCategorie::selectAll();
+            $pagetitle='ListCategorie';
+            $view='Deleted';
+            require File::build_path(array('view','View.php'));
+        }else{
+            ControllerClient::readAll();
+        }
     }
 }
