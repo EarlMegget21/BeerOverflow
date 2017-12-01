@@ -1,6 +1,7 @@
 <?php
 //Ctrl+H permet de remplacer les mots par un autre Voiture->Brasserie
 require_once File::build_path(array('model','ModelBrasserie.php')); // chargement du modèle
+require_once File::build_path(array('controller','ControllerBiere.php'));
 
 class ControllerBrasserie {
 
@@ -34,7 +35,7 @@ class ControllerBrasserie {
             $view='Update';
             require File::build_path(array('view','View.php'));
         }else{
-            ControllerClient::readAll();
+            ControllerBiere::accueil();
         }
     }
 
@@ -55,7 +56,7 @@ class ControllerBrasserie {
                 require File::build_path(array('view','View.php'));
             }
         }else{
-            ControllerClient::readAll();
+            ControllerBiere::accueil();
         }
     }
 
@@ -65,7 +66,7 @@ class ControllerBrasserie {
             $view='Update';
             require File::build_path(array('view','View.php'));
         }else{
-            ControllerClient::readAll();
+            ControllerBiere::accueil();
         }
     }
 
@@ -87,7 +88,7 @@ class ControllerBrasserie {
                 require File::build_path(array('view','View.php'));
             }
         }else{
-            ControllerClient::readAll();
+            ControllerBiere::accueil();
         }
     }
 
@@ -99,7 +100,7 @@ class ControllerBrasserie {
             $view='Deleted';
             require File::build_path(array('view','View.php'));
         }else{
-            ControllerClient::readAll();
+            ControllerBiere::accueil();
         }
     }
 }

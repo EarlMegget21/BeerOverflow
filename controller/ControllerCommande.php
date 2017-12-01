@@ -3,6 +3,7 @@
 require_once File::build_path(array('model','ModelCommande.php')); // chargement du modèle
 require_once File::build_path(array('model', 'ModelAchat.php'));
 require_once File::build_path(array('model', 'ModelBiere.php'));
+require_once File::build_path(array('controller', 'ControllerBiere.php'));
 
 class ControllerCommande {
     
@@ -62,7 +63,7 @@ class ControllerCommande {
                 require File::build_path(array('view','View.php'));
             }
         }else{
-            ControllerClient::readAll();
+            ControllerBiere::accueil();
         }
     }
 }
