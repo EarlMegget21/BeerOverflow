@@ -1,6 +1,8 @@
 <?php
-require_once File::build_path(array('model', 'ModelClient.php')); // chargement du modèle
-require_once File::build_path(array('lib', 'Security.php'));
+//Ctrl+H permet de remplacer les mots par un autre Voiture->Client
+require_once File::build_path(array('model','ModelClient.php')); // chargement du modèle
+require_once File::build_path(array('lib','Security.php'));
+require_once File::build_path(array('controller', 'ControllerBiere.php'));
 
 class ControllerClient
 {
@@ -145,10 +147,8 @@ class ControllerClient
                 if($v->isAdmin()){
                     $_SESSION['admin']=true;
                 }
-                $pagetitle = 'DetailClient';
-                $view = 'DetailClient';
-                require File::build_path(array('View', 'View.php'));
-            } else {
+                ControllerBiere::accueil();
+            }else{
                 ControllerClient::readAll();
             }
         }
@@ -157,7 +157,7 @@ class ControllerClient
     public static function deconnect(){
         session_unset();
         session_destroy();
-        ControllerClient::readAll();
+        ControllerBiere::accueil(1);
     }
     
     public static function validate(){
