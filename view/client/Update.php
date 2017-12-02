@@ -1,7 +1,15 @@
 <form method="get" action="../ProjetBiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
   <fieldset>
-    <legend>Formulaire</legend>
-    <p>
+      <legend>
+      <?php
+          if($_GET['action']=="update") {
+              echo "Modifier mon compte";
+          }else{
+              echo "Créer un compte";
+          }
+      ?>
+      </legend>
+    <div>
         <input type='hidden' name='action' value='<?php if($_GET['action']=="update"){echo "updated";}else{echo "created";}?>'> <!-- ajoute un input caché qui défini la variable GET action -->
         <input type='hidden' name='controller' value='Client'>
 
@@ -44,9 +52,9 @@
             }
         ?>
 
-    </p>
-      <p>
-      <input type="submit" value= <?php if($_GET['action']=="update"){echo "\"Modifier le compte\"";}else{echo "\"Creer un compte\"";}?>
-    </p>
+    </div>
+      <div>
+      <input type="submit" value= <?php if($_GET['action']=="update"){echo "\"Valider les modifications\"";}else{echo "\"Rejoindre BeerOverflow\"";}?>
+    </div>
   </fieldset> 
 </form>

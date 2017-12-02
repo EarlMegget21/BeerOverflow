@@ -1,5 +1,5 @@
 body {
-	background-color: #fff9e7;
+	background-color: white;
 	width: 900px;
 	margin:auto;
 	line-height:150%;
@@ -13,13 +13,13 @@ a {
 	color:#7c4600;
 }
 
-a {
-	color:#7c4600;
+a:hover{
+	font-weight: 500;
 }
 
-a:hover {
+nav a:hover {
 	background-color: #7c4600;
-	color:#fff9e7;
+	color:white;
 }
 
 nav {
@@ -67,9 +67,13 @@ footer > div:last-child{
 	src: url('/ProjetBiere/FontLogo.otf');
 }
 
-#1stHead{
+#head{
 	padding:20px;
-	margin:20px;
+	display: flex;
+}
+
+#connexion a:hover{
+	color:#ffc986;
 }
 
 #logo>img{
@@ -94,11 +98,15 @@ footer > div:last-child{
 
 #chercher{
 	margin: auto;
+	border:1px solid #7c4600;
 }
 
-header > div{
-	display:flex;
+#search_input{
+	border:0px;
+	width:170px;
+	text-align: center;
 }
+
 
 #accueil {
 	margin-top: 5px;
@@ -118,23 +126,33 @@ header > div{
 }
 
 #accueil>div>h1{
-	background-color: #fff9e7;
+	background-color: white;
 	padding:20px;
 	text-align: center;
 }
 
 #accueil>div>a {
-	background-color: #fff9e7;
+	background-color: white;
 	padding:10px;
 }
 
 #accueil>div>a:hover {
 	background-color: #7c4600;
-	color:#fff9e7;
+	color:white;
 }
 
 #acc1{
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
+}
+
+fieldset div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+fieldset div:last-child{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }

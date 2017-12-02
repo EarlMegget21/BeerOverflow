@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="/ProjetBiere/css/styles.css">
+        <!-- <link rel="stylesheet" type="text/css" href="/ProjetBiere/css/styles.css"> -->
         <style>
 
         </style>
@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <div id="1stHead">
+            <div id="head">
                 <div id="logo">
                     <img src="/ProjetBiere/logo.png" alt="Facebook" height="42" width="42">
                     <p>BeerOverflow</p>
@@ -19,7 +19,7 @@
                     <input type="hidden" name="action" value="searched"/>
                     <input type="hidden" name="controller" value="biere"/>
                     <input id="search_input" type="text" placeholder="Chercher sur BeerOverflow">
-                    <input id="search_button" type="button" value="Chercher">
+                    <input id="search_button" type="submit" value="Chercher">
                 </form>
                 <div id="connexion">
                     <?php
