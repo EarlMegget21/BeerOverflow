@@ -1,6 +1,8 @@
 <?php
 require_once File::build_path(array('model','ModelBiere.php')); // chargement du modèle
 require_once File::build_path(array('lib','Security.php'));
+require_once File::build_path(array('model','ModelBrasserie.php'));
+require_once File::build_path(array('model','ModelCategorie.php'));
 
 class ControllerBiere {
 
@@ -58,9 +60,10 @@ class ControllerBiere {
         require File::build_path(array('view','View.php'));
     }
 
-    public static function read() { //affiche les détailles de la bière et ses catégories
+    public static function read() { //affiche les détails de la bière et ses catégories
         $id=$_GET['id']; //on stock le GET pour aller plus vite
         $tab_c = ModelCateBiere::select(array('idBiere'=>$id)); //on selectionne toutes les catégories de cette bière dans un tableau
+        $tab_idCate = ModelCategorie::selectAll();   //On récup toutes les catégories de bière
         if(!$tv = ModelBiere::select(array('id'=>$id))){ //on selectionne la bière en question dans un tableau, si ça renvoie faux on affiche la page not found
             $pagetitle='Error!';
             $view='Error';
@@ -75,6 +78,7 @@ class ControllerBiere {
 
     public static function create() {
         if(Session::is_admin()){
+            $tab_id = ModelBrasserie::selectAll();
             $pagetitle='Create';
             $view='Update';
         }else{
@@ -110,6 +114,7 @@ class ControllerBiere {
 
     public static function update() {
         if(Session::is_admin()){
+            $tab_id = ModelBrasserie::selectAll();
             $pagetitle='Update';
             $view='Update';
             require File::build_path(array('view','View.php'));
@@ -124,7 +129,7 @@ class ControllerBiere {
                 'id'=>$_GET['id'], //lors de la modification d'une bière, on a besoin de l'id pour mettre dans le WHERE
                 'nom'=>$_GET['nom'],
                 'taux'=>$_GET['taux'],
-                'composition'=>$_GET['taux'],
+                'composition'=>$_GET['composition'],
                 'montant'=>$_GET['montant'],
                 'marque'=>$_GET['marque'],
                 'idBrasserie'=>$_GET['idBrasserie']);
@@ -135,6 +140,7 @@ class ControllerBiere {
             } else {
                 $id=$_GET['id']; //on stock le GET pour aller plus vite
                 $tab_c = ModelCateBiere::select(array('idBiere'=>$id)); //on selectionne toutes les caté de cette bière dans un tableau
+                $tab_idCate = ModelCategorie::selectAll();   //On récup toutes les catégories de bière
                 $tv = ModelBiere::select(array('id'=>$id)); //on selectionne la biere dans un tableau
                 $v=$tv[0]; //on récupère la biere grâce au tableau
                 $pagetitle='DetailBiere';
