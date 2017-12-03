@@ -22,18 +22,24 @@
                     <input id="search_button" type="submit" value="Chercher">
                 </form>
                 <div id="connexion">
+                	<div>
                     <?php
+                    	if(isset($_SESSION['login'])){
+                    		echo "<p>Bienvenue ".$_SESSION['login']."!</p>";
+                    	}
+                    	echo "</div><div>";
                         if(Session::is_admin()){
-                            echo '<div><a href="http://localhost/projetbiere/index.php?action=readAll&controller=client">Clients</a></div> ';
+                            echo '<a href="http://localhost/projetbiere/index.php?action=readAll&controller=client">Clients</a> ';
                         }
                         if(isset($_SESSION['login'])){
-                            echo '<div><a href="http://localhost/projetbiere/index.php?action=read&controller=client&login='.$_SESSION['login'].'">Mon Profil</a></div> ';
-                            echo '<div><a href="http://localhost/projetbiere/index.php?action=deconnect&controller=client">Deconnexion</a></div>';
+                            echo '<a href="http://localhost/projetbiere/index.php?action=read&controller=client&login='.$_SESSION['login'].'">Mon Profil</a> ';
+                            echo '<a href="http://localhost/projetbiere/index.php?action=deconnect&controller=client">Deconnexion</a>';
                         }else{
-                            echo '<div><a href="http://localhost/projetbiere/index.php?controller=client&action=connect">Connexion</a></div> ';
-                            echo '<div><a href="http://localhost/projetbiere/index.php?action=create&controller=client">S\'inscrire</a></div>';
+                            echo '<a href="http://localhost/projetbiere/index.php?controller=client&action=connect">Connexion</a> ';
+                            echo '<a href="http://localhost/projetbiere/index.php?action=create&controller=client">S\'inscrire</a>';
                         }
                     ?>
+                	</div>
                 </div>
             </div>
             <nav>
@@ -57,15 +63,21 @@
         ?>
         </div>
         <footer>
-            <div class="foot">
-                <img src="/ProjetBiere/facebook.ico" alt="Facebook" height="22" width="22">
-                <img src="/ProjetBiere/twitter.ico" alt="Twitter" height="22" width="22">
-                <img src="/ProjetBiere/instagram.png" alt="Instagram" height="22" width="22">
-                <img src="/ProjetBiere/linkedin.png" alt="LinkedIn" height="22" width="22">
-            </div>
-            <div class="foot" id="lastfoot">
-                <p>Copyright</p>
-            </div>
+        	<div>
+        		<p>Liens</p>
+        	</div>
+        	<div>
+	            <div class="foot">
+	                <img src="/ProjetBiere/facebook.ico" alt="Facebook" height="22" width="22">
+	                <img src="/ProjetBiere/twitter.ico" alt="Twitter" height="22" width="22">
+	                <img src="/ProjetBiere/instagram.png" alt="Instagram" height="22" width="22">
+	                <img src="/ProjetBiere/linkedin.png" alt="LinkedIn" height="22" width="22">
+	            </div>
+	            <div class="foot" id="lastfoot">
+	                <p>©2018 BeerOverflow</p>
+	                <p>Tout droit réservé</p>
+	            </div>
+	        </div>
         </footer>
     </body>
 </html>
