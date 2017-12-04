@@ -12,7 +12,7 @@
         <header>
             <div id="head">
                 <div id="logo">
-                    <img src="/ProjetBiere/logo.png" alt="Facebook" height="42" width="42">
+                    <img src="/ProjetBiere/img/logo.png" alt="Facebook" height="42" width="42">
                     <p>BeerOverflow</p>
                 </div>
                 <form id="chercher" method="get" action="../ProjetBiere/index.php">
@@ -67,13 +67,13 @@
         		<p>Liens</p>
         	</div>
         	<div>
-	            <div class="foot">
-	                <img src="/ProjetBiere/facebook.ico" alt="Facebook" height="22" width="22">
-	                <img src="/ProjetBiere/twitter.ico" alt="Twitter" height="22" width="22">
-	                <img src="/ProjetBiere/instagram.png" alt="Instagram" height="22" width="22">
-	                <img src="/ProjetBiere/linkedin.png" alt="LinkedIn" height="22" width="22">
+	            <div id="foot">
+	                <img src="/ProjetBiere/img/facebook.ico" alt="Facebook" height="22" width="22">
+	                <img src="/ProjetBiere/img/twitter.ico" alt="Twitter" height="22" width="22">
+	                <img src="/ProjetBiere/img/instagram.png" alt="Instagram" height="22" width="22">
+	                <img src="/ProjetBiere/img/linkedin.png" alt="LinkedIn" height="22" width="22">
 	            </div>
-	            <div class="foot" id="lastfoot">
+	            <div id="lastfoot">
 	                <p>©2018 BeerOverflow</p>
 	                <p>Tout droit réservé</p>
 	            </div>

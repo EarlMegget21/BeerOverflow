@@ -1,4 +1,4 @@
-        	body {
+body {
 	background-color: white;
 	width: 900px;
 	margin:auto;
@@ -50,9 +50,10 @@ footer>div:last-child{
 	display:flex;
 	justify-content: space-between;
 	padding: 0 5px 0 5px;
+	border-top:1px solid white;
 }
 
-.foot{
+#foot{
 	display: flex;
 	align-items: center;
 }
@@ -61,13 +62,17 @@ footer > div{
 	flex-grow: 1;
 }
 
-#lastfoot{
-	justify-content: flex-end;
+#lastfoot>p{
+	margin: 5px;
+}
+
+#lastfoot>p:first-child{
+	font-size: 10px;
 }
 
 @font-face {
 	font-family: "FontLogo";
-	src: url('/ProjetBiere/FontLogo.otf');
+	src: url('/ProjetBiere/font/FontLogo.otf');
 }
 
 #head{
@@ -129,13 +134,14 @@ footer > div{
 #search_button{
 	border: 0px;
 	background-color: white;
+	background-image: url('/ProjetBiere/img/loupe.png');
 }
 
 
 #accueil {
 	margin-top: 5px;
 	margin-bottom: 5px;
-	background-image: url('/ProjetBiere/wallpaper.jpg');
+	background-image: url('/ProjetBiere/img/wallpaper.jpg');
 	background-repeat:round;
 	height:600px;
 	color: #7c4600;
