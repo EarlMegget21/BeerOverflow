@@ -1,7 +1,5 @@
 <form method="get" action="../ProjetBiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
-  <fieldset>
-    <legend>Formulaire</legend>
-    <p>
+    <h3>Formulaire</h3>
       <input type='hidden' name='action' value='<?php if($_GET['action']=="update"){echo "updated";}else{echo "created";}?>'> <!-- ajoute un input caché qui défini la variable GET action -->
       <input type='hidden' name='controller' value='Commande'>
 
@@ -18,9 +16,5 @@
       <label for="date_id">Date</label> :
       <input type="text" <?php if($_GET['action']=="update"){echo "value=\"". $v->get("date")."\"";}else{echo "placeholder=\"ex:10/04/1995\"";} ?> name="date" id="date_id" required/>
 
-    </p>
-    <p>
-      <input type="submit" value="Submit" />
-    </p>
-  </fieldset> 
+      <input type="submit" class="submit" value="Submit" />
 </form>
