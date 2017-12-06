@@ -109,7 +109,7 @@ class ControllerClient
                 $v=$tv[0];
                 $pagetitle='DetailClient';
                 $view='Updated';
-                require File::build_path(array('View','View.php'));
+                require File::build_path(array('view','View.php'));
             }
         } else {
             ControllerBiere::accueil();
@@ -133,7 +133,7 @@ class ControllerClient
     public static function connect(){
         $pagetitle = 'Connexion';
         $view = 'Connect';
-        require File::build_path(array('View', 'View.php'));
+        require File::build_path(array('view', 'View.php'));
     }
 
     public static function connected() {
