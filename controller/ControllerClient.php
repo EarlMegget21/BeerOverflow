@@ -172,11 +172,14 @@ class ControllerClient
     }
 
     public static function initPanier(){
-        if (!isset($_SESSION['Basket'])) {
+        if (!isset($_SESSION['Basket'])) {//en caché => 	idBiere 	idCommande 	quantite
             $_SESSION['Basket'] = array(
-                "NomProd" => array("Marque", "Qte", "Prix"),
-                "Dildo" => array("Durex", "3", "69€")
+                "NomProd" => array("Marque", "Qte", "Prix", "idBiere"),
+                
             );
+            $pagetitle = 'showBasket';
+            $view = 'showBasket';
+            require File::build_path(array('view', 'View.php'));
         }
     }
 
@@ -187,13 +190,21 @@ class ControllerClient
         require File::build_path(array('view', 'View.php'));
     }
 
-    public static function addBasket($NomProd, $Marque, $Qte, $PrixBase){
+    public static function addBasket(){
         ControllerClient::initPanier();
+        $NomProd=$_GET['nom'];
+        $Marque=$_GET['marque'];
+        $Qte=1;
+        $PrixBase=$_GET['montant'];
+        $idBiere=$_GET['id'];
         if (isset($_SESSION['Basket'][$NomProd])) {
             $_SESSION['Basket'][$NomProd][1] += $Qte;
             $_SESSION['Basket'][$NomProd][2] += $Qte * $PrixBase;
         } else {
-            $_SESSION['Basket'][$NomProd] = array($Marque, $Qte, $PrixBase * $Qte);
+            $_SESSION['Basket'][$NomProd] = array($Marque, $Qte, $PrixBase * $Qte, $idBiere);
         }
+        $pagetitle = 'showBasket';
+        $view = 'showBasket';
+        require File::build_path(array('view', 'View.php'));
     }
 }
