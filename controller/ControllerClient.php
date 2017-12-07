@@ -175,7 +175,7 @@ class ControllerClient
         if (!isset($_SESSION['Basket'])) {//en caché => 	idBiere 	idCommande 	quantite
             $_SESSION['Basket'] = array(
                 "NomProd" => array("Marque", "Qte", "Prix", "idBiere"),
-                
+
             );
             $pagetitle = 'showBasket';
             $view = 'showBasket';

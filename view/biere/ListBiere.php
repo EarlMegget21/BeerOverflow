@@ -10,10 +10,10 @@ foreach ($tab_v as $v) { // Display of the beers stored in $tab_v
         <form type='GET' action='index.php'>
             <input type=\"hidden\" name=\"action\" value=\"addBasket\"/>
             <input type=\"hidden\" name=\"controller\" value=\"Client\"/>    
-            <input type='hidden' name='nom' value='".$v->get("nom")."'>
-            <input type='hidden' name='marque' value='".$v->get("marque")."'> 
-            <input type='hidden' name='montant' value='".$v->get("montant")."'>
-            <input type='hidden' name='id' value='".$v->get("id")."'>
+            <input type='hidden' name='nom' value='" . $v->get("nom") . "'>
+            <input type='hidden' name='marque' value='" . $v->get("marque") . "'> 
+            <input type='hidden' name='montant' value='" . $v->get("montant") . "'>
+            <input type='hidden' name='id' value='" . $v->get("id") . "'>
             <input type='submit' value='Ajouter au panier'>      
         </form> ";
     if (Session::is_admin()) {

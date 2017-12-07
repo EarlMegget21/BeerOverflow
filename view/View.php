@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <!-- <link rel="stylesheet" type="text/css" href="/ProjetBiere/css/styles.css"> -->
+        <link rel="stylesheet" type="text/css" href="/projetbiere/css/styles.css">
         <style>
 
         </style>
@@ -13,8 +13,9 @@
             <div id="head">
                 <div id="logo">
                     <img src="/ProjetBiere/img/logo.png" alt="Facebook" height="42" width="42">
-                    <p>BeerOverflow</p>
+
                 </div>
+                <div class="logo"><p>BeerOverflow</p></div>
                 <form id="chercher" method="get" action="../ProjetBiere/index.php">
                     <input type="hidden" name="action" value="searched"/>
                     <input type="hidden" name="controller" value="biere"/>
