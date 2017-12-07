@@ -127,13 +127,15 @@ footer a:hover {
 
 #CB img {
     margin: 10px;
+    height: 42px;
+    width:;
 }
 
 #lastfoot > p {
     margin: 5px;
 }
 
-#lastfoot > p:first-child {
+#lastfoot >32px p:first-child {
     font-size: 10px;
 }
 
@@ -333,7 +335,7 @@ label {
 }
 
 #addbasket{
-    display: ruby;
+    display: ruby;/*Colle les boutons au text*/
 }
 fieldset div {
     display: flex;
