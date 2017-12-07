@@ -7,7 +7,7 @@ foreach ($tab_v as $v) { // Display of the beers stored in $tab_v
         . " "
         . htmlspecialchars($v->get("nom"))
         . "</a> 
-        <form type='GET' action='index.php'>
+        <form type='GET' action='index.php' id='addbasket'>
             <input type=\"hidden\" name=\"action\" value=\"addBasket\"/>
             <input type=\"hidden\" name=\"controller\" value=\"Client\"/>    
             <input type='hidden' name='nom' value='" . $v->get("nom") . "'>

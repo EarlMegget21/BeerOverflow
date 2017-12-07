@@ -219,7 +219,6 @@ input {
 
 header form {
     background: linear-gradient(white 20%, #BBBBBB, white 70%);
-    width: 195px;
 }
 
 header {
@@ -333,6 +332,9 @@ label {
     justify-content: flex-end;
 }
 
+#addbasket{
+    display: ruby;
+}
 fieldset div {
     display: flex;
     flex-direction: column;
