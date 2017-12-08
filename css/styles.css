@@ -331,8 +331,8 @@ label {
     justify-content: flex-end;
 }
 
-#addbasket{
-    display: ruby;/*Colle les boutons au text*/
+.addbasket{
+    display: ruby;
 }
 fieldset div {
     display: flex;

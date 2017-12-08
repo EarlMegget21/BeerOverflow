@@ -1,40 +1,39 @@
 <?php
 echo "Bière "
-    . htmlspecialchars($v->get("marque"))
-    . " "
-    . htmlspecialchars($v->get("nom"))
-    . ", idBrasserie "
-    . htmlspecialchars($v->get("idBrasserie"))
-    . ", taux "
-    . htmlspecialchars($v->get("taux"))
-    . "%, composition :"
-    . htmlspecialchars($v->get("composition"))
-    . ", montant "
-    . htmlspecialchars($v->get("montant")) . "€";
-if (Session::is_admin()) {
-    echo "<a href=http://localhost/projetbiere/index.php?action=update&controller=biere&id="
+    .htmlspecialchars($v->get("marque"))
+    ." "
+    .htmlspecialchars($v->get("nom"))
+    .", idBrasserie "
+    .htmlspecialchars($v->get("idBrasserie"))
+    .", taux "
+    .htmlspecialchars($v->get("taux"))
+    ."%, composition :"
+    .htmlspecialchars($v->get("composition"))
+    .", montant "
+    .htmlspecialchars($v->get("montant"))."€";
+if(Session::is_admin()) {
+    echo "<a href='http://localhost/projetbiere/index.php?action=update&controller=biere&id="
         . rawurlencode($v->get("id"))
-        . ">Modifier Bière</a> <a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id="
+        . "'>Modifier Bière</a> <a href='http://localhost/projetbiere/index.php?action=delete&controller=biere&id="
         . rawurlencode($v->get("id"))
-        . ">Supprimer Bière</a>";
+        . "'>Supprimer Bière</a>";
 }
 
 
 if ($tab_c) { //si le tableau existe(il y a des catégories pour cette bière, alors on parcours le tableau en affichant chaque catégorie et un lien pour la supprimer
     echo "<h3>Catégories</h3>";
     foreach ($tab_c as $c) {    //Permet d'afficher le numéro et le nom de chaque catégorie
-        echo "- " . $c->get("idCategorie") . " ";
-        foreach ($tab_idCate as $idCate) {
-            if ($idCate->get('id') == $c->get("idCategorie")) {
-                echo "(" . $idCate->get('nom') . ")";
+        foreach($tab_idCate as $idCate){
+            if($idCate->get('id') == $c->get("idCategorie")){
+                echo $idCate->get('nom');
             }
         }
-        if (Session::is_admin()) {
-            echo "<a href=http://localhost/projetbiere/index.php?action=delete&controller=catebiere&idCategorie="
+        if(Session::is_admin()) {
+            echo "<a href='http://localhost/projetbiere/index.php?action=delete&controller=catebiere&idCategorie="
                 . $c->get("idCategorie")
                 . "&idBiere="
                 . htmlspecialchars($v->get("id"))
-                . "> Supprimer Categorie</a>";
+                . "'> Supprimer Categorie</a>";
         }
         echo "<br>";
     }
@@ -59,11 +58,11 @@ if (Session::is_admin()) {
         }
         if (!$trouve && !$premier) {
             echo "<select name = 'idCategorie'>"
-                . "<option value=\"" . $cate->get('id') . "\">" . $cate->get('id') . " (" . $cate->get('nom') . ")</option>";
+            ."<option value=\"" . $cate->get('id') . "\">" . $cate->get('nom') . "</option>";
             $premier = TRUE;
-        } else if (!$trouve && $premier) {
-            echo "<option value=\"" . $cate->get('id') . "\">" . $cate->get('id') . " (" . $cate->get('nom') . ")</option>";
-        } else {
+        }else if(!$trouve && $premier) {
+            echo "<option value=\"" . $cate->get('id') . "\">" . $cate->get('nom') . "</option>";
+        }else {
             $trouve = FALSE;
         }
     }
@@ -72,7 +71,7 @@ if (Session::is_admin()) {
             "</select>"
             . "<input type = 'submit' value = 'Ajouter Categorie' />";
     }
+    echo "</form >";
 }
-echo "</form >";
 
 ?>
