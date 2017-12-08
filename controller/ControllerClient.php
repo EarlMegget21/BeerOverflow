@@ -203,8 +203,20 @@ class ControllerClient
         } else {
             $_SESSION['Basket'][$NomProd] = array($Marque, $Qte, $PrixBase * $Qte, $idBiere);
         }
+        ControllerBiere::readAll(1);
+
+    }
+
+    public static function decrease(){
+        $id=$_GET['nom'];
+        if ($_SESSION['Basket'][$id][1]==1){
+            unset($_SESSION['Basket'][$id]);
+        }else{
+            $_SESSION['Basket'][$id][1]-=1;
+        }
         $pagetitle = 'showBasket';
         $view = 'showBasket';
+        ControllerClient::initPanier();
         require File::build_path(array('view', 'View.php'));
     }
 }

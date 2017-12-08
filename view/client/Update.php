@@ -1,4 +1,4 @@
-<form method="get" id="signup" action="../ProjetBiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
+<form method="get" id="signup" action="../projetbiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
   <h3>
     <?php
         if($_GET['action']=="update") {

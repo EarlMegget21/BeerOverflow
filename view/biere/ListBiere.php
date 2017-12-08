@@ -1,4 +1,7 @@
 <?php
+if(isset($ajoutPanier)){
+    echo "<h2>Bière ajouté dans le panier !</h2><br>";
+}
 foreach ($tab_v as $v) { // Display of the beers stored in $tab_v
     echo "- <a href=http://localhost/projetbiere/index.php?action=read&controller=biere&id="
         . rawurlencode($v->get("id"))

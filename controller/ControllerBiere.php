@@ -52,7 +52,7 @@ class ControllerBiere {
         }
     }
 
-    public static function readAll() {
+    public static function readAll($ajoutPanier = NULL) {
         $tab_v = ModelBiere::selectAll();     //appel au modèle pour gerer la BD
         //"redirige" vers la vue (pas require_once car on peut appeler plusieur fois dans le code pour 'copier' le html à la manière d'un include en C
         $pagetitle='ListBiere';

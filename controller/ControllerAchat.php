@@ -66,7 +66,7 @@ class ControllerAchat
             //on incrémente
             $donnees['NBcommandes'] += 1;
             //on insert une commande
-            Model::$pdo->query("INSERT INTO Commande VALUES (" . $donnees['NBcommandes'] . ",0,'What','2017-12-18')");
+            Model::$pdo->query("INSERT INTO Commande VALUES (" . $donnees['NBcommandes'] . ",0,'".$_SESSION['login']."','2017-12-18')");
             unset($_SESSION['Basket']['NomProd']);
             foreach ($_SESSION['Basket'] as $key) {
                 //on insert un achat... ça y est c'est payé !

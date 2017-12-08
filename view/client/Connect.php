@@ -1,4 +1,4 @@
-<form method="get" id="signin" action="../ProjetBiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
+<form method="get" id="signin" action="../projetbiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
   <h3>Connexion:</h3>
     <input type='hidden' name='action' value='connected'>
     <input type='hidden' name='controller' value='client'>
