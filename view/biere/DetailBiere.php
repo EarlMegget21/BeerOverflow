@@ -23,10 +23,9 @@ if(Session::is_admin()) {
 if($tab_c) { //si le tableau existe(il y a des catégories pour cette bière, alors on parcours le tableau en affichant chaque catégorie et un lien pour la supprimer
     echo "<h3>Catégories</h3>";
     foreach ($tab_c as $c) {    //Permet d'afficher le numéro et le nom de chaque catégorie
-        echo "- ".$c->get("idCategorie")." ";
         foreach($tab_idCate as $idCate){
             if($idCate->get('id') == $c->get("idCategorie")){
-                echo "(".$idCate->get('nom').")";
+                echo $idCate->get('nom');
             }
         }
         if(Session::is_admin()) {
@@ -59,10 +58,10 @@ if(Session::is_admin()) {
         }
         if(!$trouve && !$premier){
             echo "<select name = 'idCategorie'>"
-            ."<option value=\"" . $cate->get('id') . "\">" . $cate->get('id') . " (" . $cate->get('nom') . ")</option>";
+            ."<option value=\"" . $cate->get('id') . "\">" . $cate->get('nom') . "</option>";
             $premier = TRUE;
         }else if(!$trouve && $premier) {
-            echo "<option value=\"" . $cate->get('id') . "\">" . $cate->get('id') . " (" . $cate->get('nom') . ")</option>";
+            echo "<option value=\"" . $cate->get('id') . "\">" . $cate->get('nom') . "</option>";
         }else {
             $trouve = FALSE;
         }

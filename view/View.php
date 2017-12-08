@@ -370,7 +370,7 @@ fieldset div:last-child {
                 	<div>
                     <?php
                     	if(isset($_SESSION['login'])){
-                    		echo "<p>Bienvenue ".$_SESSION['login']."!</p>";
+                    		echo "<p>Bonjour ".$_SESSION['login']." !</p>";
                     	}
                     	echo "</div><div>";
                         if(Session::is_admin()){

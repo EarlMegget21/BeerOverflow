@@ -14,18 +14,18 @@
             <label for="nom_id">Nom</label> :
             <input type="text" <?php if($_GET['action']=="update"){echo "value=\"".$v->get("nom")."\"";}else{echo "placeholder=\"ex:Soleil\"";} ?> name="nom" id="nom_id" required/>
 
-            <label>ID de la Brasserie</label> :
+            <label>Nom de la Brasserie</label> :
             <select name = "idBrasserie">
                 <?php
                 foreach($tab_id as $t) {
                     if ($_GET['action'] == "update") {
                         if ($t->get('id') == $v->get('idBrasserie')) {
-                            echo "<option selected='selected' value=\"" . $t->get('id') . "\">" . $t->get('id') . " (" . $t->get('nom') . ")</option>";
+                            echo "<option selected='selected' value=\"" . $t->get('id') . "\">" . $t->get('nom') . "</option>";
                         } else {
-                            echo "<option value=\"" . $t->get('id') . "\">" . $t->get('id') . " (" . $t->get('nom') . ")</option>";
+                            echo "<option value=\"" . $t->get('id') . "\">" . $t->get('nom') . "</option>";
                         }
                     } else{
-                        echo "<option value=\"" . $t->get('id') . "\">" . $t->get('id') . " (" . $t->get('nom') . ")</option>";
+                        echo "<option value=\"" . $t->get('id') . "\">" . $t->get('nom') . "</option>";
                     }
                 }
                 ?>
