@@ -170,23 +170,20 @@ footer a:hover {
 #logo > img {
 
     margin-left: 10px;
-    margin-right: 10 p #logo > px;
+    margin-right: 10px;
 }
 
-.logo {
+#logo{
+    display: flex;
+}
+
+#logo p {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
     margin-right: 10px;
     font-family: "FontLogo";
     font-size: 40px;
-    display: flex;
-}
-
-#logo {
-    font-family: "FontLogo";
-    font-size: 40px;
-    display: flex;
 }
 
 #chercher {
