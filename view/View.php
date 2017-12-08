@@ -145,7 +145,7 @@ footer a:hover {
 
 @font-face {
     font-family: "FontLogo";
-    src: url('/ProjetBiere/font/FontLogo.otf');
+    src: url('/projetbiere/font/FontLogo.otf');
 }
 
 #head {
@@ -283,7 +283,7 @@ label {
 }
 
 #accueil {
-    background-image: url('/ProjetBiere/img/wallpaper.jpg');
+    background-image: url('/projetbiere/img/wallpaper.jpg');
     background-repeat: round;
     height: 600px;
     color: #7c4600;
@@ -355,14 +355,14 @@ fieldset div:last-child {
         <header>
             <div id="head">
                 <div id="logo">
-                    <img src="/ProjetBiere/img/logo.png" alt="Facebook" height="42" width="42">
+                    <img src="/projetbiere/img/logo.png" alt="Facebook" height="42" width="42">
                     <p>BeerOverflow</p>
                 </div>
-                <form id="chercher" method="get" action="../ProjetBiere/index.php">
+                <form id="chercher" method="get" action="../projetbiere/index.php">
                     <input type="hidden" name="action" value="searched"/>
                     <input type="hidden" name="controller" value="biere"/>
                     <input id="search_input" type="text" placeholder="Chercher sur BeerOverflow">
-                    <input id="search_button" type="image" value="Chercher" src="/ProjetBiere/img/loupe.png" height="15px" width="15px">
+                    <input id="search_button" type="image" value="Chercher" src="/projetbiere/img/loupe.png" height="15px" width="15px">
                 </form>
                 <div id="connexion">
                 	<div>
@@ -436,19 +436,19 @@ fieldset div:last-child {
         		</div>
         	</div>
         	<div id="CB">
-        		<img src="/ProjetBiere/img/visa.png" alt="Visa" height="12" width="22">
-	            <img src="/ProjetBiere/img/mastercard.jpeg" alt="MasterCard" height="22" width="32">
-	            <img src="/ProjetBiere/img/maestro.png" alt="Maestro" height="39" width="32">
-	            <img src="/ProjetBiere/img/american-express.png" alt="American-express" height="24" width="32">
-	            <img src="/ProjetBiere/img/paypal.jpg" alt="Paypal" height="23" width="32">
+        		<img src="/projetbiere/img/visa.png" alt="Visa" height="12" width="22">
+	            <img src="/projetbiere/img/mastercard.jpeg" alt="MasterCard" height="22" width="32">
+	            <img src="/projetbiere/img/maestro.png" alt="Maestro" height="39" width="32">
+	            <img src="/projetbiere/img/american-express.png" alt="American-express" height="24" width="32">
+	            <img src="/projetbiere/img/paypal.jpg" alt="Paypal" height="23" width="32">
         	</div>
         	<div>
 	            <div id="foot">
 	            	<p>Suivez nous :</p>
-	                <a href="https://www.facebook.com/"><img src="/ProjetBiere/img/facebook.ico" alt="Facebook" height="22" width="22"></a>
-	                <a href="https://www.twitter.com/"><img src="/ProjetBiere/img/twitter.ico" alt="Twitter" height="22" width="22"></a>
-	                <a href="https://www.instagram.com/"><img src="/ProjetBiere/img/instagram.png" alt="Instagram" height="22" width="22"></a>
-	                <a href="https://www.linkedin.com/"><img src="/ProjetBiere/img/linkedin.png" alt="LinkedIn" height="22" width="22"></a>
+	                <a href="https://www.facebook.com/"><img src="/projetbiere/img/facebook.ico" alt="Facebook" height="22" width="22"></a>
+	                <a href="https://www.twitter.com/"><img src="/projetbiere/img/twitter.ico" alt="Twitter" height="22" width="22"></a>
+	                <a href="https://www.instagram.com/"><img src="/projetbiere/img/instagram.png" alt="Instagram" height="22" width="22"></a>
+	                <a href="https://www.linkedin.com/"><img src="/projetbiere/img/linkedin.png" alt="LinkedIn" height="22" width="22"></a>
 	            </div>
 	            <div id="lastfoot">
 	                <p>©2018 BeerOverflow</p>
