@@ -20,11 +20,11 @@
             <label for="composition_id">Composition</label> :
             <input type="text" placeholder="ex:houblon" name="composition" id="composition_id"/>
 
-            <label for="montant_id">Prix Min</label> :
-            <input type="number" value="0" name="montantMin" id="montant_id"/>
+            <label for="montantMinForm_id">Prix Min</label> :
+            <input type="number" value="0" name="montantMin" id="montantMinForm_id"/>
 
-            <label for="montant_id">Prix Max</label> :
-            <input type="number" value="100" name="montantMax" id="montant_id"/>
+            <label for="montantMaxForm_id">Prix Max</label> :
+            <input type="number" value="100" name="montantMax" id="montantMaxForm_id"/>
 
         </p>
         <p>

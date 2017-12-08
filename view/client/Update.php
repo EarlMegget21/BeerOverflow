@@ -49,5 +49,6 @@
           echo " name='isAdmin' id='admin_id'/>";
       }
   ?>
-  <input type="submit" class="submit" value= <?php if($_GET['action']=="update"){echo "\"Valider les modifications\"";}else{echo "\"Valider l'inscription\"";}?>
+
+  <input type="submit" class="submit" value= <?php if($_GET['action']=="update"){echo "\"Valider les modifications\"";}else{echo "\"Valider l'inscription\"";}?>>
 </form>

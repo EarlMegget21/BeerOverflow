@@ -12,11 +12,11 @@ echo "Bière "
     .", montant "
     .htmlspecialchars($v->get("montant"))."€";
 if(Session::is_admin()) {
-    echo "<a href=http://localhost/projetbiere/index.php?action=update&controller=biere&id="
+    echo "<a href='http://localhost/projetbiere/index.php?action=update&controller=biere&id="
         . rawurlencode($v->get("id"))
-        . ">Modifier Bière</a> <a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id="
+        . "'>Modifier Bière</a> <a href='http://localhost/projetbiere/index.php?action=delete&controller=biere&id="
         . rawurlencode($v->get("id"))
-        . ">Supprimer Bière</a>";
+        . "'>Supprimer Bière</a>";
 }
 
 
@@ -30,11 +30,11 @@ if($tab_c) { //si le tableau existe(il y a des catégories pour cette bière, al
             }
         }
         if(Session::is_admin()) {
-            echo "<a href=http://localhost/projetbiere/index.php?action=delete&controller=catebiere&idCategorie="
+            echo "<a href='http://localhost/projetbiere/index.php?action=delete&controller=catebiere&idCategorie="
                 . $c->get("idCategorie")
                 . "&idBiere="
                 . htmlspecialchars($v->get("id"))
-                . "> Supprimer Categorie</a>";
+                . "'> Supprimer Categorie</a>";
         }
         echo "<br>";
     }
@@ -72,7 +72,7 @@ if(Session::is_admin()) {
             "</select>"
             ."<input type = 'submit' value = 'Ajouter Categorie' />";
     }
+    echo "</form >";
 }
-echo "</form >";
 
 ?>

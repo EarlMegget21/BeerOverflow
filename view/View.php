@@ -361,8 +361,10 @@ fieldset div:last-child {
                 <form id="chercher" method="get" action="../projetbiere/index.php">
                     <input type="hidden" name="action" value="searched"/>
                     <input type="hidden" name="controller" value="biere"/>
-                    <input id="search_input" type="text" placeholder="Chercher sur BeerOverflow">
-                    <input id="search_button" type="image" value="Chercher" src="/projetbiere/img/loupe.png" height="15px" width="15px">
+                    <input type="hidden" value="0" name="montantMin" id="montantMin_id"/>
+                    <input type="hidden" value="100" name="montantMax" id="montantMax_id"/>
+                    <input id="search_input" type="text" name="marque" placeholder="Chercher une Bière">
+                    <input id="search_button" type="image" alt="Submit" src="/ProjetBiere/img/loupe.png" height="15" width="15">
                 </form>
                 <div id="connexion">
                 	<div>
@@ -410,29 +412,29 @@ fieldset div:last-child {
         	<div>
         		<div>
         			<h4>Questions?</h4>
-        			<a href="http://">Aide</a>
-        			<a href="http://">Suivre ma commande</a>
-        			<a href="http://">Livraison</a>
-        			<a href="http://">FAQ</a>
+        			<a href="">Aide</a>
+        			<a href="">Suivre ma commande</a>
+        			<a href="">Livraison</a>
+        			<a href="">FAQ</a>
         		</div>
         		<div>
         			<h4>Quoi trouver?</h4>
-        			<a href="http://">Bières</a>
-        			<a href="http://">Brasseries</a>
-        			<a href="http://">Autres</a>
+        			<a href="">Bières</a>
+        			<a href="">Brasseries</a>
+        			<a href="">Autres</a>
         		</div>
         		<div>
         			<h4>Plus...</h4>
-        			<a href="http://">A propos</a>
-        			<a href="http://">Nos engagements</a>
-        			<a href="http://">Charte légale</a>
+        			<a href="">A propos</a>
+        			<a href="">Nos engagements</a>
+        			<a href="">Charte légale</a>
         		</div>
         		<div>
         			<h4>Nous rejoindre</h4>
-        			<a href="http://">Newsletter</a>
-        			<a href="http://">Carrière</a>
-        			<a href="http://">Investir</a>
-        			<a href="http://">Nous contacter</a>
+        			<a href="">Newsletter</a>
+        			<a href="">Carrière</a>
+        			<a href="">Investir</a>
+        			<a href="">Nous contacter</a>
         		</div>
         	</div>
         	<div id="CB">

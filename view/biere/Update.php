@@ -14,7 +14,7 @@
             <label for="nom_id">Nom</label> :
             <input type="text" <?php if($_GET['action']=="update"){echo "value=\"".$v->get("nom")."\"";}else{echo "placeholder=\"ex:Soleil\"";} ?> name="nom" id="nom_id" required/>
 
-            <label for="idBrasserie_id">ID de la Brasserie</label> :
+            <label>ID de la Brasserie</label> :
             <select name = "idBrasserie">
                 <?php
                 foreach($tab_id as $t) {
