@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="/projetbiere/css/styles.css">
+        <!-- <link rel="stylesheet" type="text/css" href="/projetbiere/css/styles.css"> -->
         <style>
 body {
     width: 900px;
@@ -30,7 +30,6 @@ a {
 }
 
 a:hover {
-    font-weight: 500;
     color: #ffc986;
 }
 
@@ -42,6 +41,7 @@ nav a:hover {
 nav {
     display: flex;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 nav > a {
@@ -220,6 +220,16 @@ input {
     text-align: center;
 }
 
+input:invalid+span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  content: '✓';
+  padding-left: 5px;
+}
+
 header form {
     background: linear-gradient(white 20%, #BBBBBB, white 70%);
 }
@@ -348,6 +358,83 @@ fieldset div:last-child {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+#listbiere{
+	display: flex;
+	flex-direction: column;
+}
+
+
+#listbiere>div{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#listbiere>div:last-child a{
+	border: 1px solid grey;
+	margin: 20px;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#listbiere>div:last-child a:hover{
+	margin: 19px;
+	width: 47px;
+	height: 47px;
+	background-color: #d0d0d0;
+}
+
+#listbiere>div:last-child a:hover img{
+	width: 42px;
+	height: 42px;
+}
+
+#listbiere>div>div{
+	flex-grow: 1;
+	display: flex;
+	padding: 20px 0 0 0;
+	justify-content: center;
+}
+
+#listbiere>div>div a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 15px;
+}
+
+#listbiere>div>div>div:last-child a img{
+	margin: 5px;
+}
+
+#listbiere>div>div>div:last-child a:hover img{
+	margin: 4px;
+	height: 42px;
+	width: 42px;
+}
+
+#listbiere>div>div:hover{
+	background-color:#ffc986;
+}
+
+#listbiere>div>div a:hover{
+	color:#7c4600;
+}
+
+#detailbiere div:first-child{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#detailbiere input, #detailbiere select{
+	margin-bottom: 20px;
+}
         </style>
         <title><?php echo $pagetitle; ?></title>
     </head>
@@ -392,7 +479,6 @@ fieldset div:last-child {
                 <a href="http://localhost/projetbiere/index.php?action=main&controller=biere">Bieres</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=brasserie">Brasseries</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=categorie">Categories</a>
-                <a href="http://localhost/projetbiere/index.php?action=showBasket&controller=client">Panier</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=categorie">A Propos</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=categorie">FAQ</a>
                 <?php

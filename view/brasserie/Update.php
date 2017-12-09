@@ -7,11 +7,12 @@
 
         <?php if($_GET['action']=="update"){$tv=ModelBrasserie::select(array('id'=>$_GET['id'])); $v=$tv[0];} ?>
 
-        <label for="nom_id">Nom</label> :
+        <label for="nom_id">Nom *</label> :
         <input type="text" <?php if($_GET['action']=="update"){echo "value=\"".$v->get("nom")."\"";}else{echo "placeholder=\"ex:Vanuxeem\"";} ?> name="nom" id="nom_id" required/>
 
-        <label for="adresse_id">Adresse</label> :
+        <label for="adresse_id">Pays *</label> :
         <input type="text" <?php if($_GET['action']=="update"){echo "value=\"".$v->get("adresse")."\"";}else{echo "placeholder=\"ex:Belgique\"";} ?> name="adresse" id="adresse_id" required/>
 
       <input type="submit" class="submit" value="Submit" />
+      <p>Les champs marqués d'une * sont obligatoires</p>
 </form>

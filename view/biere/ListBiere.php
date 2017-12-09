@@ -1,29 +1,24 @@
-<?php
-foreach ($tab_v as $v) { // Display of the beers stored in $tab_v
-    echo "- <a href=\"http://localhost/projetbiere/index.php?action=read&controller=biere&id="
-        . rawurlencode($v->get("id"))
-        . "\">"
-        . htmlspecialchars($v->get("marque"))
-        . " "
-        . htmlspecialchars($v->get("nom"))
-        . "</a> 
-        <form method='get' action='index.php' class='addbasket'>
-            <input type=\"hidden\" name=\"action\" value=\"addBasket\"/>
-            <input type=\"hidden\" name=\"controller\" value=\"Client\"/>    
-            <input type='hidden' name='nom' value='" . $v->get("nom") . "'>
-            <input type='hidden' name='marque' value='" . $v->get("marque") . "'> 
-            <input type='hidden' name='montant' value='" . $v->get("montant") . "'>
-            <input type='hidden' name='id' value='" . $v->get("id") . "'>
-            <input type='submit' value='Ajouter au panier'>      
-        </form> ";
-    if (Session::is_admin()) {
-        echo "<a href=\"http://localhost/projetbiere/index.php?action=delete&controller=biere&id="
-            . rawurlencode($v->get("id"))
-            . "\">Supprimer Bière</a>";
-    }
-    echo "<br>";
-}
-if (Session::is_admin()) {
-    echo "<a href=\"http://localhost/projetbiere/index.php?action=create&controller=Biere\">Créer Bière</a>";
-}
-?>
+<div id="listbiere">
+    <div>
+    <?php
+        foreach ($tab_v as $v) { // Display of the beers stored in $tab_v
+            echo "<div><a href=http://localhost/projetbiere/index.php?action=read&controller=biere&id="
+                . rawurlencode($v->get("id"))
+                . "><img src='/projetbiere/img/biere/".$v->get("image")."' alt='(Photo ".$v->get("nom")." ' height='250' width='200'><p>"
+                . htmlspecialchars($v->get("marque"))
+                . " "
+                . htmlspecialchars($v->get("nom"))
+                . "</p></a>";
+            if (Session::is_admin()) {
+                echo "<div><a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id="
+                    . rawurlencode($v->get("id"))
+                    . "><img src='/projetbiere/img/croix.png' alt='Supprimer Biere ' height='40' width='40'></a></div>";
+            }
+            echo "</div>";
+        }
+        if (Session::is_admin()) {
+            echo "</div><div><a href='http://localhost/projetbiere/index.php?action=create&controller=Biere'><img src='/projetbiere/img/plus.png' alt='Creer Biere ' height='40' width='40'></a>";
+        }
+    ?>
+    </div>
+</div>

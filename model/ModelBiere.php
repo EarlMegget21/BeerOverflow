@@ -42,13 +42,15 @@ class ModelBiere extends Model
      */
     private $montant;
 
+    private $image;
+
 
     protected static $object='biere';
     protected static $primary='id';
 
-    public function __construct($id=NULL, $nom=NULL, $marque=NULL, $idBrasserie=NULL, $taux=NULL, $composition=NULL, $montant=NULL)
+    public function __construct($id=NULL, $nom=NULL, $marque=NULL, $idBrasserie=NULL, $taux=NULL, $composition=NULL, $montant=NULL, $image=NULL)
     {
-        if (!is_null($id) && !is_null($nom) && !is_null($marque) && !is_null($idBrasserie) && !is_null($taux) && !is_null($composition) && !is_null($montant)) {
+        if (!is_null($id) && !is_null($nom) && !is_null($marque) && !is_null($idBrasserie) && !is_null($taux) && !is_null($composition) && !is_null($montant) && !is_null($image)) {
             $this->id = $id;
             $this->nom = $nom;
             $this->marque = $marque;
@@ -56,6 +58,7 @@ class ModelBiere extends Model
             $this->taux = $taux;
             $this->composition = $composition;
             $this->montant = $montant;
+            $this->image=$image;
         }
     }
 
