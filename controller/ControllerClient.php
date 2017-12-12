@@ -210,7 +210,9 @@ class ControllerClient
         if ($_SESSION['Basket'][$id][1]==1){
             unset($_SESSION['Basket'][$id]);
         }else{
+            $prixunit=$_SESSION['Basket'][$id][2]/$_SESSION['Basket'][$id][1];
             $_SESSION['Basket'][$id][1]-=1;
+            $_SESSION['Basket'][$id][2]-=$prixunit;
         }
         $pagetitle = 'showBasket';
         $view = 'showBasket';
