@@ -12,10 +12,10 @@ echo "<div id='detailbiere'>
                 <input type='hidden' name='id' value='" . $v->get("id") . "'>
                 <select name = 'volume'>
                     <option value='25'>25cl</option>
-                    <option value='33'>33cl</option>
-                    <option value='75'>75cl</option>
+                    <option value='33'>33cl (Prix x1,2)</option>
+                    <option value='75'>75cl (Prix x1,5)</option>
                 </select>
-                <input type='number' name='quantite' value='0' min='0'>
+                <input type='number' name='quantite' value='1' min='1'>
                 <input type='submit' value='Ajouter au panier'>      
             </form> ";
 if(Session::is_admin()) {
