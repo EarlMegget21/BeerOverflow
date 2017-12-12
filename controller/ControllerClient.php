@@ -177,9 +177,6 @@ class ControllerClient
                 "NomProd" => array("Marque", "Qte", "Prix", "idBiere"),
 
             );
-            $pagetitle = 'showBasket';
-            $view = 'showBasket';
-            require File::build_path(array('view', 'View.php'));
         }
     }
 
