@@ -157,9 +157,10 @@ class ControllerClient
     }
 
     public static function deconnect(){
+        $loginDeco = $_SESSION['login'];
         session_unset();
         session_destroy();
-        ControllerBiere::accueil(1);
+        ControllerBiere::accueil($loginDeco);
     }
     
     public static function validate(){
