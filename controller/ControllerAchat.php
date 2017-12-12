@@ -5,7 +5,7 @@ require_once File::build_path(array('model', 'ModelAchat.php')); // chargement d
 class ControllerAchat
 {
 
-    protected static $object = 'commande';
+    protected static $object = 'achat';
 
     public static function readAll()
     {
@@ -59,25 +59,10 @@ class ControllerAchat
 
     public static function vob()//validation of basket
     {
-        if (count($_SESSION['Basket']) != 1) {
-            //recupere un idcommande (on efface pas les commandes)
-            $requete = Model::$pdo->query('SELECT COUNT(*) AS NBcommandes FROM Commande');
-            $donnees = $requete->fetch();
-            //on incrémente
-            $donnees['NBcommandes'] += 1;
-            //on insert une commande
-            Model::$pdo->query("INSERT INTO Commande VALUES (" . $donnees['NBcommandes'] . ",0,'".$_SESSION['login']."','2017-12-18')");
-            unset($_SESSION['Basket']['NomProd']);
-            foreach ($_SESSION['Basket'] as $key) {
-                //on insert un achat... ça y est c'est payé !
-
-                Model::$pdo->query("INSERT INTO Achat VALUES(".$key[3].",".$donnees['NBcommandes'].",".$key[1].")");
-
-            }
-            //une fois payé on vide le panier du produit
-            unset($_SESSION['Basket']);
-            ControllerClient::initPanier();
-        }
+        ModelAchat::buy();
+        $pagetitle = 'Payement Terminé';
+        $view = 'Complete';
+        require File::build_path(array('view', 'View.php'));
     }
 
     public static function delete()
