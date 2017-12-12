@@ -479,7 +479,6 @@ fieldset div:last-child {
                 <a href="http://localhost/projetbiere/index.php?action=main&controller=biere">Bieres</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=brasserie">Brasseries</a>
                 <a href="http://localhost/projetbiere/index.php?action=readAll&controller=categorie">Categories</a>
-                <a href="http://localhost/projetbiere/index.php?action=showBasket&controller=client">Panier</a>
                 <a href="http://localhost/projetbiere/index.php">A Propos</a>
                 <a href="http://localhost/projetbiere/index.php">FAQ</a>
                 <?php

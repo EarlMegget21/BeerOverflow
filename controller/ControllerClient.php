@@ -182,10 +182,16 @@ class ControllerClient
     }
 
     public static function showBasket(){
-        $pagetitle = 'showBasket';
-        $view = 'showBasket';
-        ControllerClient::initPanier();
-        require File::build_path(array('view', 'View.php'));
+        if(isset($_GET['login'])) {
+            $pagetitle = 'showBasket';
+            $view = 'showBasket';
+            ControllerClient::initPanier();
+            require File::build_path(array('view', 'View.php'));
+        }else{
+            $pagetitle = 'Erreur';
+            $view = 'Error';
+            require File::build_path(array('view', 'View.php'));
+        }
     }
 
     public static function addBasket(){
