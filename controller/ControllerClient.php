@@ -195,11 +195,19 @@ class ControllerClient
         $Qte=$_GET['quantite'];
         $PrixBase=$_GET['montant'];
         $idBiere=$_GET['id'];
+        $volume=$_GET['volume'];
+        if($volume == 33){
+            $Prix = $PrixBase * 1.2;
+        }elseif($volume == 75){
+            $Prix = $PrixBase * 1.5;
+        }else{
+            $Prix = $PrixBase;
+        }
         if (isset($_SESSION['Basket'][$NomProd])) {
             $_SESSION['Basket'][$NomProd][1] += $Qte;
-            $_SESSION['Basket'][$NomProd][2] += $Qte * $PrixBase;
+            $_SESSION['Basket'][$NomProd][2] += $Qte * $Prix;
         } else {
-            $_SESSION['Basket'][$NomProd] = array($Marque, $Qte, $PrixBase * $Qte, $idBiere);
+            $_SESSION['Basket'][$NomProd] = array($Marque, $Qte, $Prix * $Qte, $idBiere);
         }
         ControllerBiere::readAll(1);
 
