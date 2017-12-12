@@ -192,7 +192,7 @@ class ControllerClient
         ControllerClient::initPanier();
         $NomProd=$_GET['nom'];
         $Marque=$_GET['marque'];
-        $Qte=1;
+        $Qte=$_GET['quantite'];
         $PrixBase=$_GET['montant'];
         $idBiere=$_GET['id'];
         if (isset($_SESSION['Basket'][$NomProd])) {
