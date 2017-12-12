@@ -96,7 +96,8 @@ class ControllerBiere {
                 'composition'=>$_GET['composition'],
                 'montant'=>$_GET['montant'],
                 'marque'=>$_GET['marque'],
-                'idBrasserie'=>$_GET['idBrasserie']);
+                'idBrasserie'=>$_GET['idBrasserie'],
+                'image'=>$_GET['image']);
             if(!ModelBiere::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
                 $pagetitle='Error!';
                 $view='Error';
@@ -132,7 +133,8 @@ class ControllerBiere {
                 'composition'=>$_GET['composition'],
                 'montant'=>$_GET['montant'],
                 'marque'=>$_GET['marque'],
-                'idBrasserie'=>$_GET['idBrasserie']);
+                'idBrasserie'=>$_GET['idBrasserie'],
+                'image'=>$_GET['image']);
             if(!ModelBiere::update($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
                 $pagetitle='Error!';
                 $view='Error';

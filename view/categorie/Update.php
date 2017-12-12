@@ -7,11 +7,12 @@
 
         <?php if($_GET['action']=="update"){$tv=ModelCategorie::select(array('id'=>$_GET['id'])); $v=$tv[0];} ?>
 
-        <label for="nom_id">Nom</label> :
+        <label for="nom_id">Nom *</label> :
         <input type="text" <?php if($_GET['action']=="update"){echo "value=\"".$v->get("nom")."\"";}else{echo "placeholder=\"ex:blonde\"";} ?> name="nom" id="nom_id" required/>
 
-        <label for="specifications_id">Specifications</label> :
+        <label for="specifications_id">Caractéristiques *</label> :
         <input type="text" <?php if($_GET['action']=="update"){echo "value=\"". $v->get("specifications")."\"";}else{echo "placeholder=\"ex:couleur claire, etc\"";} ?> name="specifications" id="specifications_id" required/>
 
       <input type="submit" class="submit" value="Submit" />
+      <p>Les champs marqués d'une * sont obligatoires</p>
 </form>
