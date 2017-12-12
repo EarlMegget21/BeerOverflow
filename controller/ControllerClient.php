@@ -182,7 +182,7 @@ class ControllerClient
     }
 
     public static function showBasket(){
-        if(isset($_GET['login'])) {
+        if(isset($_SESSION['login'])) {
             $pagetitle = 'showBasket';
             $view = 'showBasket';
             ControllerClient::initPanier();
