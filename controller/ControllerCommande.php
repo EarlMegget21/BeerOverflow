@@ -66,4 +66,12 @@ class ControllerCommande {
             ControllerBiere::accueil();
         }
     }
+
+    public static function getMyCommands(){
+        $login = $_SESSION['login'];
+        $tabCommande = ModelCommande::getMyCommandes($login);
+        $pagetitle='Liste des Commandes';
+        $view='ListCommande';
+        require File::build_path(array('view','View.php'));
+    }
 }

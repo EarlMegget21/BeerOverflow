@@ -1,7 +1,8 @@
 <?php
-echo "<div id='detailbiere'>
+if(isset($_SESSION['login'])) {
+    echo "<div id='detailbiere'>
         <div>
-        <img src='/projetbiere/img/biere/".htmlspecialchars($v->get("image"))."' alt='photo".$v->get("nom")."' height='300' width='240'>
+        <img src='/projetbiere/img/biere/" . htmlspecialchars($v->get("image")) . "' alt='photo" . $v->get("nom") . "' height='300' width='240'>
         <div>
             <form type='GET' action='index.php' id='addbasket'>
                 <input type='hidden' name='action' value='addBasket'/>
@@ -18,6 +19,7 @@ echo "<div id='detailbiere'>
                 <input type='number' name='quantite' value='1' min='1'>
                 <input type='submit' value='Ajouter au panier'>      
             </form> ";
+}
 if(Session::is_admin()) {
     echo "<a href=http://localhost/projetbiere/index.php?action=update&controller=biere&id=".rawurlencode($v->get("id")).">Modifier Bière</a>
           <a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id=".rawurlencode($v->get("id")).">Supprimer Bière</a>

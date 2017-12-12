@@ -1,19 +1,19 @@
 <?php
-    foreach ($tab_c as $c)
-    echo "Commande <a href=http://localhost/projetbiere/index.php?action=read&controller=Commande&id="
-        .rawurlencode($c->get("id"))
-        .">"
-        .htmlspecialchars($c->get("id"))
-        ."</a> "
-        ."Date: "
-        .htmlspecialchars($c->get("date"))
-        ." "
-        ."Livraison: ";
-        if(($c->get("livraison")) == 0){
+    foreach ($tabCommande as $c) {
+        echo "Commande numéro "
+            . htmlspecialchars($c->get("id"))
+            . " Date: "
+            . htmlspecialchars($c->get("date"))
+            . " "
+            . "Livré: ";
+        if (($c->get("livraison")) == 0) {
             echo "Non";
-        }else{
+        } else {
             echo "Oui";
         }
-        echo "<br>";
+        echo "<a href=http://localhost/projetbiere/index.php?action=read&controller=Commande&id="
+            . rawurlencode($c->get("id"))
+            . "> Detail Commande</a><br>";
+    }
 ?>
 

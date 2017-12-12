@@ -54,11 +54,11 @@ class ModelCommande extends Model
         return 0.0;
     }
 
-    public function getMyCommands($id){
-        $sql = "SELECT * FROM Commande WHERE idClient = :idClient";
+    public static function getMyCommandes($id){
+        $sql = "SELECT * FROM Commande WHERE login = :idClient";
         try{
             $data = array(
-              "idClient" => $id,
+                "idClient" => $id,
             );
             $req_prep = Model::$pdo->prepare($sql);
             $req_prep->execute($data);

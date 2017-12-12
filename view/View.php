@@ -488,6 +488,7 @@
         <?php
         if(isset($_SESSION['login'])){
             echo '<a href="http://localhost/projetbiere/index.php?action=showBasket&controller=client">Panier</a> ';
+            echo '<a href="http://localhost/projetbiere/index.php?action=getMyCommands&controller=commande">Mes Commandes</a> ';
         }
         ?>
     </nav>

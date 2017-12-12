@@ -5,7 +5,7 @@ echo "Numéro Commande: "
     ."Date: "
     .htmlspecialchars($c->get("date"))
     ."<br>"
-    ."Livraison: ";
+    ."Livré: ";
 if(($c->get("livraison")) == 0){
     echo "Non";
 }else{
