@@ -1,10 +1,9 @@
+<div id='detailbiere'>
 <?php
+echo "<div>
+        <img src='/projetbiere/img/biere/" . htmlspecialchars($v->get("image")) . "' alt='photo" . $v->get("nom") . "' height='300' width='240'>";
 if(isset($_SESSION['login'])) {
-    echo "<div id='detailbiere'>
-        <div>
-        <img src='/projetbiere/img/biere/" . htmlspecialchars($v->get("image")) . "' alt='photo" . $v->get("nom") . "' height='300' width='240'>
-        <div>
-            <form type='GET' action='index.php' id='addbasket'>
+    echo "<div><form type='GET' action='index.php' id='addbasket'>
                 <input type='hidden' name='action' value='addBasket'/>
                 <input type='hidden' name='controller' value='Client'/>    
                 <input type='hidden' name='nom' value='" . $v->get("nom") . "'>
@@ -19,11 +18,13 @@ if(isset($_SESSION['login'])) {
                 <input type='number' name='quantite' value='1' min='1'>
                 <input type='submit' value='Ajouter au panier'>      
             </form> ";
-}
-if(Session::is_admin()) {
-    echo "<a href=http://localhost/projetbiere/index.php?action=update&controller=biere&id=".rawurlencode($v->get("id")).">Modifier Bière</a>
-          <a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id=".rawurlencode($v->get("id")).">Supprimer Bière</a>
+    if (Session::is_admin()) {
+        echo "<div>
+          <a href=http://localhost/projetbiere/index.php?action=update&controller=biere&id=" . rawurlencode($v->get("id")) . ">Modifier Bière</a>
+          <a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id=" . rawurlencode($v->get("id")) . ">Supprimer Bière</a>
         </div>";
+    }
+    echo "</div>";
 }
 
 echo "</div><div><p>"
@@ -61,8 +62,7 @@ if($tab_c) { //si le tableau existe(il y a des catégories pour cette bière, al
 }
 
 if (Session::is_admin()) {
-    echo
-        "<form method = 'get' action = '../ProjetBiere/index.php' >"
+    echo "<form method = 'get' action = '../ProjetBiere/index.php' >"
         . "<input type = 'hidden' name = 'action' value = 'created' />"
         . "<input type = 'hidden' name = 'controller' value = 'catebiere' />"
         . "<input type = 'hidden' name = 'idBiere' value = '" . $v->get("id") . "' >";
@@ -94,6 +94,6 @@ if (Session::is_admin()) {
     }
     echo "</form >";
 }
-echo "</form ></div>";
 
 ?>
+</div>

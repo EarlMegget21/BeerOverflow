@@ -41,12 +41,12 @@ class ControllerBiere {
         $data["montantMax"] = $_GET["montantMax"];
         //var_dump($data);    //DEBUG
         if(!ModelBiere::search($data)){
-            $pagetitle='Error!';
-            $view='Error';
+            $pagetitle='Rechercher des bières';
+            $view='AucunResultat';
             require File::build_path(array('view','View.php'));
         } else {
             $tab_v = ModelBiere::search($data);
-            $pagetitle='Résultat Recherche';
+            $pagetitle='Rechercher des bières';
             $view='ListBiere';
             require File::build_path(array('view','View.php'));
         }

@@ -372,7 +372,7 @@
             justify-content: center;
         }
 
-        #listbiere>div:last-child a{
+        #ajouter{
             border: 1px solid grey;
             margin: 20px;
             width: 45px;
@@ -382,14 +382,14 @@
             justify-content: center;
         }
 
-        #listbiere>div:last-child a:hover{
+        #ajouter:hover{
             margin: 19px;
             width: 47px;
             height: 47px;
             background-color: #d0d0d0;
         }
 
-        #listbiere>div:last-child a:hover img{
+        #ajouter:hover img{
             width: 42px;
             height: 42px;
         }
