@@ -452,6 +452,7 @@
             <input type="hidden" value="100" name="montantMax" id="montantMax_id"/>
             <input id="search_input" type="text" name="marque" placeholder="Chercher une Bière">
             <input id="search_button" type="image" alt="Submit" src="/ProjetBiere/img/loupe.png" height="15" width="15">
+            <input id="search_button" type="image" alt="Submit" src="/projetbiere/img/loupe.png" height="15" width="15">
         </form>
         <div id="connexion">
             <div>
