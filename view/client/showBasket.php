@@ -24,9 +24,7 @@ if (isset($_SESSION['Basket'])) {
             }
         }
         echo "</table>";
-        echo <<<END
-<a href="http://localhost/projetbiere/index.php?action=vob&controller=Achat">Valider la commande</a>
-END;
+        echo "<a href='http://webinfo.iutmontp.univ-montp2.fr/~sonettir/e-commerce/index.php?action=vob&controller=Achat'>Valider la commande</a>";
     }else{
         echo "<p>Panier vide !</p>";
     }

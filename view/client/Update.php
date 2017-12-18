@@ -1,4 +1,4 @@
-<form method="get" id="signup" action="../projetbiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
+<form method="post" id="signup" action="../e-commerce/index.php?action=<?php if($_GET['action']=="update"){echo "updated";}else{echo "created";}?>&controller=Client"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
   <h3>
     <?php
         if($_GET['action']=="update") {
@@ -8,16 +8,14 @@
         }
     ?>
   </h3>
-  <input type='hidden' name='action' value='<?php if($_GET['action']=="update"){echo "updated";}else{echo "created";}?>'>
-  <input type='hidden' name='controller' value='Client'>
 
   <label for="login_id">Login *</label>
   <?php
       if($_GET['action']=="update"){
-          echo "<input type=\"text\" value=\"".$_GET['login']."\" name=\"login\" id=\"login_id\" readonly/>";
+          echo "<input type='text' value='".$_GET['login']."' name='login' id='login_id' readonly/>";
           $tv=ModelClient::select(array('login'=>$_GET['login'])); $v=$tv[0];
       }else{
-          echo "<input type=\"text\" placeholder=\"Ex:OutlawSpiritus\" name=\"login\" id=\"login_id\" required/>";
+          echo "<input type='text' placeholder='Ex:OutlawSpiritus' name='login' id='login_id' required/>";
 
       }
   ?>

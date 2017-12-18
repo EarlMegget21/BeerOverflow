@@ -46,20 +46,20 @@ class ControllerClient
 
     public static function created() {
         $data=array(
-            'login'=>$_GET['login'],
+            'login'=>$_POST['login'],
             'nonce'=>Security::generateRandomHex(),
-            'nom'=>$_GET['nom'],
-            'prenom'=>$_GET['prenom'],
+            'nom'=>$_POST['nom'],
+            'prenom'=>$_POST['prenom'],
             'isAdmin'=>0);
-        if($_GET['mdp']==$_GET['mdp2']){
-            $mdp= Security::getSeed().$_GET['mdp'];
+        if($_POST['mdp']==$_POST['mdp2']){
+            $mdp= Security::getSeed().$_POST['mdp'];
             $data['mdp']= Security::chiffrer($mdp);
         }
-        if (filter_var($_GET['email'], FILTER_VALIDATE_EMAIL)) {
-            $data['email']=$_GET['email'];
+        if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            $data['email']=$_POST['email'];
         }
-        $mail="Valider email: http://webinfo.iutmontp.univ-montp2.fr/~sonettir/ProjetBiere/index.php?action=validate&controller=client&login=".$_GET['login']."&nonce=".$data['nonce'];
-        mail($_GET['email'], 'ProjetBiere', $mail);
+        $mail="Valider email: http://webinfo.iutmontp.univ-montp2.fr/~sonettir/e-commerce/index.php?action=validate&controller=client&login=".$_POST['login']."&nonce=".$data['nonce'];
+        mail($_POST['email'], 'ProjetBiere', $mail);
         if(!ModelClient::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
             $pagetitle='Error!';
             $view='Error';
@@ -83,19 +83,19 @@ class ControllerClient
     }
 
     public static function updated() {
-        if(Session::is_user($_GET['login'])||Session::is_admin()){
+        if(Session::is_user($_POST['login'])||Session::is_admin()){
             $data=array(
-                'login'=>$_GET['login'],
-                'nom'=>$_GET['nom'],
-                'prenom'=>$_GET['prenom']);
-            if($_GET['mdp']==$_GET['mdp2']){
-                $mdp= Security::getSeed().$_GET['mdp'];
+                'login'=>$_POST['login'],
+                'nom'=>$_POST['nom'],
+                'prenom'=>$_POST['prenom']);
+            if($_POST['mdp']==$_POST['mdp2']){
+                $mdp= Security::getSeed().$_POST['mdp'];
                 $data['mdp']= Security::chiffrer($mdp);
             }
-            if (filter_var($_GET['email'], FILTER_VALIDATE_EMAIL)) {
-                $data['email'] = $_GET['email'];
+            if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+                $data['email'] = $_POST['email'];
             }
-            if (Session::is_admin() && isset($_GET['isAdmin'])) {
+            if (Session::is_admin() && isset($_POST['isAdmin'])) {
                 $data['isAdmin'] = 1;
             }else{
                 $data['isAdmin'] = 0;
@@ -105,7 +105,7 @@ class ControllerClient
                 $view = 'Error';
                 require File::build_path(array('View', 'View.php'));
             } else {
-                $tv = ModelClient::select(array('login'=>$_GET['login']));
+                $tv = ModelClient::select(array('login'=>$_POST['login']));
                 $v=$tv[0];
                 $pagetitle='DetailClient';
                 $view='Updated';
@@ -165,20 +165,22 @@ class ControllerClient
     
     public static function validate(){
         if(isset($_GET['login'])){
-            $v = ModelClient::select($_GET["login"]);
-            if(isset($_GET['nonce'])&&$v->getNonce()==$_GET["nonce"]){
-                ModelClient::validate($_GET["login"]);
+			$login=$_GET['login'];
+            $tv = ModelClient::select(array('login'=>$login));
+            if(isset($_GET['nonce'])&&$tv[0]->get("nonce")==$_GET["nonce"]){
+                ModelClient::validate($login);
             }
-        }
+            ControllerClient::connect();
+        }else{
+			ControllerBiere::accueil();
+		}
     }
 
     public static function initPanier(){
         if (!isset($_SESSION['Basket'])) {//en caché => 	idBiere 	idCommande 	quantite
             $_SESSION['Basket'] = array(
                 "NomProd" => array("Marque", "Qte", "Prix", "idBiere"),
-
             );
-
         }
     }
 

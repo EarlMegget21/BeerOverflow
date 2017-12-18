@@ -1,8 +1,5 @@
-<form method="get" action="../ProjetBiere/index.php"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
+<form method="post" action="../e-commerce/index.php?action=<?php if($_GET['action']=="update"){echo "updated";}else{echo "created";}?>&controller=Biere"> <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
         <h3>Formulaire:</h3>
-            <input type='hidden' name='controller' value="biere"> <!-- ajoute un input caché qui défini la variable GET action -->
-
-            <input type='hidden' name='action' value="<?php if($_GET['action']=="update"){echo "updated";}else{echo "created";}?>"> <!-- ajoute un input caché qui défini la variable GET action -->
 
             <?php if($_GET['action']=="update"){echo "<input type='hidden' value=\"".$_GET['id']."\" name=\"id\" id=\"id_id\" readonly/>";} ?> <!-- met un attribut caché avec l'id dans le cas où c'est un update car l'id n'apparaît pas est n'est pas modifiable manuellement -->
 

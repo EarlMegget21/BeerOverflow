@@ -47,7 +47,7 @@ class ModelAchat extends Model
     }
 
     public static function getMyPurchases($id){
-        $sql = "SELECT a.quantite, b.marque, b.nom FROM achat a, biere b WHERE a.idBiere = b.id AND a.idCommande = :id";
+        $sql = "SELECT a.quantite, b.marque, b.nom FROM Achat a, Biere b WHERE a.idBiere = b.id AND a.idCommande = :id";
         try{
             // Prepare the SQL statement
             $req_prep = Model::$pdo->prepare($sql);
@@ -75,7 +75,7 @@ class ModelAchat extends Model
     public static function buy(){
         if (count($_SESSION['Basket']) != 1) {
             //recupere un idcommande (on efface pas les commandes)
-            $requete = Model::$pdo->query('SELECT COUNT(*) AS NBcommandes FROM Commande');
+            $requete = Model::$pdo->query('SELECT MAX(id) AS NBcommandes FROM Commande');
             $donnees = $requete->fetch();
             //on incrémente
             $donnees['NBcommandes'] += 1;

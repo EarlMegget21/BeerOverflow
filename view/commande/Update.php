@@ -1,4 +1,4 @@
-<form method="get" action="../ProjetBiere/index.php">
+<form method="get" action="../e-commerce/index.php">
     <!-- action determine le fichier dans lequel on est redirigé avec les variables rentrées après Submit -->
     <h3>Formulaire</h3>
     <input type='hidden' name='action' value='<?php if ($_GET['action'] == "update") {

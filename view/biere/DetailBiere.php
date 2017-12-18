@@ -1,7 +1,7 @@
 <div id='detailbiere'>
 <?php
 echo "<div>
-        <img src='/projetbiere/img/biere/" . htmlspecialchars($v->get("image")) . "' alt='photo" . $v->get("nom") . "' height='300' width='240'>";
+        <img src='http://webinfo.iutmontp.univ-montp2.fr/~sonettir/e-commerce/img/biere/" . htmlspecialchars($v->get("image")) . "' alt='photo" . $v->get("nom") . "' height='300' width='240'>";
 if(isset($_SESSION['login'])) {
     echo "<div><form type='GET' action='index.php' id='addbasket'>
                 <input type='hidden' name='action' value='addBasket'/>
@@ -20,8 +20,8 @@ if(isset($_SESSION['login'])) {
             </form> ";
     if (Session::is_admin()) {
         echo "<div>
-          <a href=http://localhost/projetbiere/index.php?action=update&controller=biere&id=" . rawurlencode($v->get("id")) . ">Modifier Bière</a>
-          <a href=http://localhost/projetbiere/index.php?action=delete&controller=biere&id=" . rawurlencode($v->get("id")) . ">Supprimer Bière</a>
+          <a href=http://webinfo.iutmontp.univ-montp2.fr/~sonettir/e-commerce/index.php?action=update&controller=biere&id=" . rawurlencode($v->get("id")) . ">Modifier Bière</a>
+          <a href=http://webinfo.iutmontp.univ-montp2.fr/~sonettir/e-commerce/index.php?action=delete&controller=biere&id=" . rawurlencode($v->get("id")) . ">Supprimer Bière</a>
         </div>";
     }
     echo "</div>";
@@ -50,7 +50,7 @@ if($tab_c) { //si le tableau existe(il y a des catégories pour cette bière, al
             }
         }
         if(Session::is_admin()) {
-            echo "<a href='http://localhost/projetbiere/index.php?action=delete&controller=catebiere&idCategorie="
+            echo "<a href='http://webinfo.iutmontp.univ-montp2.fr/~sonettir/e-commerce/index.php?action=delete&controller=catebiere&idCategorie="
                 . $c->get("idCategorie")
                 . "&idBiere="
                 . htmlspecialchars($v->get("id"))
@@ -62,7 +62,7 @@ if($tab_c) { //si le tableau existe(il y a des catégories pour cette bière, al
 }
 
 if (Session::is_admin()) {
-    echo "<form method = 'get' action = '../ProjetBiere/index.php' >"
+    echo "<form method = 'get' action = '../e-commerce/index.php' >"
         . "<input type = 'hidden' name = 'action' value = 'created' />"
         . "<input type = 'hidden' name = 'controller' value = 'catebiere' />"
         . "<input type = 'hidden' name = 'idBiere' value = '" . $v->get("id") . "' >";

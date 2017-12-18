@@ -70,7 +70,7 @@ class ModelBiere extends Model
     public static function search($data){
         $table_name= "biere";
         $class_name= "Biere";
-        $sql = "SELECT * FROM biere bi ";
+        $sql = "SELECT * FROM Biere bi ";
         if(isset($data["nomBrasserie"])) {
             $sql = $sql . "JOIN Brasserie br ON br.id = bi.idBrasserie WHERE br.nom=:nomBrasserie AND ";
         } else{

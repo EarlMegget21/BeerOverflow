@@ -91,13 +91,13 @@ class ControllerBiere {
     public static function created() {
         if(Session::is_admin()){
             $data=array( //pas besoin de rentrer l'id lors de la création d'une bière, il s'incrémente tout seul sur MySQL lors de la création d'un tuple
-                'nom'=>$_GET['nom'],
-                'taux'=>$_GET['taux'],
-                'composition'=>$_GET['composition'],
-                'montant'=>$_GET['montant'],
-                'marque'=>$_GET['marque'],
-                'idBrasserie'=>$_GET['idBrasserie'],
-                'image'=>$_GET['image']);
+                'nom'=>$_POST['nom'],
+                'taux'=>$_POST['taux'],
+                'composition'=>$_POST['composition'],
+                'montant'=>$_POST['montant'],
+                'marque'=>$_POST['marque'],
+                'idBrasserie'=>$_POST['idBrasserie'],
+                'image'=>$_POST['image']);
             if(!ModelBiere::save($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
                 $pagetitle='Error!';
                 $view='Error';
@@ -127,20 +127,20 @@ class ControllerBiere {
     public static function updated() {
         if(Session::is_admin()){
             $data=array(
-                'id'=>$_GET['id'], //lors de la modification d'une bière, on a besoin de l'id pour mettre dans le WHERE
-                'nom'=>$_GET['nom'],
-                'taux'=>$_GET['taux'],
-                'composition'=>$_GET['composition'],
-                'montant'=>$_GET['montant'],
-                'marque'=>$_GET['marque'],
-                'idBrasserie'=>$_GET['idBrasserie'],
-                'image'=>$_GET['image']);
+                'id'=>$_POST['id'], //lors de la modification d'une bière, on a besoin de l'id pour mettre dans le WHERE
+                'nom'=>$_POST['nom'],
+                'taux'=>$_POST['taux'],
+                'composition'=>$_POST['composition'],
+                'montant'=>$_POST['montant'],
+                'marque'=>$_POST['marque'],
+                'idBrasserie'=>$_POST['idBrasserie'],
+                'image'=>$_POST['image']);
             if(!ModelBiere::update($data)){ //NULL est interprété comme non vrai aussi donc soit on return true en cas de succès soit on teste si $car1->save() === false (le === check si c'est bien un boolean et si c'est false donc si c'est NULL ça ne sera pas un boolean)
                 $pagetitle='Error!';
                 $view='Error';
                 require File::build_path(array('view','View.php'));
             } else {
-                $id=$_GET['id']; //on stock le GET pour aller plus vite
+                $id=$_POST['id']; //on stock le GET pour aller plus vite
                 $tab_c = ModelCateBiere::select(array('idBiere'=>$id)); //on selectionne toutes les caté de cette bière dans un tableau
                 $tab_idCate = ModelCategorie::selectAll();   //On récup toutes les catégories de bière
                 $tv = ModelBiere::select(array('id'=>$id)); //on selectionne la biere dans un tableau
